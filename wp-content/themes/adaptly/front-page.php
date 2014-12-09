@@ -60,4 +60,8 @@
   </div>
 </div>
 
+<div class="pre-footer-cta">
+  <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
+</div>
+
 <?php get_footer(); ?>

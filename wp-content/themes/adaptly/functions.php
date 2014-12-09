@@ -620,6 +620,18 @@ function create_post_type() {
 	);
   	register_post_type( 'Clients', $args7);
 
+  	$args8 = array(
+		'labels' => array(
+			'name' => __( 'Locations' ),
+			'singular_name' => __( 'Location' )
+		),
+		'public' => true,
+		'menu_icon' => 'dashicons-location',
+		'rewrite' => array('with_front' => false, 'slug' => 'locations'),
+		'supports' => array( 'title', 'editor' )
+	);
+  	register_post_type( 'Locations', $args8);
+
   flush_rewrite_rules();
 }
 

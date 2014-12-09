@@ -32,4 +32,8 @@
 
   </div>
 
+<div class="pre-footer-cta">
+  <p class="partner-signup">Start receiving Adaptly Partner updates</p>
+</div>
+
 <?php get_footer(); ?>
