@@ -2,7 +2,12 @@
 <div class="mid-cont services">
   <?php while ( have_posts() ) : the_post(); ?>
     <?php the_content(); ?>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
+    <div class="computer-animation">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
+      <video width="480" height="320" controls="controls">
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4" type="video/mp4">
+      </video>
+    </div>
   <?php endwhile; wp_reset_query(); ?>
 </div>
 
