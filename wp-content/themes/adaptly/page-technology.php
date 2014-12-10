@@ -4,8 +4,8 @@
     <?php the_content(); ?>
     <div class="computer-animation">
       <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
-      <video width="480" height="320" controls="controls">
-        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4" type="video/mp4">
+      <video width="480" height="320" autoplay="autoplay">
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4" type="video/mp4" >
       </video>
     </div>
   <?php endwhile; wp_reset_query(); ?>
@@ -14,7 +14,23 @@
 <div class="deploy-manage-analyze">
   <div class="mid-cont">
     <?php the_field('deploy_manage_analyze'); ?>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
+    <div class="computer-container">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_03.png">
+    </div>
+  </div>
+</div>
+
+<div class="maximum-effect">
+  <div class="mid-cont">
+    <?php the_field('maximum_effect'); ?>
+    <section id="dg-container" class="dg-container">
+      <div class="dg-wrapper">
+        <a href="#"><<img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_01.png"></a>
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_02.png"></a>
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_03.png"></a>
+      </div>
+    </section>
   </div>
 </div>
 
@@ -51,5 +67,13 @@
     <input type="submit" name="submit">
   </form>
 </div>
+
+<script type="text/javascript">
+  $(function() {
+    $('#dg-container').gallery({
+      autoplay  : true
+    });
+  });
+</script/>
 
 <?php get_footer(); ?>
