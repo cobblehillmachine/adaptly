@@ -1,5 +1,6 @@
 
 $(window).load(function() {
+  // homepageAnimation();
     $('.client-testimonial-carousel.flexslider').flexslider({
       animation:'slide',
       controlNav:false,
@@ -10,9 +11,13 @@ $(window).load(function() {
     requestDemoForm();
 });
 
+function homepageAnimation() {
+  var height = $(window).height();
+  $('.video-bg video').css('height', height);
+}
 
 function requestDemoForm() {
   $('.pre-footer-cta button').on('click', function() {
-    $('.request-demo-form').toggle();
+    $('.request-demo-form').slideToggle();
   })
 }

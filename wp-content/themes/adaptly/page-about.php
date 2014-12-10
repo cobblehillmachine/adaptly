@@ -5,32 +5,30 @@
       <?php the_content(); ?>
     </div>
 </div>
-<div class="about frontlines">
+<div class="subnav-wrapper">
+  <div class="subnav mid-cont">
+    <ul>
+      <li><a href="#what">what</a></li>
+      <li><a href="#why">why</a></li>
+      <li><a href="#who">who</a></li>
+    </ul>
+  </div>
+</div>
+<div id="what" class="about frontlines">
     <div class="mid-cont">
       <?php the_field('on_the_frontlines') ?>
     </div>
 </div>
-<div class="about something-bigger">
+<div id="why" class="about something-bigger">
     <div class="mid-cont">
       <?php the_field('something_bigger') ?>
     </div>
 </div>
-<div class="about remarkability">
-    <div class="mid-cont">
-      <?php the_field('remarkability') ?>
-    </div>
-</div>
-<div class="about meet-our-team">
+
+<div id="who" class="about meet-our-team">
     <div class="mid-cont">
       <div class="bold-type"><?php the_field('meet_our_team') ?></div>
-      <?php query_posts( array( 'post_type' => 'team members') ); ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-        <div class="team-member">
-          <div class=""><?php the_post_thumbnail('full'); ?></div>
-          <div class="bold-type name"><?php the_title(); ?></div>
-          <div class="title"><?php the_content(); ?></div>
-        </div>
-      <?php endwhile; wp_reset_query(); ?>
+      <h4>Coming Soon :)</h4>
     </div>
 </div>
 

@@ -1,12 +1,21 @@
 <?php get_header(); ?>
-
+<!-- <div class="video-bg">
+  <video autoplay="autoplay" width="100px" height="100px" controls="true">
+    <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.mp4" type="video/mp4" >
+  </video>
+</div> -->
 <div class="mid-cont home-page">
   <?php while ( have_posts() ) : the_post(); ?>
+
     <?php the_content(); ?>
     <div class="icon-container">
       <?php the_field('technology_intro'); ?>
     </div>
     <?php the_field('work_smarter'); ?>
+    <div class="computer-container">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_03.png">
+    </div>
   <?php endwhile; wp_reset_query(); ?>
 </div>
 
