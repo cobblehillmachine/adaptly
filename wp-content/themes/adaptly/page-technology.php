@@ -26,7 +26,7 @@
     <?php the_field('maximum_effect'); ?>
     <section id="dg-container" class="dg-container">
       <div class="dg-wrapper">
-        <a href="#"><<img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_01.png"></a>
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_01.png"></a>
         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_02.png"></a>
         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_03.png"></a>
       </div>
