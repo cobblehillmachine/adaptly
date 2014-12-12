@@ -73,11 +73,11 @@ p {  font-size: 18px;}
 .case-study-grid .case-study .photo { z-index: -1;}
 .case-study-grid .case-study .photo img { widht: 100%; height: auto;}
 .case-study-grid .case-study .color-overlay{  position: absolute; width: 100%; height: 98%; top: 0; opacity: 0; background-color: #1AA2D1;  transition: opacity 0.5s ease; ;}
-.case-study-grid .case-study .text-overlay { position: absolute; width: 100%; top: 50%; transform: translate(0,-50%); opacity: 0; color:white; transition: opacity 0.5s ease; padding: 0 15px;}
+.case-study-grid .case-study .text-overlay { position: absolute; width: 100%; top: 50%; transform: translate(0,-50%); opacity: 0; color:white; transition: opacity 0.5s ease; padding: 0 15px; font-size: 29px;}
 .case-study-grid .case-study:hover .text-overlay { opacity: 1;}
 .case-study-grid .case-study:hover .color-overlay{opacity: 0.75}
 
-.case-study-grid .case-study .text-overlay a {  border: 1px white solid; border-radius: 3px; padding: 5px; color:white;}
+.case-study-grid .case-study .text-overlay a {  border: 1px white solid; border-radius: 3px; padding: 5px; color:white; font-size: 18px;}
 
 /*About Page*/
 .about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -159px; color:white;}
@@ -128,10 +128,10 @@ p {  font-size: 18px;}
 body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .deploy-manage-analyze ul li:nth-child(2n+1) {  font-size:20px; color: #1AA2D1;margin-top:30px;}
 
-.computer-container {  width: 60%; height: 100%; display: inline-block; position: relative}
+.computer-container {  width: 520px; height: auto; display: inline-block; position: relative}
 .computer-container img:first-child { width: 100%; height: 100%;}
 .computer-container img:nth-child(2) { position: absolute;  top: 48px;  height: 67%;  left: 100px;  width: 61%;}
-.home-page .computer-container {  width: 100%;}
+.home-page .computer-container {  width: 880px;}
 .home-page .computer-container img:nth-child(2) { top:80px; left:166px;}
 
 .work-smarter { padding: 50px 0;}
@@ -141,7 +141,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 .emphasize-adaptability { background-color: #1AA2D1; color:white; padding: 50px 0;}
 
-.computer-animation { position: relative; width: 100%; height: auto;}
+.computer-animation { position: relative; width: 880px; height: auto;}
 /*.computer-animation img { position: absolute; top: 0;width: 100%; height: 100%;}*/
 .computer-animation video { position: absolute; top: 0;  width: 62%; left: 166px;  height: 100%;}
 
