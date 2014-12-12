@@ -80,7 +80,7 @@ p {  font-size: 18px;}
 .case-study-grid .case-study .text-overlay a {  border: 1px white solid; border-radius: 3px; padding: 5px; color:white; font-size: 18px;}
 
 /*About Page*/
-.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -159px; color:white;}
+.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -159px; color:white;background-repeat: no-repeat;  background-size: cover;}
 .subnav-wrapper { background: #F2F2F2}
 .subnav ul {  margin: 0 auto; width: 30%; padding: 20px 0;}
 .subnav li {  display: inline-block; font-size:20px; width: 30%;}
