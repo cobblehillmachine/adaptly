@@ -518,7 +518,7 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 function my_login_logo() { ?>
   <style type="text/css">
       body.login div#login h1 a {
-          background-image: url(<?php echo get_bloginfo( 'template_directory' ) ?>/images/kica-logo.jpg);
+          background-image: url(<?php echo get_bloginfo( 'template_directory' ) ?>/images/adaptly_logo.png);
           background-size:auto;
           width: auto;
       }
@@ -650,3 +650,14 @@ function svg_size() {
   echo '<style type="text/css">'.$css.'</style>';
 }
 add_action('admin_head', 'svg_size');
+
+// excerpt length
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

@@ -5,6 +5,7 @@
 <?php endwhile; wp_reset_query(); ?>
 </div>
 
+
 <div class="map">
   <div class="mid-cont">
     <h3>Locate Us</h3>

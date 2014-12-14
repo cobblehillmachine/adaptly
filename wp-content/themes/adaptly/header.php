@@ -19,6 +19,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png" />
 	<script src="//use.typekit.net/jjt5ytw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -31,6 +32,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/blur.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.gallery.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.53451.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.js"></script>
