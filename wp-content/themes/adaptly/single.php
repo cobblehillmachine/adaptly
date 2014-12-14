@@ -1,40 +1,28 @@
 <?php
-/**
- * The Template for displaying all single posts
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
-
+// template for single case study
 get_header(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<div class="header-image"><img src="<?php the_field('header_image'); ?>"></div>
+<div class="post-header-cta">
+  <p class="pdf-download">Download the full case study.<a href="<?php the_field('pdf_for_download'); ?>">DOWNLOAD</a></p>
+</div>
+<div class="mid-cont">
+	<?php the_content() ?>
+</div>
+<div class="stats-wrapper">
+	<div class="mid-cont">
+		<div><?php the_field('stats'); ?></div>
+	</div>
+</div>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+<div class="mid-cont bottom-content">
+	<?php the_field('bottom_content'); ?>
+</div>
 
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
 
-					// Previous/next post navigation.
-					twentyfourteen_post_nav();
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				endwhile;
-			?>
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar( 'content' );
-get_sidebar();
-get_footer();
+<div class="pre-footer-cta">
+  <p class="pdf-download">Download the full case study.<a href="<?php the_field('pdf_for_download'); ?>">DOWNLOAD</a></p>
+</div>
+<?php endwhile; wp_reset_query(); ?>
+<?php get_footer(); ?>

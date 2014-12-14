@@ -49,7 +49,9 @@
 			<a href="/">
 				<?php if (is_page('13')) { ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_white.png">
-				<?php } else { ?>
+				<?php } else if (is_single()) { ?>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_white.png">
+				 <?php } else { ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo.png">
 				<?php } ?>
 			</a>

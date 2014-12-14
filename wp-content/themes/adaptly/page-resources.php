@@ -33,7 +33,7 @@
 </div>
 <div class='mid-cont case-studies resources'>
   <div class="case-study-grid resources-feed" id="case-studies">
-    <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'DESC', 'posts_per_page' => 6) ); ?>
+    <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'ASC', 'posts_per_page' => 6) ); ?>
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="case-study">
       <div class="photo"><?php the_post_thumbnail('full'); ?></div>
@@ -57,9 +57,9 @@
             <p><?php the_field('source'); ?></p>
             <p><?php the_field('press_date'); ?></p>
           </div>
-          <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-          <?php the_excerpt(); ?>
-          <a href="<?php the_permalink(); ?>">Read More ></a>
+          <a href="<?php the_field('external_link'); ?>" target=_blank><h4><?php the_title(); ?></h4></a>
+          <?php the_content(); ?>
+          <a href="<?php the_field('external_link'); ?>" target=_blank>Read More ></a>
         </div>
       </div>
       <?php endwhile; wp_reset_query(); ?>

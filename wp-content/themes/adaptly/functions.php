@@ -661,3 +661,10 @@ function new_excerpt_more( $more ) {
 	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+function is_post_type($type){
+    global $wp_query;
+    if($type == get_post_type($wp_query->post->ID)) return true;
+    return false;
+}
