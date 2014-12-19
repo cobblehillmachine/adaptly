@@ -19,7 +19,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png" />
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/Favicon.png" />
 	<script src="//use.typekit.net/jjt5ytw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">

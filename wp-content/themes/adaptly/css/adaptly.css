@@ -15,6 +15,7 @@ a { color: #1AA2D1; text-decoration: none;}
 
 
 header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 10px 3%;text-align:left;}
+.page-id-13 header {  padding-top: 0;}
 header {  margin-bottom:100px;}
 header .logo {  width: 150px; display: inline-block;}
 header .logo img {  max-width: 100%;}
