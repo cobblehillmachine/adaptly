@@ -11,7 +11,8 @@ $(window).load(function() {
     requestDemoForm();
     blurs();
     smoothScroll();
-    resourceTabs()
+    // resourceTabs()
+    // shareCounter();
 });
 
 function homepageAnimation() {
@@ -47,26 +48,42 @@ function smoothScroll() {
   });
 }
 
-function resourceTabs() {
-  $('.resources.subnav li.blog a').on('click', function() {
-    $('.resources.subnav a').css('border-bottom', 0)
-    $(this).css('border-bottom', '2px #1AA2D1 solid')
-    $('.blog.resources').fadeIn('slow');
-    $('.case-studies.resources').fadeOut('fast');
-    $('.press.resources').fadeOut('fast');
+// function resourceTabs() {
+//   $('.resources.subnav li.blog a').on('click', function() {
+//     $('.resources.subnav a').css('border-bottom', 0)
+//     $(this).css('border-bottom', '2px #1AA2D1 solid')
+//     $('.blog.resources').fadeIn('slow');
+//     $('.case-studies.resources').fadeOut('fast');
+//     $('.press.resources').fadeOut('fast');
+//   })
+//   $('.resources.subnav li.case-studies a').on('click', function() {
+//     $('.resources.subnav a').css('border-bottom', 0)
+//     $(this).css('border-bottom', '2px #1AA2D1 solid')
+//     $('.blog.resources').fadeOut('fast');
+//     $('.case-studies.resources').fadeIn('slow');
+//     $('.press.resources').fadeOut('fast');
+//   })
+//   $('.resources.subnav li.press a').on('click', function() {
+//     $('.resources.subnav a').css('border-bottom', 0)
+//     $(this).css('border-bottom', '2px #1AA2D1 solid')
+//     $('.blog.resources').fadeOut('fast');
+//     $('.case-studies.resources').fadeOut('fast');
+//     $('.press.resources').fadeIn('slow');
+//   })
+// }
+
+function shareCounter() {
+  var shareDivs = $('.ssba');
+  $.each(shareDivs, function(div) {
+    var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent;
+    console.log($('this' + ' .ssba_sharecount.facebook'))
+    var twitterCount = $(' .ssba_sharecount.twitter').textContent;
+    var totalCount = parseInt(facebookCount) + parseInt(twitterCount);
+    console.log(totalCount);
+    $(' .counter-total').text('totalCount')
   })
-  $('.resources.subnav li.case-studies a').on('click', function() {
-    $('.resources.subnav a').css('border-bottom', 0)
-    $(this).css('border-bottom', '2px #1AA2D1 solid')
-    $('.blog.resources').fadeOut('fast');
-    $('.case-studies.resources').fadeIn('slow');
-    $('.press.resources').fadeOut('fast');
-  })
-  $('.resources.subnav li.press a').on('click', function() {
-    $('.resources.subnav a').css('border-bottom', 0)
-    $(this).css('border-bottom', '2px #1AA2D1 solid')
-    $('.blog.resources').fadeOut('fast');
-    $('.case-studies.resources').fadeOut('fast');
-    $('.press.resources').fadeIn('slow');
-  })
+
+
+
+
 }

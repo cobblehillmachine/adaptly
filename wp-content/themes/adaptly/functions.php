@@ -541,7 +541,8 @@ function create_post_type() {
 		'public' => true,
 		'menu_icon' => 'dashicons-hammer',
 		'rewrite' => array('with_front' => false, 'slug' => 'services'),
-		'supports' => array( 'title', 'editor', 'thumbnail' )
+		'supports' => array( 'title', 'editor', 'thumbnail' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Services', $args1);
 
@@ -553,7 +554,8 @@ function create_post_type() {
 		'public' => true,
 		'menu_icon' => 'dashicons-networking',
 		'rewrite' => array('with_front' => false, 'slug' => 'partners'),
-		'supports' => array( 'title', 'editor', 'thumbnail' )
+		'supports' => array( 'title', 'editor', 'thumbnail' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Partners', $args2);
 
@@ -566,7 +568,8 @@ function create_post_type() {
 
 		'menu_icon' => 'dashicons-format-quote',
 		'rewrite' => array('with_front' => false, 'slug' => 'client_testimonials'),
-		'supports' => array( 'title', 'editor' )
+		'supports' => array( 'title', 'editor' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Client Testimonials', $args3);
 
@@ -578,7 +581,8 @@ function create_post_type() {
 		'public' => true,
 		'menu_icon' => 'dashicons-groups',
 		'rewrite' => array('with_front' => false, 'slug' => 'team_members'),
-		'supports' => array( 'title', 'editor', 'thumbnail' )
+		'supports' => array( 'title', 'editor', 'thumbnail' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Team Members', $args4);
 
@@ -591,7 +595,8 @@ function create_post_type() {
 		'has_archive' => true,
 		'menu_icon' => 'dashicons-chart-line',
 		'rewrite' => array('with_front' => false, 'slug' => 'case_studies'),
-		'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' )
+		'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Case Studies', $args5);
 
@@ -604,7 +609,8 @@ function create_post_type() {
 		'has_archive' => true,
 		'menu_icon' => 'dashicons-welcome-widgets-menus',
 		'rewrite' => array('with_front' => false, 'slug' => 'press_posts'),
-		'supports' => array( 'title', 'editor' )
+		'supports' => array( 'title', 'editor' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Press Posts', $args6);
 
@@ -616,7 +622,8 @@ function create_post_type() {
 		'public' => true,
 		'menu_icon' => 'dashicons-businessman',
 		'rewrite' => array('with_front' => false, 'slug' => 'clients'),
-		'supports' => array( 'title', 'thumbnail' )
+		'supports' => array( 'title', 'thumbnail' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Clients', $args7);
 
@@ -628,7 +635,8 @@ function create_post_type() {
 		'public' => true,
 		'menu_icon' => 'dashicons-location',
 		'rewrite' => array('with_front' => false, 'slug' => 'locations'),
-		'supports' => array( 'title', 'editor' )
+		'supports' => array( 'title', 'editor' ),
+		'exclude_from_search' => true
 	);
   	register_post_type( 'Locations', $args8);
 
