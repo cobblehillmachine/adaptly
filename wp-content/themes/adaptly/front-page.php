@@ -30,7 +30,6 @@
           <p class="client-name bold-type"><?php the_title(); ?></p>
         </div>
       </li>
-
     <?php endwhile; wp_reset_query(); ?>
     </ul>
   </div>

@@ -640,6 +640,32 @@ function create_post_type() {
 	);
   	register_post_type( 'Locations', $args8);
 
+  	$args9 = array(
+		'labels' => array(
+			'name' => __( 'Benefits' ),
+			'singular_name' => __( 'Benefit' )
+		),
+		'public' => true,
+		'menu_icon' => 'dashicons-smiley',
+		'rewrite' => array('with_front' => false, 'slug' => 'benefits'),
+		'supports' => array( 'title', 'thumbnail' ),
+		'exclude_from_search' => true
+	);
+  	register_post_type( 'Benefits', $args9);
+
+  	$args10 = array(
+		'labels' => array(
+			'name' => __( 'Employee Quotes' ),
+			'singular_name' => __( 'Employee Quote' )
+		),
+		'public' => true,
+		'menu_icon' => 'dashicons-format-status',
+		'rewrite' => array('with_front' => false, 'slug' => 'employee_quotes'),
+		'supports' => array( 'title', 'editor', 'thumbnail' ),
+		'exclude_from_search' => true
+	);
+  	register_post_type( 'Employee Quotes', $args10);
+
   flush_rewrite_rules();
 }
 

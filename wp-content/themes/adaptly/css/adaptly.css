@@ -15,7 +15,7 @@ a { color: #1AA2D1; text-decoration: none;}
 
 
 header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 10px 3%;text-align:left;}
-.page-id-13 header {  padding-top: 0;}
+.page-id-13 header {  padding-top: -113px;}
 header {  margin-bottom:100px;}
 header .logo {  width: 150px; display: inline-block;}
 header .logo img {  max-width: 100%;}
@@ -32,13 +32,16 @@ footer .section p { color:white; font-size: 16px; margin:0;}
 footer .section.social p {  font-size: 12px; font-weight: 400;}
 footer .section.social img {  margin: 0 5px 25px;}
 .pre-footer-cta, .post-header-cta {  width: 100%; background-color: #F0F0F1; text-align: center; padding: 10px 0;}
-.pre-footer-cta button, .pre-footer-cta a, .post-header-cta a {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px;}
+.pre-footer-cta button, .pre-footer-cta a, .post-header-cta a,  {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px;}
 .request-demo-form {  display:none; background: white;}
 .request-demo-form .form-left,.request-demo-form .form-right { width: 49%; display: inline-block; padding: 3%; text-align: left;}
 .request-demo-form input {  background: #F0F0F1; margin-bottom:20px; color:black;}
 .request-demo-form input[type="submit"] { color:white;}
 .request-demo-form label {  text-align: left;}
-
+.newsletter-signup {  display: inline-block;}
+.mailchimp-signup { display: inline-block;}
+.mailchimp-signup input.email { background-color: #93D8F7; color :white; text-align:center; -webkit-appearance: none; -moz-appearance: none; border: 0; width: 100px; margin-left: 10px;}
+.mailchimp-signup input.email::-webkit-input-placeholder, .mailchimp-signup input.email:-moz-placeholder, .mailchimp-signup input.email::-moz-placeholder, .mailchimp-signup input.email:-ms-input-placeholder { color: white; font-size: 18px; text-align: center; }
 
 h2 {  font-size: 47px; }
 h3 { font-size: 29px;}
@@ -57,6 +60,7 @@ p {  font-size: 18px;}
 .client-testimonial-carousel p {  font-size: 31px;}
 .client-testimonial-carousel p.client-name {  font-size: 17px; padding-top: 50px; opacity: 0.5;}
 .flexslider.client-testimonial-carousel { border:0; margin: 0 auto;background:transparent; border-radius:0; padding: 50px; box-shadow: none; -webkit-box-shadow: none;}
+.header-slider .flexslider, .employee-quotes.flexslider { border:0; margin: 0 auto;background:transparent; border-radius:0; padding: 50px 0 0 0; box-shadow: none; -webkit-box-shadow: none; width: 100%;}
 
 .client-wrapper { background: #F0F0F1; margin-bottom:100px;}
 .client-wrapper ul {  margin: 0;}
@@ -68,6 +72,7 @@ p {  font-size: 18px;}
 .single-service img { max-width: 50%; display: block; margin: 0 auto;}
 
 /*Case study grid (multi-page)*/
+.case-study-wrapper { padding-top: 50px;}
 .case-study-grid {  margin:75px 0;}
 .case-study-grid .case-study {  width: 48%; display: inline-block; vertical-align: top; position: relative; margin: 0 2% 2% 0; }
 .case-study-grid .case-study:nth-child(2n) {   margin-right: 0;}
@@ -81,7 +86,7 @@ p {  font-size: 18px;}
 .case-study-grid .case-study .text-overlay a {  border: 1px white solid; border-radius: 3px; padding: 5px; color:white; font-size: 18px;}
 
 /*About Page*/
-.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -159px; color:white;background-repeat: no-repeat;  background-size: cover;}
+.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -169px; color:white;background-repeat: no-repeat;  background-size: cover;}
 .subnav-wrapper { background: #F2F2F2}
 .subnav ul {  margin: 0 auto; width: 30%; padding: 20px 0;}
 .subnav li {  display: inline-block; font-size:20px; width: 30%;}
@@ -90,6 +95,7 @@ p {  font-size: 18px;}
 
 .page-id-13 header .main-nav a {  color:white;}
 .about {  padding: 75px 0;}
+.subnav.about { padding: 10px 0;}
 .something-bigger { background-image: url('../images/something_bigger.jpg'); background-size: cover;}
 .remarkability {  background: #EA665B; color:white;}
 .team-member {  width: 32%; padding: 0 3%; display: inline-block; vertical-align: top; text-align: left; margin-bottom: 20px;}
@@ -218,10 +224,25 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .single .blog-post ul { list-style: disc; font-size: 18px; margin-left: 20px;}
 .single .blog-post li { margin-bottom: 15px;}
 
-.post-share div { width: 32%; padding: 3%; display: inline-block; vertical-align: top}
+.post-share div { width: 32%; padding: 3%; display: inline-block; vertical-align: top; margin-bottom: 50px;}
+.post-share a { padding: 10px 45%;  border-radius: 5px;color: white;}
+.post-share .facebook a { background-color: #2E3190;}
+.post-share .twitter a {  background-color: #00ACED;}
+.post-share .email a {  background-color: #404041;}
 
 .author-wrapper { background-color: #F0F0F1; padding: 50px 0; border-bottom: 1px black solid;}
 .author img { width: 30%; display: inline-block; vertical-align: top}
 .author-info {  width: 69%; display: inline-block; text-align: left; padding: 0 3%; vertical-align: top;}
 .author-info h5 { font-size: 18px; font-weight: 400; margin-top: 0;}
 
+/*Careers Page*/
+.header-slider.careers {  margin-top: -100px;}
+.wide-cont.careers div{ width: 40%;text-align: left; position: absolute; z-index:10; left: 10%; top: 150px; }
+.mid-cont.benefits {  padding: 50px 0;}
+.mid-cont.benefits h3 { font-weight: 400;}
+.mid-cont.benefits .benefit {  width: 29%; padding: 20px 8%; display: inline-block; text-align: center; margin: 0 auto;}
+.mid-cont.benefits .benefit img { display: block; margin: 0 auto 10px;}
+.employee-quotes li { position: relative;}
+.employee-quotes .quote { width: 40%; left: 10%; position: absolute; top: 0; font-size: 22px;}
+.employee-quotes .quote p { font-size: 22px;}
+.employee-quotes .quote .title {  font-size: 17px; font-weight :400;}
