@@ -3,6 +3,7 @@ body {  margin:0; text-align: center;}
 img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
 .mid-cont { width: 80%; margin: 0 auto; max-width: 1100px;}
+.mobile { display: none;}
 
 ul {  list-style:none; padding:0;}
 a { color: #1AA2D1; text-decoration: none;}
@@ -19,9 +20,9 @@ header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 10px 3%;text-al
 header {  margin-bottom:100px;}
 header .logo {  width: 150px; display: inline-block;}
 header .logo img {  max-width: 100%;}
-header .main-nav {  float:right;}
-header .main-nav li { display: inline-block; padding: 0 20px; font-size: 15px;}
-header .main-nav a {  text-decoration:none; color:black;}
+header .main-nav.desktop {  float:right;}
+header .main-nav.desktop li { display: inline-block; padding: 0 20px; font-size: 15px;}
+header .main-nav.desktop a {  text-decoration:none; color:black;}
 
 footer { background-color: #231F20; padding: 20px 0; }
 footer .section { display:inline-block; width: 24%; text-align: center; vertical-align: top}
@@ -52,9 +53,8 @@ p {  font-size: 18px;}
 /*Home page*/
 /*.video-bg video { width: 100%;}*/
 
-.icon-container { margin-top: 150px; margin-bottom:100px;}
-.icon-container img { width: 22%; height: auto; padding: 2%;}
-.icon-container img:hover { fill: blue;}
+.tech-intro { margin-top: 150px; margin-bottom:100px;}
+.icon-container { margin-bottom: 100px;}
 
 .client-testimonial-wrapper { background-image: url(../images/quote_photo.jpg); background-size: cover; color:white; margin-top:100px;}
 .client-testimonial-carousel p {  font-size: 31px;}
@@ -93,7 +93,7 @@ p {  font-size: 18px;}
 .subnav a { color:black;}
 .subnav a:hover { border-bottom: 2px #1AA2D1 solid;}
 
-.page-id-13 header .main-nav a {  color:white;}
+.page-id-13 header .main-nav.desktop a {  color:white;}
 .about {  padding: 75px 0;}
 .subnav.about { padding: 10px 0;}
 .something-bigger { background-image: url('../images/something_bigger.jpg'); background-size: cover;}
@@ -149,7 +149,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 .work-smarter { padding: 50px 0;}
 .work-smarter img { width: 75%%; height: 100%;}
-.work-smarter ul {  width: 32%; display: inline-block; padding:5%;}
+.work-smarter ul {  width: 32%; display: inline-block; padding:5%; vertical-align: top;}
 .work-smarter ul li:nth-child(2) { font-size:20px; margin: 20px 0; font-weight: 400;}
 
 .emphasize-adaptability { background-color: #1AA2D1; color:white; padding: 50px 0;}
@@ -202,7 +202,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .resources.press h4 { margin-top: 0; font-weight: 400; margin-bottom: 0;}
 
 .single header { background-color: black; margin-bottom: 0;}
-.single .main-nav a { color:white;}
+.single .main-nav.desktop a { color:white;}
 .single .header-image { width: 100%; margin-bottom: -5px;}
 .single .header-image img { width: 100%;}
 
@@ -237,6 +237,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 /*Careers Page*/
 .header-slider.careers {  margin-top: -100px;}
+.header-slider strong { display: none;}
 .wide-cont.careers div{ width: 40%;text-align: left; position: absolute; z-index:10; left: 10%; top: 150px; }
 .mid-cont.benefits {  padding: 50px 0;}
 .mid-cont.benefits h3 { font-weight: 400;}
@@ -246,3 +247,53 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .employee-quotes .quote { width: 40%; left: 10%; position: absolute; top: 0; font-size: 22px;}
 .employee-quotes .quote p { font-size: 22px;}
 .employee-quotes .quote .title {  font-size: 17px; font-weight :400;}
+
+
+
+
+
+
+
+
+/*MEDIA QUERY FOR COMPUTERS WHEN MIDCONT REACHES 880PX*/
+@media only screen and (max-width: 1100px) {
+  .home-page .computer-container {  width: 600px;}
+  .home-page .computer-container img:nth-child(2) {top: 54px; left: 113px; }
+}
+
+@media only screen and (max-width: 950px) {
+  .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto;}
+  .case-study-grid .case-study:nth-child(2n) {  margin-right: auto;}
+  .case-study-grid .case-study .text-overlay { opacity: 1; color: black;}
+  .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%;}
+  .case-study-grid .case-study .text-overlay a {  border: 1px black solid;color: black;}
+}
+
+/*MIDCONT REACHES 600PX*/
+@media only screen and (max-width: 750px) {
+  .mid-cont { width: 90%;}
+  .wide-cont {  width: 90%;}
+  .desktop{ display: none;}
+  /*header nav*/
+  .main-nav.desktop { display: none;}
+  .main-nav.mobile {  display: block; }
+  /*footer*/
+  footer .section { display: block; width: 100%; margin: 0 auto;}
+  footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
+  footer .social p {  display: block;}
+  /*homepage*/
+  .icon-container img { width: 50%; padding: 0 10%;}
+  .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
+  .clients ul li:first-child, .clients ul li:nth-child(2), .clients ul li:nth-child(3) {  display: none;}
+  .client-wrapper li {  width: 30%;}
+}
+
+@media only screen and (max-width: 666px) {
+  .home-page .computer-container {  width: 400px;}
+  .home-page .computer-container img:nth-child(2) {top: 36px; left: 75px; }
+}
+
+@media only screen and (max-width: 444px) {
+  .home-page .computer-container {  width: 300px;}
+  .home-page .computer-container img:nth-child(2) {top: 27px; left: 57px; height: 66%; }
+}

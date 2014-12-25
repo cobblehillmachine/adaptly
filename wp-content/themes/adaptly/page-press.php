@@ -10,7 +10,6 @@
       <li class="blog"><a href=<?php site_url(); ?>'/resources/blog'>Blog</a></li>
       <li class="case-studies"><a href=<?php site_url(); ?>'/resources/case-studies'>Case Studies</a></li>
       <li class='press'><a href=<?php site_url(); ?>'/resources/press' class='active'>Press</a></li>
-      <li><?php get_search_form(  ); ?></li>
     </ul>
   </div>
 

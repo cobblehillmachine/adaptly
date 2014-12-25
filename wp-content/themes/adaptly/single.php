@@ -33,7 +33,8 @@ get_header(); ?>
     <img src="<?php the_field('author_image'); ?>">
     <div class="author-info">
       <?php the_field('author'); ?>
-      <p></p>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_icon_blue.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/twitter_icon_blue.png" alt="">
     </div>
   </div>
 </div>

@@ -1,6 +1,7 @@
 
 $(window).load(function() {
   // homepageAnimation();
+
     $('.client-testimonial-carousel.flexslider').flexslider({
       animation:'slide',
       controlNav:false,
@@ -21,7 +22,13 @@ $(window).load(function() {
     smoothScroll();
     // resourceTabs()
     // shareCounter();
+    svgColorChange();
+
 });
+
+//
+console.log($('.icon-container'))
+
 
 function homepageAnimation() {
   var height = $(window).height();
@@ -75,7 +82,26 @@ function careersHeaderSlider() {
       controlNav:false,
       directionNav: false,
       prevText: '',
-      nextText: '',
-
+      nextText: ''
+      // before: function(slider) {
+      //   var $currentSlide = $('.header-slider ul li')[slider.currentSlide];
+      //   console.log($currentSlide)
+      //   var color = $currentSlide.html;
+      //   console.log(color)
+      //   // $('wide-cont.careers a').css('background-color', color)
+      // }
     })
+
 }
+
+function svgColorChange() {
+  var scrollDistance = $('.icon-container').offset().top;
+  $(document).scroll(function() {
+  if($(this).scrollTop() > scrollDistance) {
+    $('.icon-container path, .icon-container circle, .icon-container line, .icon-container ellipse, .icon-container rect, .icon-container polygon').attr('stroke', "#1AA2D1");
+    $('.icon-container g g g g path').attr('fill', "#1AA2D1");
+  }
+})
+}
+
+

@@ -56,8 +56,11 @@
 				<?php } ?>
 			</a>
 		</div>
-		<div class="main-nav">
+		<div class="main-nav desktop">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</div>
+		<div class="main-nav mobile">
+			<?php wp_nav_menu( array( 'menu' => '3' ) ); ?>
 		</div>
 	</header><!-- #masthead -->
 
