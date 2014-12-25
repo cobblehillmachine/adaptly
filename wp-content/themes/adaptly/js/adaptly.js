@@ -36,9 +36,16 @@ function homepageAnimation() {
 }
 
 function requestDemoForm() {
-  $('.pre-footer-cta button').on('click', function() {
-    $('.request-demo-form').slideToggle();
+  $('.request-demo-cta button').on('click', function() {
+    $('.request-demo-form.technology').slideToggle();
   })
+  $('.post-header-cta button').on('click', function() {
+    $('.request-demo-form.post-header').slideToggle();
+  })
+  $('.pre-footer-cta button').on('click', function() {
+    $('.request-demo-form.pre-footer').slideToggle();
+  })
+
 }
 
 function blurs() {

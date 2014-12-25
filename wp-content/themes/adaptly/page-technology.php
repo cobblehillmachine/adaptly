@@ -48,9 +48,7 @@
 <div class="pre-footer-cta">
   <p class="request-demo-cta ">Start using Adaptly technology today<button>Request Demo</button></p>
 </div>
-
-
-<div class="request-demo-form contact mid-cont">
+<div class="request-demo-form technology contact mid-cont">
   <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
     <input type=hidden name="oid" value="00Dd0000000ezSf">
     <input type=hidden name="retURL" value="http://www.adaptly.com">
