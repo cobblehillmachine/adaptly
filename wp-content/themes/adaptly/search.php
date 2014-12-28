@@ -32,9 +32,12 @@ get_header(); ?>
 		<?php
 			while ( have_posts() ) : the_post();
 				get_template_part( 'content', 'search' );
-			endwhile;
-			twentyfourteen_paging_nav();
-		else :
+			endwhile; ?>
+			<div class="pagination">
+        <?php previous_posts_link( '< Newer Entries' ); ?>
+        <?php next_posts_link( 'Older Entries >', 0 ); wp_reset_postdata(); ?>
+      </div>
+		<?php else :
 			get_template_part( 'content', 'none' );
 		endif; ?>
 	</div>
