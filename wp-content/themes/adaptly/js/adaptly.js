@@ -84,20 +84,18 @@ function shareCounter() {
 }
 
 function careersHeaderSlider() {
+  var colorList = ['#b1aba9', 'black', '#171735', '#461b25', '#9d9d9d']
   $('.header-slider ul').addClass('slides');
   $('.header-slider .flexslider').flexslider({
       animation:'slide',
       controlNav:false,
       directionNav: false,
       prevText: '',
-      nextText: ''
-      // before: function(slider) {
-      //   var $currentSlide = $('.header-slider ul li')[slider.currentSlide];
-      //   console.log($currentSlide)
-      //   var color = $currentSlide.html;
-      //   console.log(color)
-      //   // $('wide-cont.careers a').css('background-color', color)
-      // }
+      nextText: '',
+      before: function(slider) {
+        var currentColor = colorList[slider.currentSlide]
+        $('.wide-cont.careers a').css('background-color', currentColor);
+      }
     })
 
 }
