@@ -30,6 +30,7 @@ get_header(); ?>
 
   <?php } ?>
 <div class="mid-cont">
+  <p  class="all-case-studies"><a href="/resources/case-studies"><< See all case studies</a></p>
 	<?php the_content() ?>
 </div>
 <div class="stats-wrapper">

@@ -213,6 +213,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .single .header-image { width: 100%; margin-bottom: -5px;}
 .single .header-image img { width: 100%;}
 
+p.all-case-studies {  text-align: left; margin-top: 20px;}
 .single-casestudies .stats-wrapper {  background: #1AA2D1; margin-top: 50px;}
 .single-casestudies .stats-wrapper ul { margin: 0; width: 30%; display: inline-block; padding: 50px 0;}
 .single-casestudies .stats-wrapper li { color: white; font-weight: 400;}
@@ -238,7 +239,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .post-share .email a {  background-color: #404041;}
 
 .author-wrapper { background-color: #F0F0F1; padding: 50px 0; border-bottom: 1px black solid;}
-.author img { width: 30%; display: inline-block; vertical-align: top}
+.author img.headshot { width: 30%; display: inline-block; vertical-align: top}
 .author-info {  width: 69%; display: inline-block; text-align: left; padding: 0 3%; vertical-align: top;}
 .author-info h5 { font-size: 18px; font-weight: 400; margin-top: 0;}
 
