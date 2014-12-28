@@ -29,10 +29,11 @@ $(window).load(function() {
 function homepageAnimation() {
   var height = $(window).height();
   $('.video-bg').css('height', height);
-  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
-    console.log("chrome!")
-   $('.video-bg').css('background', 'url("wp-content/themes/adaptly/images/homepage_animation.gif")');
-  }
+  // if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+  //   console.log("chrome!")
+  //   $('.video-bg video').hide();
+  //   $('.video-bg').css('background', 'url("wp-content/themes/adaptly/images/homepage_animation.gif")');
+  // }
 }
 
 function requestDemoForm() {
