@@ -8,42 +8,35 @@
  */
 
 get_header(); ?>
+<?php query_posts( array( 'page_id' => 286 ) ); ?>
+<?php while ( have_posts() ) : the_post(); ?>
+  <div class="resources mid-cont">
+    <?php the_content(); ?>
+  </div>
+<?php endwhile; wp_reset_query(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<div class="resources subnav mid-cont">
+  <ul>
+    <li class="blog"><a href=<?php site_url(); ?>'/resources/blog' class='active'>Blog</a></li>
+    <li class="case-studies"><a href=<?php site_url(); ?>'/resources/case-studies'>Case Studies</a></li>
+    <li class='press'><a href=<?php site_url(); ?>'/resources/press'>Press</a></li>
+    <li><?php get_search_form(  ); ?></li>
+  </ul>
+</div>
 
-			<?php if ( have_posts() ) : ?>
+<h4 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h4>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h1>
-			</header><!-- .page-header -->
-
-				<?php
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
-
-						/*
-						 * Include the post format-specific template for the content. If you want to
-						 * use this in a child theme, then include a file called called content-___.php
-						 * (where ___ is the post format) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-
-					endwhile;
-					// Previous/next post navigation.
-					twentyfourteen_paging_nav();
-
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
-
-				endif;
-			?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
-<?php
-get_sidebar( 'content' );
-get_sidebar();
-get_footer();
+<?php if ( have_posts() ) : ?>
+<div class="blog resources">
+  <div id="blog" class="blog-feed mid-cont">
+		<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'content', 'search' );
+			endwhile;
+			twentyfourteen_paging_nav();
+		else :
+			get_template_part( 'content', 'none' );
+		endif; ?>
+	</div>
+</div>
+<?php get_footer();

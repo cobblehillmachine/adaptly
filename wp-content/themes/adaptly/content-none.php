@@ -8,9 +8,9 @@
  */
 ?>
 
-<header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyfourteen' ); ?></h1>
-</header>
+
+<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyfourteen' ); ?></h1>
+
 
 <div class="page-content">
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
@@ -20,7 +20,6 @@
 	<?php elseif ( is_search() ) : ?>
 
 	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyfourteen' ); ?></p>
-	<?php get_search_form(); ?>
 
 	<?php else : ?>
 
