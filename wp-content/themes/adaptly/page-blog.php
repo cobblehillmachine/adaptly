@@ -25,8 +25,10 @@
           <?php the_excerpt('...'); ?>
           <div class="bottom-cont">
               <a href="<?php the_permalink(); ?>">Read More ></a>
-              <span class="counter-total"></span>
-              <?php echo do_shortcode( '[ssba]' ); ?>
+              <div class="share">
+                <span class="counter-total"></span>
+                <?php echo do_shortcode( '[ssba]' ); ?>
+              </div>
           </div>
         </div>
       </div>

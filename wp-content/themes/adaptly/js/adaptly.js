@@ -21,7 +21,7 @@ $(window).load(function() {
     blurs();
     smoothScroll();
     // resourceTabs()
-    // shareCounter();
+    shareCounter();
     svgColorChange();
 
 });
@@ -74,12 +74,14 @@ function smoothScroll() {
 function shareCounter() {
   var shareDivs = $('.ssba');
   $.each(shareDivs, function(div) {
-    var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent;
-    console.log($('this' + ' .ssba_sharecount.facebook'))
-    var twitterCount = $(' .ssba_sharecount.twitter').textContent;
+    var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
+    var twitterCount = $(' .ssba_sharecount.twitter').textContent || 0;
     var totalCount = parseInt(facebookCount) + parseInt(twitterCount);
-    console.log(totalCount);
-    $(' .counter-total').text('totalCount')
+    if (totalCount === 1) {
+      $(' .counter-total').text(totalCount + " share");
+    } else {
+      $(' .counter-total').text(totalCount + " shares");
+    }
   })
 }
 

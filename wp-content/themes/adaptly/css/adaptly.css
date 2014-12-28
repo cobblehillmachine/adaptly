@@ -192,13 +192,15 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .resources.subnav li a.active { border-bottom: 2px #1AA2D1 solid;}
 
 .blog-feed img {  width: 50%; display: inline-block; border-top:10px #1AA2D1 solid; vertical-align: top}
-.ssba { display: inline-block; float:right;}
-.blog-feed .ssba img {  display: inline-block; border: 0; vertical-align: middle; float:none; padding:5px;}
+.share { display: inline-block; float:right;}
+.blog-feed .ssba img {  display: inline-block; border: 0; vertical-align: middle; float:none; padding:3px;}
 .ssba_sharecount {  display: none;}
-.resources a {  color: black; font-weight: 400; vertical-align: middle; display: inline-block;}
+.resources a {  font-size: 16px;color: black; font-weight: 400; vertical-align: middle; display: inline-block;}
+.resources .share { float: right;}
+.resources .counter-total {font-weight: 400;   right: 60px; font-size: 15px;position: absolute; margin-top: 3px;}
 .blog-feed .excerpt { width: 49%; display: inline-block; padding-left: 2%; text-align: left; vertical-align: top}
 .blog-feed .excerpt h4 {  margin-top: 0;}
-.blog-feed .excerpt .bottom-cont { margin-top: 40px;}
+.blog-feed .excerpt .bottom-cont { margin-top: 40px; position: relative}
 .resources .post { margin: 40px 0; text-align:left;}
 .resources .pagination a {  padding: 25px 25px}
 
