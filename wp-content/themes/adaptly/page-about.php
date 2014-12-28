@@ -38,8 +38,14 @@
             <p class="title"><?php the_field("title"); ?></p>
           </div>
           <div class="icons">
-            <a href="<?php the_field("facebook_link"); ?>" class="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/team_member_facebook_icon.png"></a>
-            <a href="<?php the_field("twitter_link"); ?>" class="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/team_member_twitter_icon.png"></a>
+            <?php $has_facebook = get_field('facebook_link');
+            $has_twitter = get_field('twitter_link');
+            if ($has_facebook) { ?>
+              <a href="<?php the_field("facebook_link"); ?>" class="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/team_member_facebook_icon.png"></a>
+            <?php };
+            if ($has_twitter) { ?>
+              <a href="<?php the_field("twitter_link"); ?>" class="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/team_member_twitter_icon.png"></a>
+            <?php }; ?>
           </div>
         </div>
         <?php the_content();?>

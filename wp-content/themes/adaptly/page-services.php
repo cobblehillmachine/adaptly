@@ -16,7 +16,6 @@
 
   <?php the_field('team_intro'); ?>
 
-
 </div>
 
 <div class="services team-pic">
@@ -26,7 +25,7 @@
 <div class="mid-cont case-study-wrapper">
   <?php the_field('case_study_intro'); ?>
   <div class="case-study-grid">
-    <?php query_posts( array( 'post_type' => 'case studies') ); ?>
+    <?php query_posts( array( 'post_type' => 'case studies', 'posts_per_page' => 8) ); ?>
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="case-study">
       <div class="photo"><?php the_post_thumbnail('full'); ?></div>

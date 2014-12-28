@@ -33,7 +33,7 @@ footer .section p { color:white; font-size: 16px; margin:0;}
 footer .section.social p {  font-size: 12px; font-weight: 400;}
 footer .section.social img {  margin: 0 5px 25px;}
 .pre-footer-cta, .post-header-cta-wrapper {  width: 100%; background-color: #F0F0F1; text-align: center; padding: 10px 0;}
-.pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px;}
+.pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px; cursor: pointer;}
 .request-demo-form {  display:none; background: white;}
 .request-demo-form .form-left,.request-demo-form .form-right { width: 49%; display: inline-block; padding: 3%; text-align: left;}
 .request-demo-form input {  background: #F0F0F1; margin-bottom:20px; color:black;}
@@ -106,9 +106,9 @@ p {  font-size: 18px;}
 .team-member .name {  font-size: 20px; margin-bottom: 0; font-weight: 400; margin-top: 20px;}
 .team-member .title { font-size: 18px; margin: 0;}
 .team-member .icons { width: auto; display: inline-block; float:right; margin-top: 20px;}
-.team-member .icons a {display: inline-block; vertical-align: middle; padding: 0 4px;}
-.team-member .icons a.facebook { width: 17px;}
-.team-member .icons a.twitter { width: 34px; }
+.team-member .icons a {display: inline-block; vertical-align: middle; padding: 0 2px;}
+.team-member .icons a.facebook { width: 15px;}
+.team-member .icons a.twitter { width: 25px;}
 .team-member .icons img { border: 0; width: 100%;}
 
 /*Partners Page*/
@@ -124,7 +124,7 @@ p {  font-size: 18px;}
 .contact .wpcf7 {  width: 70%; text-align: left; display: inline-block; vertical-align: top; padding: 0 10%;}
 .contact form input, .contact form textarea { background: #EEEEEE; border-radius: 5px; width: 100%;  -webkit-appearance: none; -moz-appearance: none; border: 1px #CCCCCC solid; font-size: 18px; padding: 10px;}
 .contact form input { height: 40px; }
-.contact form input[type="submit"] {  width: 100px; background: #1AA2D1; border: 0;}
+.contact form input[type="submit"] {  width: 100px; background: #1AA2D1; border: 0; cursor:pointer;}
 .contact ul { width: 29%; text-align: left; display: inline-block;vertical-align: top}
 .contact ul li {  font-size: 18px; margin-bottom: 50px;}
 
