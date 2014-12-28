@@ -314,16 +314,18 @@
 <div class="mid-cont home-page">
   <?php the_field('case_study_intro'); ?>
   <div class="case-study-grid">
-    <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'DESC', 'posts_per_page' => 6) ); ?>
+    <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'ASC', 'posts_per_page' => 6) ); ?>
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="case-study">
-      <div class="photo"><?php the_post_thumbnail('full'); ?></div>
-      <div class="color-overlay"></div>
-      <div class="text-overlay">
-        <?php the_title(); ?>
-        <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>">Learn More </a>
-      </div>
+      <a href="<?php the_permalink(); ?>">
+        <div class="photo"><?php the_post_thumbnail('full'); ?></div>
+        <div class="color-overlay"></div>
+        <div class="text-overlay">
+          <?php the_title(); ?>
+          <?php the_excerpt(); ?>
+          <a href="<?php the_permalink(); ?>" class="learn-more">Learn More
+        </div>
+      </a>
     </div>
     <?php endwhile; wp_reset_query(); ?>
   </div>
