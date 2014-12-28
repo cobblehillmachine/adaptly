@@ -239,12 +239,12 @@
           </foreignObject>
           <g i:extraneous="self">
             <g>
-              <rect x="147.4" y="144.5" fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" width="220" height="156.3"/>
-              <polygon fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" points="173.3,278 223.5,171.8 275.2,242.5
-                300.8,221.4 342.8,278       "/>
-              <circle fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" cx="321.4" cy="189.2" r="14.8"/>
+              <rect x="147.4" y="170.5" fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" width="220" height="156.3"/>
+              <polygon fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" points="173.3,304 223.5,197.8 275.2,268.5
+                300.8,247.4 342.8,304       "/>
+              <circle fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" cx="321.4" cy="215.2" r="14.8"/>
             </g>
-            <circle fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" cx="257.4" cy="222.6" r="182.2"/>
+            <circle fill="none" stroke="#F06522" stroke-width="2" stroke-miterlimit="10" cx="257.4" cy="245.6" r="211.2"/>
           </g>
         </switch>
       </svg>

@@ -31,8 +31,8 @@ function homepageAnimation() {
   $('.video-bg').css('height', height);
   if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
     console.log("chrome!")
-    $('.video-bg video').hide();
-    $('.video-bg').css('background', 'url("wp-content/themes/adaptly/images/homepage_animation.gif")');
+    // $('.video-bg video').hide();
+    // $('.video-bg').css('background', 'url("wp-content/themes/adaptly/images/homepage_animation.gif")');
   }
 }
 
