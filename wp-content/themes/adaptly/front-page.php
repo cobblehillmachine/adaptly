@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="video-bg">
-  <video  controls="false" autoplay="true" type="hidden" poster="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.gif">
+  <video  controls="false" autoplay="true" type="hidden" >
     <source = src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.mp4" type="video/mp4">
   </video>
 </div>
