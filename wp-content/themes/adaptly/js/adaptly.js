@@ -1,6 +1,6 @@
 
 $(window).load(function() {
-  // homepageAnimation();
+  homepageAnimation();
 
     $('.client-testimonial-carousel.flexslider').flexslider({
       animation:'slide',
@@ -26,13 +26,13 @@ $(window).load(function() {
 
 });
 
-//
-console.log($('.icon-container'))
-
-
 function homepageAnimation() {
   var height = $(window).height();
-  $('.video-bg video').css('height', height);
+  $('.video-bg').css('height', height);
+  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+    console.log("chrome!")
+   $('.video-bg').css('background', 'url("wp-content/themes/adaptly/images/homepage_animation.gif")');
+  }
 }
 
 function requestDemoForm() {

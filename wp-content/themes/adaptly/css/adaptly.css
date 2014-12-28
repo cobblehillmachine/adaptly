@@ -53,7 +53,7 @@ p {  font-size: 18px;}
 .svg-container img {  width: 22%; height: auto; padding: 2%;}
 
 /*Home page*/
-/*.video-bg video { width: 100%;}*/
+.video-bg { /*background: url('../images/homepage_animation (1).gif');  */position: absolute; width: 100%; background-size: cover; z-index: -10; top: 0; left: 0;}
 
 .tech-intro { margin-top: 150px; margin-bottom:100px;}
 .icon-container { margin-bottom: 100px;}

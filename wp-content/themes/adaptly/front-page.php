@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="video-bg">
-  <!-- <video src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.mp4"  width="100px" height="100px" controls="true">
-  </video> -->
+  <video src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.mp4"  controls="false" autoplay="true" type="hidden">
+  </video>
 </div>
 <div class="mid-cont home-page">
   <?php while ( have_posts() ) : the_post(); ?>
