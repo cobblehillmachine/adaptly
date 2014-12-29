@@ -22,7 +22,7 @@
         <div class="photo"><?php the_post_thumbnail('full'); ?></div>
         <div class="color-overlay"></div>
         <div class="text-overlay">
-          <?php the_title(); ?>
+          <h3><?php the_title(); ?></h3>
           <?php the_excerpt(); ?>
           <a href="<?php the_permalink(); ?>" class="learn-more">Learn More
         </div>

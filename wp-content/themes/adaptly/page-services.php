@@ -5,11 +5,11 @@
     <?php the_content(); ?>
   <?php endwhile; wp_reset_query(); ?>
 
-  <?php query_posts( array( 'post_type' => 'services') ); ?>
+  <?php query_posts( array( 'post_type' => 'services', 'order' => 'ASC') ); ?>
   <?php while ( have_posts() ) : the_post(); ?>
     <div class="single-service">
       <?php the_post_thumbnail('full'); ?>
-      <?php the_title(); ?>
+      <h4><?php the_title(); ?></h4>
       <?php the_content(); ?>
     </div>
   <?php endwhile; wp_reset_query(); ?>
@@ -32,7 +32,7 @@
         <div class="photo"><?php the_post_thumbnail('full'); ?></div>
         <div class="color-overlay"></div>
         <div class="text-overlay">
-          <?php the_title(); ?>
+          <h3><?php the_title(); ?></h3>
           <?php the_excerpt(); ?>
           <a href="<?php the_permalink(); ?>" class="learn-more">Learn More
         </div>

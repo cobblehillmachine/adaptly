@@ -71,8 +71,10 @@ p {  font-size: 18px;}
 
 
 /*Services Page*/
-.single-service {width: 49%; display: inline-block; vertical-align: top; padding: 0 70px;}
-.single-service img { max-width: 50%; display: block; margin: 0 auto;}
+.single-service {width: 49%; display: inline-block; vertical-align: top; padding: 0 10%; }
+.single-service img { max-width: 50%; display: block; margin: 0 auto 10px auto; min-width: 144px;}
+.single-service h4 {  font-weight: 400; margin: 0;}
+.single-service p { margin-top: 0;}
 
 /*Case study grid (multi-page)*/
 .case-study-wrapper { padding-top: 50px;}
@@ -280,6 +282,7 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%;}
   .case-study-grid .case-study .text-overlay a {  color: black;}
   .case-study-grid .case-study .text-overlay a.learn-more { display: none;}
+  .single-service { padding: 0 6%;}
 }
 
 /*MIDCONT REACHES 600PX*/
@@ -301,6 +304,9 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
   .clients ul li:first-child, .clients ul li:nth-child(2), .clients ul li:nth-child(3) {  display: none;}
   .client-wrapper li {  width: 30%;}
+  /*services*/
+  .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
+  .single-service img { width: 144px;}
 }
 
 @media only screen and (max-width: 666px) {
