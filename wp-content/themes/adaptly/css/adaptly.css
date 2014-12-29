@@ -57,6 +57,7 @@ p {  font-size: 18px;}
 
 .tech-intro { margin-top: 150px; margin-bottom:100px;}
 .icon-container { margin-bottom: 100px;}
+.icon-container svg { width: 24%;}
 
 .client-testimonial-wrapper { background-image: url(../images/quote_photo.jpg); background-size: cover; color:white; margin-top:100px;}
 .client-testimonial-carousel p {  font-size: 31px;}
@@ -87,6 +88,7 @@ p {  font-size: 18px;}
 
 .case-study-grid .case-study .text-overlay a.learn-more {  border: 1px white solid; border-radius: 3px; padding: 5px; color:white; font-size: 18px;}
 .case-study-grid .case-study .text-overlay a {  color: white;}
+.case-study-grid .case-study .text-overlay h3 { margin: 0; font-weight: 400;}
 
 /*About Page*/
 .about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -169px; color:white;background-repeat: no-repeat;  background-size: cover;}
@@ -276,7 +278,8 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .case-study-grid .case-study:nth-child(2n) {  margin-right: auto;}
   .case-study-grid .case-study .text-overlay { opacity: 1; color: black;}
   .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%;}
-  .case-study-grid .case-study .text-overlay a {  border: 1px black solid;color: black;}
+  .case-study-grid .case-study .text-overlay a {  color: black;}
+  .case-study-grid .case-study .text-overlay a.learn-more { display: none;}
 }
 
 /*MIDCONT REACHES 600PX*/
@@ -291,6 +294,8 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   footer .section { display: block; width: 100%; margin: 0 auto;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
   footer .social p {  display: block;}
+  /*common*/
+  .pre-footer-cta { display: none;}
   /*homepage*/
   .icon-container img { width: 50%; padding: 0 10%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
@@ -301,6 +306,7 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
 @media only screen and (max-width: 666px) {
   .home-page .computer-container {  width: 400px;}
   .home-page .computer-container img:nth-child(2) {top: 36px; left: 75px; }
+  .icon-container svg { width: 35%;}
 }
 
 @media only screen and (max-width: 444px) {

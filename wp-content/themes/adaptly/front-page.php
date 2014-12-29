@@ -14,7 +14,7 @@
 
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 10px 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 10px 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -29,7 +29,7 @@
       </svg>
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 0 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 0 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -52,7 +52,7 @@
       </svg>
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 0 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 0 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -70,7 +70,7 @@
       </svg>
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 0 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 0 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -97,7 +97,7 @@
       </svg>
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 10px 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 10px 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -208,7 +208,7 @@
       </svg>
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 10px 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 10px 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -231,7 +231,7 @@
       </svg>
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 10px 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 10px 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -250,7 +250,7 @@
       </svg>
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="width: 24%; padding: 10px 2%">
+   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 10px 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -321,7 +321,7 @@
         <div class="photo"><?php the_post_thumbnail('full'); ?></div>
         <div class="color-overlay"></div>
         <div class="text-overlay">
-          <?php the_title(); ?>
+          <h3><?php the_title(); ?></h3>
           <?php the_excerpt(); ?>
           <a href="<?php the_permalink(); ?>" class="learn-more">Learn More
         </div>
