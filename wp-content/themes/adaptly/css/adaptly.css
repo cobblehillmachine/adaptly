@@ -207,7 +207,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .blog-feed .excerpt h4 {  margin-top: 0;}
 .blog-feed .excerpt .bottom-cont { margin-top: 40px; position: relative}
 .resources .post { margin: 40px 0; text-align:left;}
-.resources .pagination a {  padding: 25px 25px}
+.resources .pagination a {  padding: 25px 25px; color: #1AA2D1; font-size: 20px;}
 
 .resources.press .heading p { display: inline-block; padding-right: 10px; font-weight: 400}
 .resources.press .heading p:first-child { text-transform: uppercase; color: #1AA2D1; font-size: 18px;}
@@ -238,7 +238,7 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
 .single .blog-post li { margin-bottom: 15px;}
 
 .post-share div { width: 32%; padding: 3%; display: inline-block; vertical-align: top; margin-bottom: 50px;}
-.post-share a { padding: 10px 45%;  border-radius: 5px;color: white;}
+.post-share a { padding: 10px 75px;  border-radius: 5px;color: white;}
 .post-share .facebook a { background-color: #2E3190;}
 .post-share .twitter a {  background-color: #00ACED;}
 .post-share .email a {  background-color: #404041;}
@@ -277,6 +277,9 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .computer-animation video  {top: -12px; left: 111px; height: 102%}
   .deploy-manage-analyze ul { width: 100%; display: block; float: none; text-align: center;}
   .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
+  .post-share div { width: 100%; display: block; margin: 20px auto; }
+  .post-share a { padding: 10px 50px;}
+}
 
 
 @media only screen and (max-width: 950px) {
@@ -294,6 +297,7 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .mid-cont { width: 90%;}
   .wide-cont {  width: 90%;}
   .desktop{ display: none;}
+  .mobile { display: block;}
   /*header nav*/
   .main-nav.desktop { display: none;}
   .main-nav.mobile {  display: block; }
@@ -316,6 +320,27 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .partner.data { width: 49%; padding: 0 10%;}
   /*technology*/
   .work-smarter ul {  width: 100%; display: block;}
+  /*resources*/
+  .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
+  .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
+  .resources.mid-cont.subnav ul li {  width: 32%;}
+  .resources.mid-cont.subnav.blog ul li:last-child { display: none;}
+  .blog.resources img, .blog-feed .excerpt .bottom-cont { display: none;}
+  .blog-feed .excerpt { width: 100%; display: block;}
+  .blog-feed .excerpt p { border-bottom: 2px #1AA2D1 solid; padding-bottom: 25px;}
+  .blog-feed .post:nth-child(4) .excerpt p {  border-bottom: 0; padding-bottom: 0;}
+  .blog-feed .excerpt h4 {  margin-bottom: 0; font-weight: 400;}
+  .pre-footer-cta.mobile {  display: block;}
+  .pre-footer-cta.mobile .newsletter-signup,.pre-footer-cta.mobile .mailchimp-signup { display: block; margin-bottom: 20px;}
+  .resources-feed.case-study-grid { margin-top: 50px;}
+  .resources-feed.case-study-grid .case-study .color-overlay { display: none;}
+  .resources-feed.case-study-grid .case-study .text-overlay { background-color: #F0F0F1; position: relative; transform: none; margin-top: -5px;}
+  .resources-feed.case-study-grid .case-study .text-overlay h3 {  padding-top: 10px;}
+  .single-casestudies .stats-wrapper ul { width: 100%; display: block;}
+  .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
+  .single .blog-post {  padding: 25px 0;}
+
+
 }
 
 @media only screen and (max-width: 666px) {
