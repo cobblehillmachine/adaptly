@@ -273,7 +273,11 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
 @media only screen and (max-width: 1100px) {
   .home-page .computer-container {  width: 600px;}
   .home-page .computer-container img:nth-child(2) {top: 54px; left: 113px; }
-}
+  .computer-animation { width: 600px; margin-bottom: 50px;}
+  .computer-animation video  {top: -12px; left: 111px; height: 102%}
+  .deploy-manage-analyze ul { width: 100%; display: block; float: none; text-align: center;}
+  .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
+
 
 @media only screen and (max-width: 950px) {
   .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto;}
@@ -310,12 +314,16 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   /*partners*/
   .partner.featured { display: block; width: 100%;}
   .partner.data { width: 49%; padding: 0 10%;}
+  /*technology*/
+  .work-smarter ul {  width: 100%; display: block;}
 }
 
 @media only screen and (max-width: 666px) {
   .home-page .computer-container {  width: 400px;}
   .home-page .computer-container img:nth-child(2) {top: 36px; left: 75px; }
   .icon-container svg { width: 35%;}
+  .computer-animation { width: 400px;}
+  .computer-animation video { top: -11px; left: 74px;}
 }
 
 @media only screen and (max-width: 444px) {
