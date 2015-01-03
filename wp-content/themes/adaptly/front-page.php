@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="video-bg">
+<div class="video-bg desktop">
   <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" autoplay="true" data-setup='{"example_option":true}'>
     <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.ogv" type="video/ogv">
     <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.webm" type="video/webm">

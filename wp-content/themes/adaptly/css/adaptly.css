@@ -306,6 +306,14 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   /*header nav*/
   .main-nav.desktop { display: none;}
   .main-nav.mobile {  display: block; }
+  .main-nav.mobile {  display: inline-block; float:right;}
+  .main-nav.mobile a {  color: #1AA2D1; }
+  .main-nav.mobile .sidr { background-color: #1AA2D1; -webkit-box-shadow: none; box-shadow: none;}
+  .main-nav.mobile .sidr a {  color: white;}
+  .main-nav.mobile .sidr ul li {  border-bottom: 0; border-top: 0;}
+  .main-nav.mobile .sidr ul { border-bottom: 0;}
+  .main-nav.mobile .sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span { -webkit-box-shadow: none; box-shadow: none;}
+  .main-nav.mobile .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { line-height: 48px}
   /*footer*/
   footer .section { display: block; width: 100%; margin: 0 auto;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}

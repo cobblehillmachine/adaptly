@@ -1,5 +1,8 @@
 
 $(window).load(function() {
+  $('#sidr-trigger').sidr( {
+    side: 'right'
+  });
   homepageAnimation();
   $('.employee-quotes.flexslider').flexslider({
     animation:'slide',
@@ -13,6 +16,7 @@ $(window).load(function() {
   blurs();
   smoothScroll();
   shareCounter();
+
 });
 
 function homepageAnimation() {

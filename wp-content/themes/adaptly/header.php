@@ -36,9 +36,11 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.gallery.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.53451.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.sidr.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/adaptly.js"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/adaptly.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/flexslider.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.dark.css" />
 	<?php wp_head(); ?>
 </head>
 
@@ -60,7 +62,10 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
 		<div class="main-nav mobile">
-			<?php wp_nav_menu( array( 'menu' => '3' ) ); ?>
+			<a id="sidr-trigger" href="#sidr">NAV</a>
+			<div id="sidr">
+				<?php wp_nav_menu( array( 'menu' => '3' ) ); ?>
+			</div>
 		</div>
 	</header><!-- #masthead -->
 
