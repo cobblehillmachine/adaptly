@@ -352,8 +352,10 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .single-casestudies .stats-wrapper ul { width: 100%; display: block;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   .single .blog-post {  padding: 25px 0;}
-
-
+  /*contact page*/
+  .contact .wpcf7 { width: 100%; padding: 0;}
+  .contact ul { width: 100%; text-align: center;}
+  .map .location {  width: 100%; display: block;}
 }
 
 @media only screen and (max-width: 666px) {
