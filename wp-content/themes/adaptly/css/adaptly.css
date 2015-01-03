@@ -53,7 +53,11 @@ p {  font-size: 18px;}
 .svg-container img {  width: 22%; height: auto; padding: 2%;}
 
 /*Home page*/
-.video-bg { /*background: url('../images/homepage_animation (1).gif');  */position: absolute; width: 100%; background-size: cover; z-index: -10; top: 0; left: 0;}
+.animation-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); text-align: center;}
+.video-bg { position: absolute; z-index: -5; width: 100%; top: 0;}
+.video-bg video { position: absolute; top: 0; left: 0;  width: auto; height: 100%;}
+.rest-of-homepage { display: none; margin-top:-475px;}
+.home.page footer{ display: none;}
 
 .tech-intro { margin-top: 150px; margin-bottom:100px;}
 .icon-container { margin-bottom: 100px;}
@@ -247,6 +251,7 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
 .author img.headshot { width: 30%; display: inline-block; vertical-align: top}
 .author-info {  width: 69%; display: inline-block; text-align: left; padding: 0 3%; vertical-align: top;}
 .author-info h5 { font-size: 18px; font-weight: 400; margin-top: 0;}
+.author-info a {  width: 30px; display: inline-block;}
 
 /*Careers Page*/
 .header-slider.careers {  margin-top: -100px;}

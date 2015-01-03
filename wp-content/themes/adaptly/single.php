@@ -36,11 +36,15 @@ get_header(); ?>
       <?php the_field('author'); ?>
       <?php $has_facebook = get_field('author_facebook_link');
       $has_twitter = get_field('author_twitter_link');
+      $has_linkedin = get_field('author_linkedin_link');
       if ($has_facebook) { ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_blue.png" alt="">
+        <a href="<?php the_field('author_facebook_link'); ?>" target=_blank><img src="<?php echo get_template_directory_uri(); ?>/images/facebook_blue.png" alt=""></a>
       <?php };
       if ($has_twitter) { ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/twitter_blue.png" alt="">
+        <a href="<?php the_field('author_twitter_link'); ?>" target=_blank><img src="<?php echo get_template_directory_uri(); ?>/images/twitter_blue.png" alt=""></a>
+      <?php }
+      if ($has_linkedin) { ?>
+        <a href="<?php the_field('author_linkedin_link'); ?>" target=_blank><img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" alt=""></a>
       <?php } ?>
     </div>
   </div>

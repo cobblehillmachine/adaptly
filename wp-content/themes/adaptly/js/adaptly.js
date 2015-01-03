@@ -1,39 +1,42 @@
 
 $(window).load(function() {
   homepageAnimation();
-
-    $('.client-testimonial-carousel.flexslider').flexslider({
-      animation:'slide',
-      controlNav:false,
-      directionNav: false,
-      prevText: '',
-      nextText: ''
-    });
-    $('.employee-quotes.flexslider').flexslider({
-      animation:'slide',
-      controlNav:false,
-      directionNav: false,
-      prevText: '',
-      nextText: ''
-    })
-    careersHeaderSlider();
-    requestDemoForm();
-    blurs();
-    smoothScroll();
-    // resourceTabs()
-    shareCounter();
-    svgColorChange();
-
+  $('.employee-quotes.flexslider').flexslider({
+    animation:'slide',
+    controlNav:false,
+    directionNav: false,
+    prevText: '',
+    nextText: ''
+  })
+  careersHeaderSlider();
+  requestDemoForm();
+  blurs();
+  smoothScroll();
+  shareCounter();
 });
 
 function homepageAnimation() {
   var height = $(window).height();
+  $('.animation-text-wrapper').css('height', height)
   $('.video-bg').css('height', height);
-  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
-    console.log("chrome!")
-    // $('.video-bg video').hide();
-    // $('.video-bg').css('background', 'url("wp-content/themes/adaptly/images/homepage_animation.gif")');
-  }
+  $(document).scroll(function() {
+    $('.video-bg').fadeOut('fast');
+    $('.home.page footer').show();
+    $('.rest-of-homepage').fadeIn('fast', function() {
+      svgColorChange();
+      clientTestimonialSlider();
+    })
+  })
+}
+
+function clientTestimonialSlider() {
+  $('.client-testimonial-carousel.flexslider').flexslider({
+    animation:'slide',
+    controlNav:false,
+    directionNav: false,
+    prevText: '',
+    nextText: ''
+  });
 }
 
 function requestDemoForm() {
@@ -105,11 +108,11 @@ function careersHeaderSlider() {
 function svgColorChange() {
   var scrollDistance = $('.icon-container').offset().top;
   $(document).scroll(function() {
-  if($(this).scrollTop() > scrollDistance) {
-    $('.icon-container path, .icon-container circle, .icon-container line, .icon-container ellipse, .icon-container rect, .icon-container polygon').attr('stroke', "#1AA2D1");
-    $('.icon-container g g g g path').attr('fill', "#1AA2D1");
-  }
-})
+    if($(this).scrollTop() > scrollDistance) {
+      $('.icon-container path, .icon-container circle, .icon-container line, .icon-container ellipse, .icon-container rect, .icon-container polygon').attr('stroke', "#1AA2D1");
+      $('.icon-container g g g g path').attr('fill', "#1AA2D1");
+    }
+  })
 }
 
 

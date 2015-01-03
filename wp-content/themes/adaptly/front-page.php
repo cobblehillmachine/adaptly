@@ -1,20 +1,27 @@
 <?php get_header(); ?>
 <div class="video-bg">
-  <video  controls="false" autoplay="true" type="hidden" >
-    <source = src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.mp4" type="video/mp4">
+  <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" autoplay="true" data-setup='{"example_option":true}'>
+    <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.ogv" type="video/ogv">
+    <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.webm" type="video/webm">
+    <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.mp4" type="video/mp4">
+    <!--[if IE]><div style='clear: both; height: 112px; padding:0; position: relative;'><a href="http://www.theie8countdown.com/ie-users-info"><img src="" border="0" height="112" width="348" alt="" /></a></div><![endif]-->
   </video>
 </div>
-<div class="mid-cont home-page">
-  <?php while ( have_posts() ) : the_post(); ?>
-
+<div class="home-page animation-text-wrapper">
+<?php while ( have_posts() ) : the_post(); ?>
+  <div class="animation-text">
     <?php the_content(); ?>
-    <div class='tech-intro'><?php the_field('technology_intro'); ?>
-      </div>
-    <div class="icon-container">
+  </div>
+<?php endwhile; wp_reset_query(); ?>
+</div>
 
+<div class='rest-of-homepage'>
+  <div class="mid-cont home-page">
+    <div class='tech-intro'><?php the_field('technology_intro'); ?></div>
+    <div class="icon-container">
       <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-   enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 10px 2%">
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
+     enable-background="new 0 0 500 500" xml:space="preserve" style="padding: 10px 2%">
         <switch>
           <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
             <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -277,71 +284,70 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_03.png">
     </div>
-  <?php endwhile; wp_reset_query(); ?>
-</div>
-
-<div class="home-page client-testimonial-wrapper">
-  <div class="client-testimonial-carousel flexslider">
-    <ul class="slides">
-    <?php query_posts( array( 'post_type' => 'client testimonials') ); ?>
-    <?php while ( have_posts() ) : the_post(); ?>
-      <li>
-        <div class="mid-cont">
-          <?php the_content(); ?>
-          <p class="client-name bold-type"><?php the_title(); ?></p>
-        </div>
-      </li>
-    <?php endwhile; wp_reset_query(); ?>
-    </ul>
   </div>
-</div>
 
-<div class="home-page client-wrapper">
-  <div class="wide-cont clients">
-    <ul class="">
-    <?php query_posts( array( 'post_type' => 'clients', 'posts_per_page' => 6) ); ?>
-    <?php while ( have_posts() ) : the_post(); ?>
-      <li>
-        <div class="logo-wrapper">
-          <?php the_post_thumbnail(full); ?>
-        </div>
-      </li>
-    <?php endwhile; wp_reset_query(); ?>
-    </ul>
-  </div>
-</div>
-
-<div class="mid-cont home-page">
-  <?php the_field('case_study_intro'); ?>
-  <div class="case-study-grid">
-    <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'ASC', 'posts_per_page' => 6) ); ?>
-    <?php while ( have_posts() ) : the_post(); ?>
-    <div class="case-study">
-      <a href="<?php the_permalink(); ?>">
-        <div class="photo"><?php the_post_thumbnail('full'); ?></div>
-        <div class="color-overlay"></div>
-        <div class="text-overlay">
-          <h3><?php the_title(); ?></h3>
-          <?php the_excerpt(); ?>
-          <a href="<?php the_permalink(); ?>" class="learn-more">Learn More
-        </div>
-      </a>
+  <div class="home-page client-testimonial-wrapper">
+    <div class="client-testimonial-carousel flexslider">
+      <ul class="slides">
+      <?php query_posts( array( 'post_type' => 'client testimonials') ); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <li>
+          <div class="mid-cont">
+            <?php the_content(); ?>
+            <p class="client-name bold-type"><?php the_title(); ?></p>
+          </div>
+        </li>
+      <?php endwhile; wp_reset_query(); ?>
+      </ul>
     </div>
-    <?php endwhile; wp_reset_query(); ?>
+  </div>
+
+  <div class="home-page client-wrapper">
+    <div class="wide-cont clients">
+      <ul class="">
+      <?php query_posts( array( 'post_type' => 'clients', 'posts_per_page' => 6) ); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <li>
+          <div class="logo-wrapper">
+            <?php the_post_thumbnail(full); ?>
+          </div>
+        </li>
+      <?php endwhile; wp_reset_query(); ?>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mid-cont home-page">
+    <?php the_field('case_study_intro'); ?>
+    <div class="case-study-grid">
+      <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'ASC', 'posts_per_page' => 6) ); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+      <div class="case-study">
+        <a href="<?php the_permalink(); ?>">
+          <div class="photo"><?php the_post_thumbnail('full'); ?></div>
+          <div class="color-overlay"></div>
+          <div class="text-overlay">
+            <h3><?php the_title(); ?></h3>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="learn-more">Learn More
+          </div>
+        </a>
+      </div>
+      <?php endwhile; wp_reset_query(); ?>
+    </div>
+  </div>
+
+  <div class="pre-footer-cta">
+    <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
+    <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_db19f9e852" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="button" ></div>
+    </form>
   </div>
 </div>
-
-<div class="pre-footer-cta">
-  <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
-  <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_db19f9e852" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="button" ></div>
-  </form>
-</div>
-
 <?php get_footer(); ?>
