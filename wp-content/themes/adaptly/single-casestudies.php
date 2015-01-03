@@ -62,7 +62,6 @@ get_header(); ?>
   if ($if_has_demo) {?>
 <div class="pre-footer-cta">
   <p class="case-study-download">Download the full case study.<button>DOWNLOAD</button></p>
-  <a style="display: none" class="pdf-link" href="<?php the_field('pdf_for_download') ?>"></a>
 </div>
 <div class="request-demo-form contact case-study mid-cont pre-footer">
     <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="download-pdf-request">
