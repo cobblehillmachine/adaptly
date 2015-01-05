@@ -1,5 +1,6 @@
-body * {  box-sizing: border-box;font-family: "open-sans",sans-serif; font-style: normal; font-weight: 300;}
-body {  margin:0; text-align: center;}
+
+body * {  box-sizing: border-box;}
+body {  margin:0; text-align: center;font-family: "open-sans",sans-serif; font-style: normal; font-weight: 300;}
 img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
 .mid-cont { width: 80%; margin: 0 auto; max-width: 1100px;}
@@ -9,6 +10,7 @@ ul {  list-style:none; padding:0;}
 a { color: #1AA2D1; text-decoration: none;}
 .blue { color: #1AA2D1;}
 
+.nimbus {   font-family: "nimbus-sans"; font-weight:400; font-style: normal; font-size: 11px; line-height: 17.5pt;}
 .bold-type {font-family: "open-sans",sans-serif; font-style: normal; font-weight: 400; }
 .bolder-type { font-family: "open-sans",sans-serif; font-style: normal; font-weight: 600;  }
 *:focus { border: 0;  outline:none;}
@@ -46,10 +48,10 @@ footer .section.social img {  margin: 0 5px 25px;}
 #mc-embedded-subscribe { width: 40px; -webkit-appearance: none; background-color: black; margin-left: -14px; border-radius: 3px; border: 0; color: white; height: 32px; display: inline-block; cursor:pointer;}
 form .clear { display: inline-block; vertical-align: top}
 
-h2 {  font-size: 47px; }
-h3 { font-size: 29px;}
-h4 { font-size: 21px;}
-p {  font-size: 18px;}
+h2 {  font-size: 47px;font-weight: 300;}
+h3 { font-size: 29px;font-weight: 300;}
+h4 { font-size: 21px;font-weight: 300;}
+p {  font-size: 18px;font-weight: 300;}
 .svg-container img {  width: 22%; height: auto; padding: 2%;}
 
 /*Home page*/
@@ -112,7 +114,7 @@ p {  font-size: 18px;}
 .frontlines li img { padding: 50px 0 30px 0; display: block; margin: 0 auto;}
 .something-bigger { background-image: url('../images/something_bigger.jpg'); background-size: cover;}
 .remarkability {  background: #EA665B; color:white;}
-.team-member {  width: 32%; padding: 0 3%; display: inline-block; vertical-align: top; text-align: left; margin-bottom: 20px;}
+.team-member {  width: 32%; padding: 0 3%; display: inline-block; vertical-align: top; text-align: left; margin-bottom: 20px; font-family: "nimbus-sans"; font-weight:400 ; font-style: normal ; font-size: 11pt; line-height: 17.5pt;}
 .team-member img {  border: 1px solid #F0F0F1;}
 .team-member .header .info {  display: inline-block;  width: 75%;}
 .team-member .name {  font-size: 20px; margin-bottom: 0; font-weight: 400; margin-top: 20px;}
@@ -222,7 +224,8 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .single .header-image { width: 100%; margin-bottom: -5px;}
 .single .header-image img { width: 100%;}
 
-p.all-case-studies {  text-align: left; margin-top: 20px;}
+p.back-to-feed {  text-align: left; margin-top: 20px; padding-left: 50px;}
+p.back-to-feed a {  color: black;}
 .single-casestudies .stats-wrapper {  background: #1AA2D1; margin-top: 50px;}
 .single-casestudies .stats-wrapper ul { margin: 0; width: 30%; display: inline-block; padding: 50px 0;}
 .single-casestudies .stats-wrapper li { color: white; font-weight: 400;}
@@ -230,8 +233,9 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
 .tooltip {  width: 0;   height: 0;  border-left: 20px solid transparent;  border-right: 20px solid transparent; border-top: 20px solid #1AA2D1; position: absolute; left: 50%;  transform: translate(-50%, 0);}
 
 
-.single-casestudies .bottom-content.half div {width: 49%; display: inline-block; vertical-align: top; text-align: left; padding: 100px 3%;}
-.single-casestudies .bottom-content.half
+.single-casestudies .bottom-content.half div {width: 49%; display: inline-block; vertical-align: middle; text-align: left; padding: 100px 3%;}
+.single-casestudies .bottom-content.half .left p:first-child {  font-weight: 500; color: #1AA2D1;}
+.single-casestudies .bottom-content.half .left p {  line-height: 1.5em;}
 .single-casestudies .bottom-content img { width: auto; padding: 3%; vertical-align: top}
 
 .single .blog-post {  padding: 50px 0; text-align: left;}
@@ -303,6 +307,11 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   .wide-cont {  width: 90%;}
   .desktop{ display: none;}
   .mobile { display: block;}
+  .animation-text { width: 90%;}
+  h2 {  font-size: 37px;}
+  h3 { font-size: 29px;}
+  h4 { font-size: 21px;}
+  p {  font-size: 18px;}
   /*header nav*/
   .main-nav.desktop { display: none;}
   .main-nav.mobile {  display: block; }
@@ -321,6 +330,7 @@ p.all-case-studies {  text-align: left; margin-top: 20px;}
   /*common*/
   .pre-footer-cta { display: none;}
   /*homepage*/
+  .rest-of-homepage { margin-top: -385px;}
   .icon-container img { width: 50%; padding: 0 10%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
   .clients ul li:first-child, .clients ul li:nth-child(2), .clients ul li:nth-child(3) {  display: none;}

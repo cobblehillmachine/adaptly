@@ -29,8 +29,10 @@ get_header(); ?>
   </div>
 
   <?php } ?>
+
+  <p  class="back-to-feed"><a href="/resources/case-studies">< All Case Studies</a></p>
+
 <div class="mid-cont">
-  <p  class="all-case-studies"><a href="/resources/case-studies"><< See all case studies</a></p>
 	<?php the_content() ?>
 </div>
 <div class="stats-wrapper">

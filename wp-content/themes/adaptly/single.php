@@ -15,8 +15,11 @@ get_header(); ?>
     <div class="clear"><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="button" ></div>
   </form>
 </div>
+
+  <p  class="back-to-feed"><a href="/resources/case-studies">< All Articles</a></p>
+
 <div class="mid-cont blog-post">
-  <p><a href="/resources/blog"><< See all blog posts</a></p>
+
   <h3><?php the_title(); ?></h3>
   <span class='date'><?php the_field('date'); ?></date>
   <?php the_content(); ?>
