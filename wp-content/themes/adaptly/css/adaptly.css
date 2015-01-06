@@ -371,6 +371,7 @@ p.back-to-feed a {  color: black;}
   .single-casestudies .stats-wrapper ul { width: 100%; display: block;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   .single .blog-post {  padding: 25px 0;}
+  p.back-to-feed {  padding-left: 5%;}
   /*contact page*/
   .contact .wpcf7 { width: 100%; padding: 0;}
   .contact ul { width: 100%; text-align: center;}

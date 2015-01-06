@@ -21,7 +21,7 @@ get_header(); ?>
 <div class="mid-cont blog-post">
 
   <h3><?php the_title(); ?></h3>
-  <span class='date'><?php the_field('date'); ?></date>
+  <span class='date'><?php the_field('date'); ?></span>
   <?php the_content(); ?>
 </div>
 <div class="post-share mid-cont">
