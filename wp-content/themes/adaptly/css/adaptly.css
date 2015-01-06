@@ -336,6 +336,8 @@ p.back-to-feed a {  color: black;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
   .client-wrapper li {  width: 30%;}
   .wide-cont.clients {  padding: 40px 0 25px 0;}
+  .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%;}
+  .client-testimonial-carousel p {  font-size: 21px;}
   /*services*/
   .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
   .single-service img { width: 144px;}
