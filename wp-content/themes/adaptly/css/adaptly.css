@@ -90,7 +90,7 @@ p {  font-size: 18px;font-weight: 300;}
 .case-study-grid .case-study .photo { z-index: -1;}
 .case-study-grid .case-study .photo img { widht: 100%; height: auto;}
 .case-study-grid .case-study .color-overlay{  position: absolute; width: 100%; height: 98%; top: 0; opacity: 0; background-color: #1AA2D1;  transition: opacity 0.5s ease; ;}
-.case-study-grid .case-study .text-overlay { position: absolute; width: 100%; top: 50%; transform: translate(0,-50%); opacity: 0; color:white; transition: opacity 0.5s ease; padding: 0 15px; font-size: 21px;}
+.case-study-grid .case-study .text-overlay { position: absolute; width: 100%; top: 50%; transform: translate(0,-50%); -moz-transform: translate(0,-50%); -webkit-transform: translate(0,-50%); opacity: 0; color:white; transition: opacity 0.5s ease; padding: 0 15px; font-size: 21px;}
 .case-study-grid .case-study:hover .text-overlay { opacity: 1;}
 .case-study-grid .case-study:hover .color-overlay{opacity: 0.75}
 
