@@ -11,7 +11,8 @@ $(window).load(function() {
     controlNav:false,
     directionNav: false,
     prevText: '',
-    nextText: ''
+    nextText: '',
+    pauseOnHover: false
   })
   careersHeaderSlider();
   requestDemoForm();
