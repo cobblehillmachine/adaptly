@@ -314,10 +314,10 @@ p.back-to-feed a {  color: black;}
   p {  font-size: 18px;}
   /*header nav*/
   .main-nav.desktop { display: none;}
-  .main-nav.mobile {  display: block; }
   .main-nav.mobile {  display: inline-block; float:right;}
   .main-nav.mobile a {  color: #1AA2D1; }
   .main-nav.mobile a img {  width: 50px;}
+  .main-nav.mobile #sidr {  display: none;}
   .main-nav.mobile .sidr { background-color: #1AA2D1; -webkit-box-shadow: none; box-shadow: none;}
   .main-nav.mobile .sidr a {  color: white;}
   .main-nav.mobile .sidr ul li {  border-bottom: 0; border-top: 0;}
@@ -331,7 +331,8 @@ p.back-to-feed a {  color: black;}
   /*common*/
   .pre-footer-cta { display: none;}
   /*homepage*/
-  .rest-of-homepage { margin-top: -385px;}
+  .video-bg { display: none;}
+  .rest-of-homepage { margin-top: -345px;}
   .icon-container img { width: 50%; padding: 0 10%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
   .client-wrapper li {  width: 30%;}
@@ -374,7 +375,7 @@ p.back-to-feed a {  color: black;}
 @media only screen and (max-width: 666px) {
   .home-page .computer-container {  width: 400px;}
   .home-page .computer-container img:nth-child(2) {top: 36px; left: 75px; }
-  .icon-container svg { width: 35%;}
+  .icon-container svg { width: 35%;vertical-align: middle}
   .computer-animation { width: 400px;}
   .computer-animation video { top: -11px; left: 74px;}
 }

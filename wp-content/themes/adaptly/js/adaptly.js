@@ -1,5 +1,6 @@
 
 $(window).load(function() {
+  $('.sidr').show();
   $('#sidr-trigger').sidr( {
     side: 'right',
     onOpen: navClose()
@@ -120,7 +121,6 @@ function svgColorChange() {
 }
 
 function navClose() {
-
   $('body').on('click', function() {
      $.sidr('close', 'sidr-main');
   })
