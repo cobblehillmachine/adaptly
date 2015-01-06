@@ -10,7 +10,6 @@ ul {  list-style:none; padding:0;}
 a { color: #1AA2D1; text-decoration: none;}
 .blue { color: #1AA2D1;}
 
-.nimbus {   font-family: "nimbus-sans"; font-weight:400; font-style: normal; font-size: 11px; line-height: 17.5pt;}
 .bold-type {font-family: "open-sans",sans-serif; font-style: normal; font-weight: 400; }
 .bolder-type { font-family: "open-sans",sans-serif; font-style: normal; font-weight: 600;  }
 *:focus { border: 0;  outline:none;}
@@ -114,7 +113,7 @@ p {  font-size: 18px;font-weight: 300;}
 .frontlines li img { padding: 50px 0 30px 0; display: block; margin: 0 auto;}
 .something-bigger { background-image: url('../images/something_bigger.jpg'); background-size: cover;}
 .remarkability {  background: #EA665B; color:white;}
-.team-member {  width: 32%; padding: 0 3%; display: inline-block; vertical-align: top; text-align: left; margin-bottom: 20px; font-family: "nimbus-sans"; font-weight:400 ; font-style: normal ; font-size: 11pt; line-height: 17.5pt;}
+.team-member {  width: 32%; padding: 0 3%; display: inline-block; vertical-align: top; text-align: left; margin-bottom: 20px; font-size: 11pt; line-height: 17.5pt;}
 .team-member img {  border: 1px solid #F0F0F1;}
 .team-member .header .info {  display: inline-block;  width: 75%;}
 .team-member .name {  font-size: 20px; margin-bottom: 0; font-weight: 400; margin-top: 20px;}
