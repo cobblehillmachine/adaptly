@@ -317,6 +317,7 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile {  display: block; }
   .main-nav.mobile {  display: inline-block; float:right;}
   .main-nav.mobile a {  color: #1AA2D1; }
+  .main-nav.mobile a img {  width: 50px;}
   .main-nav.mobile .sidr { background-color: #1AA2D1; -webkit-box-shadow: none; box-shadow: none;}
   .main-nav.mobile .sidr a {  color: white;}
   .main-nav.mobile .sidr ul li {  border-bottom: 0; border-top: 0;}
@@ -333,8 +334,8 @@ p.back-to-feed a {  color: black;}
   .rest-of-homepage { margin-top: -385px;}
   .icon-container img { width: 50%; padding: 0 10%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
-  .clients ul li:first-child, .clients ul li:nth-child(2), .clients ul li:nth-child(3) {  display: none;}
   .client-wrapper li {  width: 30%;}
+  .wide-cont.clients {  padding: 40px 0 25px 0;}
   /*services*/
   .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
   .single-service img { width: 144px;}

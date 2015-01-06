@@ -1,7 +1,8 @@
 
 $(window).load(function() {
   $('#sidr-trigger').sidr( {
-    side: 'right'
+    side: 'right',
+    onOpen: navClose()
   });
   homepageAnimation();
   $('.employee-quotes.flexslider').flexslider({
@@ -16,7 +17,6 @@ $(window).load(function() {
   blurs();
   smoothScroll();
   shareCounter();
-
 });
 
 function homepageAnimation() {
@@ -116,6 +116,13 @@ function svgColorChange() {
       $('.icon-container path, .icon-container circle, .icon-container line, .icon-container ellipse, .icon-container rect, .icon-container polygon').attr('stroke', "#1AA2D1");
       $('.icon-container g g g g path').attr('fill', "#1AA2D1");
     }
+  })
+}
+
+function navClose() {
+
+  $('body').on('click', function() {
+     $.sidr('close', 'sidr-main');
   })
 }
 
