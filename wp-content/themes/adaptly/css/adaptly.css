@@ -16,10 +16,10 @@ a { color: #1AA2D1; text-decoration: none;}
 
 
 
-header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 10px 3%;text-align:left;}
-.page-id-13 header {  padding-top: -113px;}
+header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 25px 3% 10px;text-align:left;}
+/*.page-id-13 header {  padding-top: -113px;}*/
 header {  margin-bottom:100px;}
-header .logo {  width: 150px; display: inline-block;}
+header .logo {  width: 150px; display: inline-block; }
 header .logo img {  max-width: 100%;}
 header .main-nav.desktop {  float:right;}
 header .main-nav.desktop li { display: inline-block; padding: 0 20px; font-size: 15px;}
@@ -98,7 +98,7 @@ p {  font-size: 18px;font-weight: 300;}
 .case-study-grid .case-study .text-overlay h3 { margin: 0; font-weight: 400;}
 
 /*About Page*/
-.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -169px; color:white;background-repeat: no-repeat;  background-size: cover;}
+.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -181px; color:white;background-repeat: no-repeat;  background-size: cover;}
 .subnav-wrapper { background: #F2F2F2}
 .subnav ul {  margin: 0 auto; width: 30%; padding: 20px 0;}
 .subnav li {  display: inline-block; font-size:20px; width: 30%;}
