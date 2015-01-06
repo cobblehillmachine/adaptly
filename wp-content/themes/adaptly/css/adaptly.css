@@ -220,6 +220,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .resources.press h4 { margin-top: 0; font-weight: 400; margin-bottom: 0;}
 
 .single header { background-color: black; margin-bottom: 0;}
+
 .single .main-nav.desktop a { color:white;}
 .single .header-image { width: 100%; margin-bottom: -5px;}
 .single .header-image img { width: 100%;}
@@ -317,6 +318,8 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile {  display: inline-block; float:right;}
   .main-nav.mobile a {  color: #1AA2D1; }
   .main-nav.mobile a img {  width: 50px;}
+  .main-nav.mobile .blue-hamburger { display: inline-block;}
+  .main-nav.mobile .white-hamburger { display: none;}
   .main-nav.mobile #sidr {  display: none;}
   .main-nav.mobile .sidr { background-color: #1AA2D1; -webkit-box-shadow: none; box-shadow: none;}
   .main-nav.mobile .sidr a {  color: white;}
@@ -324,6 +327,8 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile .sidr ul { border-bottom: 0;}
   .main-nav.mobile .sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span { -webkit-box-shadow: none; box-shadow: none;}
   .main-nav.mobile .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { line-height: 48px}
+  .single .main-nav.mobile .blue-hamburger {  display: none}
+  .single .main-nav.mobile .white-hamburger { display: inline-block;}
   /*footer*/
   footer .section { display: block; width: 100%; margin: 0 auto;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
