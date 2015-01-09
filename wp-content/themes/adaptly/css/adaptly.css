@@ -106,7 +106,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .case-study-grid .case-study .text-overlay p {  margin-bottom: 25px;}
 
 /*About Page*/
-.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 50px 0;  margin-top: -181px; color:white;background-repeat: no-repeat;  background-size: cover;}
+.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 100px 0;  margin-top: -181px; color:white;background-repeat: no-repeat;  background-size: cover;}
 .subnav-wrapper { background: #F2F2F2}
 .subnav ul {  margin: 0 auto; width: 30%; padding: 20px 0;}
 .subnav li {  display: inline-block; font-size:20px; width: 30%;}
@@ -114,13 +114,15 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .subnav a:hover { border-bottom: 2px #1AA2D1 solid;}
 
 .page-id-13 header .main-nav.desktop a {  color:white;}
-.about {  padding: 75px 0;}
+.about {  padding: 65px 0 75px;}
 .subnav.about { padding: 10px 0;}
 .frontlines ul {  background: url('../images/about_arrow.png') 50% 0; background-repeat: no-repeat; margin: 50px 0;}
 .frontlines li {  width: 49%; display: inline-block; vertical-align: top}
 .frontlines li img { padding: 50px 0 30px 0; display: block; margin: 0 auto;}
 .something-bigger { background-image: url('../images/something_bigger.jpg'); background-size: cover;}
 .remarkability {  background: #EA665B; color:white;}
+.about.meet-our-team {  padding-top: 30px}
+.about.meet-our-team h3 { padding-bottom: 50px;}
 .team-member {  width: 32%; padding: 0 3%; display: inline-block; vertical-align: top; text-align: left; margin-bottom: 20px; font-size: 11pt; line-height: 17.5pt;}
 .team-member img {  border: 1px solid #F0F0F1;}
 .team-member .header .info {  display: inline-block;  width: 75%;}
@@ -201,7 +203,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 /*Resrouces*/
 .resources ul { font-size:21px; list-style: dash;}
-.resources.subnav ul {  width: 55%;}
+.resources.subnav ul {  width: 100%;}
 .resources.subnav ul li { width: 24%; font-weight: 400;}
 .resources.subnav input { display: inline-block;}
 .resources.subnav input#search {width: 66%; background: #F0F0F1; border: 0; text-align: center; padding: 5px; border-radius: 3px; font-size: 18px; vertical-align: top;color: black; text-align: left;}
@@ -213,13 +215,14 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .share { display: inline-block; float:right;}
 .blog-feed .ssba img {  display: inline-block; border: 0; vertical-align: middle; float:none; padding:3px;}
 .ssba_sharecount {  display: none;}
-.resources a {  font-size: 16px;color: black; font-weight: 400; vertical-align: middle; display: inline-block;}
+.resources .excerpt a {  font-size: 16px;color: black; font-weight: 400; vertical-align: middle; display: inline-block;}
 .resources .share { float: right;}
 .resources .counter-total {font-weight: 400;   right: 60px; font-size: 15px;position: absolute; margin-top: 3px;}
 .blog-feed .excerpt { width: 49%; display: inline-block; padding-left: 2%; text-align: left; vertical-align: top}
 .blog-feed .excerpt h4 {  margin-top: 0;}
 .blog-feed .excerpt .bottom-cont { margin-top: 40px; position: relative}
 .resources .post { margin: 40px 0; text-align:left;}
+.resources .pagination {  margin: 50px 0;}
 .resources .pagination a {  padding: 25px 25px; color: #1AA2D1; font-size: 20px;}
 
 .resources.press .heading p { display: inline-block; padding-right: 10px; font-weight: 400}

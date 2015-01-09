@@ -19,7 +19,7 @@
     <?php query_posts( array(  'order' => "DESC", "posts_per_page" => 4, "paged" => get_query_var( 'paged' )) );
       while ( have_posts() ) : the_post(); ?>
       <div class="post">
-        <img src="<?php the_field('thumbnail'); ?>">
+        <a href="<?php the_permalink(); ?>"><img src="<?php the_field('thumbnail'); ?>"></a>
         <div class="excerpt">
           <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
           <?php the_excerpt('...'); ?>

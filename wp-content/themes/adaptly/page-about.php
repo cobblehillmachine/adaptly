@@ -26,7 +26,7 @@
 </div>
 
 <div id="who" class="about meet-our-team">
-    <div class="mid-cont">
+    <div class="wide-cont">
       <div class="bold-type"><?php the_field('meet_our_team') ?></div>
       <?php query_posts( array( 'post_type' => 'team members', 'order' => "ASC", 'posts_per_page' => 20) ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
