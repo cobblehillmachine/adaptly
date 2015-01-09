@@ -177,15 +177,15 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 .emphasize-adaptability { background-color: #1AA2D1; color:white; padding: 50px 0;}
 
-.computer-animation { position: relative; width: 880px; height: auto; margin: 0 auto;}
+.computer-animation { position: relative; width: 880px; height: auto; margin: 0 auto 50px;}
 /*.computer-animation img { position: absolute; top: 0;width: 100%; height: 100%;}*/
 .computer-animation video { position: absolute; top: 0;  width: 62%; left: 166px;  height: 100%;}
 
 
 
-.maximum-effect { background: url('../images/technology_carousel_bg.png') rgba(0, 0, 0, 0.6); padding: 50px 0; background-size: cover;}
+.maximum-effect { background: url('../images/technology_carousel_bg.png') rgba(0, 0, 0, 0.6); padding: 50px 0 0 0; background-size: cover;}
 
-.dg-container{  width: 100%;  height: 450px;  position: relative; margin-top:75px;}
+.dg-container{  width: 100%;  height: 415px;  position: relative; margin-top:75px;}
 .dg-wrapper{  width: 481px; height: 316px;  margin: 0 auto; position: relative; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d;-o-transform-style: preserve-3d;  -ms-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 1000px;  -moz-perspective: 1000px;-o-perspective: 1000px;
   -ms-perspective: 1000px;  perspective: 1000px;  }
 .dg-wrapper a{  width: 482px; height: 316px;  display: block; position: absolute; left: 0;  top: 0; background: transparent url(../images/browser.png) no-repeat top left;  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);}
@@ -281,8 +281,13 @@ p.back-to-feed a {  color: black;}
 
 
 
-
-
+/*MEDIA QUERY FOR COMPUTERS WHEN MIDCONT REACHES 880PX*/
+@media only screen and (max-width: 1466px) {
+  .home-page .computer-container {  width: 600px;}
+  .home-page .computer-container img:nth-child(2) {top: 54px; left: 113px; }
+  .computer-animation { width: 600px; margin-bottom: 50px;}
+  .computer-animation video  {top: -12px; left: 111px; height: 102%}
+}
 
 @media only screen and (max-width: 1350px) {
   .case-study-grid .case-study .text-overlay {  padding: 0 10px;}
@@ -295,12 +300,9 @@ p.back-to-feed a {  color: black;}
   .deploy-manage-analyze {  padding-bottom: 150px;}
   }
 
-/*MEDIA QUERY FOR COMPUTERS WHEN MIDCONT REACHES 880PX*/
+
 @media only screen and (max-width: 1100px) {
-  .home-page .computer-container {  width: 600px;}
-  .home-page .computer-container img:nth-child(2) {top: 54px; left: 113px; }
-  .computer-animation { width: 600px; margin-bottom: 50px;}
-  .computer-animation video  {top: -12px; left: 111px; height: 102%}
+
   .deploy-manage-analyze {  padding-bottom : 50px;}
   .deploy-manage-analyze ul { width: 100%; display: block; float: none; text-align: center;}
   .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
@@ -316,7 +318,11 @@ p.back-to-feed a {  color: black;}
 
 }
 
-/*MIDCONT REACHES 600PX*/
+/*MEDIA QUERY FOR COMPUTERS WHEN MIDCONT REACHES 600PX*/
+@media only screen and (max-width: 1000px) {
+
+}
+
 @media only screen and (max-width: 750px) {
   .mid-cont { width: 90%;}
   .wide-cont {  width: 90%;}
@@ -392,7 +398,7 @@ p.back-to-feed a {  color: black;}
   .map .location {  width: 100%; display: block;}
 }
 
-@media only screen and (max-width: 666px) {
+@media only screen and (max-width: 1000px) {
   .home-page .computer-container {  width: 400px;}
   .home-page .computer-container img:nth-child(2) {top: 36px; left: 75px; }
   .icon-container svg { width: 35%;vertical-align: middle}

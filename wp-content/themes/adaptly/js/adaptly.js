@@ -86,7 +86,7 @@ function blurs() {
   $('.maximum-effect').blurjs({
     source: '.maximum-effect',
     radius: 0,
-    overlay: 'rgba(255, 255, 255, 0.2)'
+    overlay: 'rgba(255, 255, 255, 0.4)'
   })
 }
 
