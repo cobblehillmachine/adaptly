@@ -1,3 +1,11 @@
+document.onreadystatechange = function(e)
+{
+    if (document.readyState === 'complete')
+    {
+        //dom is ready, window.onload fires later
+        $('.video-bg video')[0].play();
+    }
+};
 
 $(window).load(function() {
   $('.sidr').show();
