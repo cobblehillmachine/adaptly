@@ -16,7 +16,7 @@ a { color: #1AA2D1; text-decoration: none;}
 
 
 
-header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 25px 3% 10px;text-align:left;}
+header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 6px 3% 10px;text-align:left;}
 /*.page-id-13 header {  padding-top: -113px;}*/
 header {  margin-bottom:100px;}
 header .logo {  width: 150px; display: inline-block; }
@@ -28,7 +28,7 @@ header .main-nav.desktop a {  text-decoration:none; color:black;}
 footer { background-color: #231F20; padding: 20px 0; }
 footer .section { display:inline-block; width: 24%; text-align: center; vertical-align: top}
 footer a {  color: inherit;}
-footer .section h3 { color: white; text-transform: uppercase; font-size: 19px; font-weight:400;}
+footer .section h3 { color: white; text-transform: uppercase; font-size: 19px; font-weight:300;}
 footer .section img { margin-bottom: 15px;}
 footer .section p { color:white; font-size: 16px; margin:0;}
 footer .section.social p {  font-size: 12px; font-weight: 400;}
