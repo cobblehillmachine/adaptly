@@ -58,12 +58,13 @@ p {  font-size: 18px;font-weight: 300;}
 
 /*Home page*/
 .animation-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); text-align: center;}
-.video-bg { position: absolute; z-index: -5; width: 100%; top: 0;}
+.animation-text-wrapper { position: relative; margin-top: -179px;}
+.video-bg{ position: absolute; z-index: -5; width: 100%; top: 0;}
 .video-bg video { position: absolute; top: 0; left: 0;  width: auto; height: 100%;}
-.rest-of-homepage { display: none; margin-top:-475px;}
+.rest-of-homepage { display: none;}
 .home.page footer{ display: none;}
 
-.tech-intro { margin-top: 150px; margin-bottom:100px;}
+.tech-intro { margin-bottom:100px;}
 .icon-container { margin-bottom: 100px;}
 .icon-container svg { width: 24%;}
 

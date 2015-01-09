@@ -23,17 +23,28 @@ $(window).load(function() {
 
 function homepageAnimation() {
   var height = $(window).height();
+
   $('.animation-text-wrapper').css('height', height)
   $('.video-bg').css('height', height);
   $(document).scroll(function() {
+    var videoScrollDistance = $(this).scrollTop()
     $('.video-bg').fadeOut('fast');
     $('.home.page footer').show();
     $('.rest-of-homepage').fadeIn('fast', function() {
       svgColorChange();
       clientTestimonialSlider();
     })
+    if (videoScrollDistance === 0) {
+      console.log(videoScrollDistance)
+      $('.video-bg video')[0].play();
+      $('.video-bg').show();
+    }
   })
+
+
 }
+
+
 
 function clientTestimonialSlider() {
   $('.client-testimonial-carousel.flexslider').flexslider({
