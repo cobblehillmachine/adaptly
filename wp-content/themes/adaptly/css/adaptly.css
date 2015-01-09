@@ -16,14 +16,17 @@ a { color: #1AA2D1; text-decoration: none;}
 
 
 
-header, .footer-wrapper {  width: 100%; margin: 0 auto; padding: 6px 3% 10px;text-align:left;}
+header, .footer-wrapper {  width: 100%; margin: 0 auto; text-align:left;}
+header {  padding: 25px 3% 10px}
+.footer-wrapper { padding:6px 3% 10px}
 /*.page-id-13 header {  padding-top: -113px;}*/
 header {  margin-bottom:100px;}
 header .logo {  width: 150px; display: inline-block; }
 header .logo img {  max-width: 100%;}
 header .main-nav.desktop {  float:right;}
-header .main-nav.desktop li { display: inline-block; padding: 0 20px; font-size: 15px;}
+header .main-nav.desktop li { display: inline-block; padding: 0 25px; font-size: 15px;}
 header .main-nav.desktop a {  text-decoration:none; color:black;}
+header ul { margin: 0;  margin-top: 10px;}
 
 footer { background-color: #231F20; padding: 20px 0; }
 footer .section { display:inline-block; width: 24%; text-align: center; vertical-align: top}
