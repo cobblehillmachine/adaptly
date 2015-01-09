@@ -41,5 +41,9 @@
     <?php endwhile; wp_reset_query(); ?>
   </div>
 </div>
+<div class="pre-footer-cta">
+    <p class="request-demo-cta contact-us">Start using Adaptly services today.<a href="/contact">Contact Us</a></p>
+
+  </div>
 
 <?php get_footer(); ?>
