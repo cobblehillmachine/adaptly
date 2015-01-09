@@ -83,8 +83,8 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 
 
 /*Services Page*/
-.single-service {width: 49%; display: inline-block; vertical-align: top; padding: 0 10%; }
-.single-service img { max-width: 50%; display: block; margin: 0 auto 10px auto; min-width: 144px;}
+.single-service {width: 49%; display: inline-block; vertical-align: top; padding: 0 3%; margin-top: 60px;}
+.single-service img { display: block; margin: 0 auto 10px auto; width: 110px;}
 .single-service h4 {  font-weight: 400; margin: 0;}
 .single-service p { margin-top: 0;}
 
@@ -314,7 +314,7 @@ p.back-to-feed a {  color: black;}
   .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%;}
   .case-study-grid .case-study .text-overlay a {  color: black;}
   .case-study-grid .case-study .text-overlay a.learn-more { display: none;}
-  .single-service { padding: 0 6%;}
+  .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
 
 }
 
@@ -365,8 +365,7 @@ p.back-to-feed a {  color: black;}
   .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%;}
   .client-testimonial-carousel p {  font-size: 21px;}
   /*services*/
-  .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
-  .single-service img { width: 144px;}
+
   /*partners*/
   .partner.featured { display: block; width: 100%;}
   .partner.data { width: 49%; padding: 0 10%;}
