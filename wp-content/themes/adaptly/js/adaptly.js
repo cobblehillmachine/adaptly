@@ -24,7 +24,7 @@ $(window).load(function() {
   })
   careersHeaderSlider();
   requestDemoForm();
-  // blurs();
+  blurs();
   smoothScroll();
   shareCounter();
 });
@@ -39,7 +39,7 @@ function homepageAnimation() {
     $('.video-bg').fadeOut('fast');
     $('.home.page footer').show();
     $('.rest-of-homepage').fadeIn('fast', function() {
-      svgColorChange();
+      // svgColorChange();
       clientTestimonialSlider();
     })
     if (videoScrollDistance === 0) {
