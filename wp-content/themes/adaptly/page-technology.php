@@ -15,8 +15,8 @@
   <div class="mid-cont">
     <?php the_field('deploy_manage_analyze'); ?>
     <div class="computer-container">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/technology_carousel_03.png">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/technology_computer.png">
+
     </div>
   </div>
 </div>

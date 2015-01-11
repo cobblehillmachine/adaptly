@@ -20,7 +20,7 @@ header, .footer-wrapper {  width: 100%; margin: 0 auto; text-align:left;}
 header {  padding: 25px 3% 10px}
 .footer-wrapper { padding:6px 3% 10px}
 /*.page-id-13 header {  padding-top: -113px;}*/
-header {  margin-bottom:80px;}
+header {  margin-bottom:0px;}
 header .logo {  width: 150px; display: inline-block; }
 header .logo img {  max-width: 100%;}
 header .main-nav.desktop {  float:right;}
@@ -44,14 +44,15 @@ footer .section.social img {  margin: 0 5px 25px;}
 .request-demo-form input[type="submit"] { color:white;}
 .request-demo-form label {  text-align: left;}
 .newsletter-signup, .partner-signup {  display: inline-block;}
-.mailchimp-signup { display: inline-block;}
+.mailchimp-signup { display: inline-block; position: relative}
 .mailchimp-signup input.email { background-color: #93D8F7; color :white; text-align:center; -webkit-appearance: none; -moz-appearance: none; border: 0;  margin-left: 10px; width: 190px;}
 .mailchimp-signup input.email::-webkit-input-placeholder { color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email:-moz-placeholder{ color: white; font-size: 16px; text-align: center; }
 .mailchimp-signup input.email::-moz-placeholder{ color: white; font-size: 16px; text-align: center; }
 .mailchimp-signup input.email:-ms-input-placeholder{ color: white; font-size: 16px; text-align: center; }
-#mc-embedded-subscribe { width: 40px; -webkit-appearance: none; background-color: black; margin-left: -14px; border-radius: 3px; border: 0; color: white; height: 28px; display: inline-block; cursor:pointer;}
+#mc-embedded-subscribe { width: 28px; -webkit-appearance: none; background-color: black; margin-left: -14px; border-radius: 3px; border: 0; color: white; height: 28px; display: inline-block; cursor:pointer;}
 form .clear { display: inline-block; vertical-align: top}
+.cta-arrow {  position: absolute; width: 27px; right: 0;}
 
 h2 {  font-size: 47px;font-weight: 300;}
 h3 { font-size: 29px;font-weight: 300;}
@@ -160,17 +161,15 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 
 
 /*Tehcnology*/
-.deploy-manage-analyze {  background: #F0F0F1; padding: 50px 0; }
+.deploy-manage-analyze {  background: #F0F0F1; padding: 50px 0 100px; }
 
-.deploy-manage-analyze ul { width: 40%; display: inline-block; text-align: left; float:right;}
+.deploy-manage-analyze ul { width: 45%; display: inline-block; text-align: left; float:right; padding-left: 2%;}
 body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .deploy-manage-analyze ul li:nth-child(2n+1) {  font-size:20px; color: #1AA2D1;margin-top:30px;}
 
-.computer-container {  width: 450px; height: auto; display: inline-block; position: relative; margin-top: 50px;}
+.computer-container {  width: 55%; height: auto; display: inline-block; position: relative; margin-top: 50px;}
 .computer-container img:first-child { width: 100%; height: 100%;}
-.computer-container img:nth-child(2) { position: absolute;  top: 41px;  height: 67%;  left: 84px;  width: 61%;}
-.home-page .computer-container {  width: 880px;}
-.home-page .computer-container img:nth-child(2) { top:80px; left:166px;}
+.home-page .computer-container {  width: 100%; display: block;}
 
 .work-smarter { padding: 50px 0;}
 .work-smarter img { width: auto; height: 100%;}
@@ -286,8 +285,7 @@ p.back-to-feed a {  color: black;}
 
 /*MEDIA QUERY FOR COMPUTERS WHEN MIDCONT REACHES 880PX*/
 @media only screen and (max-width: 1466px) {
-  .home-page .computer-container {  width: 600px;}
-  .home-page .computer-container img:nth-child(2) {top: 54px; left: 113px; }
+
   .computer-animation { width: 600px; margin-bottom: 50px;}
   .computer-animation video  {top: -12px; left: 111px; height: 102%}
 }
@@ -298,9 +296,8 @@ p.back-to-feed a {  color: black;}
 }
 
 @media only screen and (max-width: 1250px) {
-  .computer-container { width: 390px; }
-  .computer-container img:nth-child(2) {  top: 35px; left: 74px;}
   .deploy-manage-analyze {  padding-bottom: 150px;}
+
   }
 
 
@@ -401,14 +398,11 @@ p.back-to-feed a {  color: black;}
 }
 
 @media only screen and (max-width: 1000px) {
-  .home-page .computer-container {  width: 400px;}
-  .home-page .computer-container img:nth-child(2) {top: 36px; left: 75px; }
   .icon-container svg { width: 35%;vertical-align: middle}
   .computer-animation { width: 400px;}
   .computer-animation video { top: -11px; left: 74px;}
 }
 
 @media only screen and (max-width: 444px) {
-  .home-page .computer-container {  width: 300px;}
-  .home-page .computer-container img:nth-child(2) {top: 27px; left: 57px; height: 66%; }
+
 }
