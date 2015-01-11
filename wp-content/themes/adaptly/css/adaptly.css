@@ -107,7 +107,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .case-study-grid .case-study .text-overlay p {  margin-bottom: 25px;}
 
 /*About Page*/
-.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 100px 0;  margin-top: -181px; color:white;background-repeat: no-repeat;  background-size: cover;}
+.about-header { background-image: url(../images/about_header.jpg); padding: 120px 0 100px 0;  margin-top: -81px; color:white;background-repeat: no-repeat;  background-size: cover;}
 .subnav-wrapper { background: #F2F2F2}
 .subnav ul {  margin: 0 auto; width: 30%; padding: 20px 0;}
 .subnav li {  display: inline-block; font-size:20px; width: 30%;}
@@ -119,9 +119,10 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .page-id-13 header .main-nav.desktop a {  color:white;}
 .about {  padding: 65px 0 75px;}
 .subnav.about { padding: 10px 0;}
-.frontlines ul {  background: url('../images/about_arrow.png') 50% 0; background-repeat: no-repeat; margin: 50px 0;}
+.frontlines ul {  background: url('../images/about_arrow.png') 50% 0; background-repeat: no-repeat; margin: 50px 0 0; min-height: 35px;}
 .frontlines li {  width: 49%; display: inline-block; vertical-align: top}
-.frontlines li img { padding: 50px 0 30px 0; display: block; margin: 0 auto;}
+.frontlines li img {  width: 100%;padding: 50px 75px 25px}
+.frontlines img { width: 49%;padding: 25px 75px; display: block; margin: 0 auto;}
 .something-bigger { background-image: url('../images/something_bigger.jpg'); background-size: cover;}
 .remarkability {  background: #EA665B; color:white;}
 .about.meet-our-team {  padding-top: 30px}
