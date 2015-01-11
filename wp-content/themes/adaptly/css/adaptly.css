@@ -37,7 +37,7 @@ footer .section p { color:white; font-size: 16px; margin:0;}
 footer .section.social p {  font-size: 12px; font-weight: 400;}
 footer .section.social img {  margin: 0 5px 25px;}
 .pre-footer-cta, .post-header-cta-wrapper {  width: 100%; background-color: #F0F0F1; text-align: center; padding: 10px 0;}
-.pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px; cursor: pointer;}
+.pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px; cursor: pointer; font-weight: 300;}
 .request-demo-form {  display:none; background: white;}
 .request-demo-form .form-left,.request-demo-form .form-right { width: 49%; display: inline-block; padding: 3%; text-align: left;}
 .request-demo-form input {  background: #F0F0F1; margin-bottom:20px; color:black;}
@@ -70,7 +70,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 
 .tech-intro { margin-bottom:25px;}
 .icon-container { margin-bottom: 100px;}
-.icon-container svg { width: 24%;}
+.icon-container img { width: 24%; padding: 20px 4%}
 
 .client-testimonial-wrapper { background-image: url(../images/quote_photo.jpg); background-size: cover; color:white; margin-top:100px;}
 .client-testimonial-carousel p {  font-size: 31px;}
@@ -113,6 +113,8 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .subnav li {  display: inline-block; font-size:20px; width: 30%;}
 .subnav a { color:black;}
 .subnav a:hover { border-bottom: 2px #1AA2D1 solid;}
+.subnav form {  position: relative; width: 180px;}
+.subnav form img {position: absolute;right: 19px; top: 3px;}
 
 .page-id-13 header .main-nav.desktop a {  color:white;}
 .about {  padding: 65px 0 75px;}
@@ -161,13 +163,13 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 
 
 /*Tehcnology*/
-.deploy-manage-analyze {  background: #F0F0F1; padding: 50px 0 100px; }
+.deploy-manage-analyze {  background: #F0F0F1; padding: 50px 0 125px; }
 
-.deploy-manage-analyze ul { width: 45%; display: inline-block; text-align: left; float:right; padding-left: 2%;}
+.deploy-manage-analyze ul { width: 40%; display: inline-block; text-align: left; float:right; padding-left: 2%;}
 body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .deploy-manage-analyze ul li:nth-child(2n+1) {  font-size:20px; color: #1AA2D1;margin-top:30px;}
 
-.computer-container {  width: 55%; height: auto; display: inline-block; position: relative; margin-top: 50px;}
+.computer-container {  width: 60%; height: auto; display: inline-block; position: relative; margin-top: 50px;}
 .computer-container img:first-child { width: 100%; height: 100%;}
 .home-page .computer-container {  width: 100%; display: block;}
 
@@ -207,7 +209,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .resources.subnav input { display: inline-block;}
 .resources.subnav input#search {width: 66%; background: #F0F0F1; border: 0; text-align: center; padding: 5px; border-radius: 3px; font-size: 18px; vertical-align: top;color: black; text-align: left;}
 .resources.subnav input#search::-webkit-input-placeholder, .resources.subnav input#search:-moz-placeholder, .resources.subnav input#search::-moz-placeholder, .resources.subnav input#search:-ms-input-placeholder { color: black; font-size: 18px; text-align: center; }
-.resources.subnav input {width: 25%;width: 25%; -webkit-appearance: none;background-color: black; margin-left: -5px;  border-radius: 3px; border: 0;color: white; height: 34px;}
+.resources.subnav input {width: 28px;-webkit-appearance: none;background-color: black; margin-left: -5px;  border-radius: 3px; border: 0;color: white; height: 34px;}
 .resources.subnav li a.active { border-bottom: 2px #1AA2D1 solid;}
 
 .blog-feed img {  width: 50%; display: inline-block; border-top:10px #1AA2D1 solid; vertical-align: top}

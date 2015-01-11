@@ -4,8 +4,11 @@
     <?php the_content(); ?>
     <div class="computer-animation">
       <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
-      <video width="480" height="320" autoplay="autoplay" loop>
-        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4" type="video/mp4" >
+      <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" data-setup='{"example_option":true}' autoplay='true'>
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.ogv#t=1,17" type="video/ogv">
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.webm#t=1,17" type="video/webm">
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4#t=1,17" type="video/mp4">
+        <!--[if IE]><div style='clear: both; height: 112px; padding:0; position: relative;'><a href="http://www.theie8countdown.com/ie-users-info"><img src="" border="0" height="112" width="348" alt="" /></a></div><![endif]-->
       </video>
     </div>
   <?php endwhile; wp_reset_query(); ?>
@@ -46,7 +49,7 @@
 
 
 <div class="pre-footer-cta">
-  <p class="request-demo-cta ">Start using Adaptly technology today<button>Request Demo</button></p>
+  <p class="request-demo-cta ">Start using Adaptly technology today<a>Request Demo</a></p>
 </div>
 <div class="request-demo-form technology contact mid-cont">
   <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">

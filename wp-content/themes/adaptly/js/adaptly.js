@@ -24,7 +24,7 @@ $(window).load(function() {
   })
   careersHeaderSlider();
   requestDemoForm();
-  blurs();
+  // blurs();
   smoothScroll();
   shareCounter();
 });
@@ -32,7 +32,7 @@ $(window).load(function() {
 function homepageAnimation() {
   var height = $(window).height();
 
-  $('.animation-text-wrapper').css('height', height)
+  $('.animation-text-wrapper').css('height', height + 179)
   $('.video-bg').css('height', height);
   $(document).scroll(function() {
     var videoScrollDistance = $(this).scrollTop()
@@ -65,13 +65,13 @@ function clientTestimonialSlider() {
 }
 
 function requestDemoForm() {
-  $('.request-demo-cta button').on('click', function() {
+  $('.request-demo-cta a').on('click', function() {
     $('.request-demo-form.technology').slideToggle();
   })
-  $('.post-header-cta button').on('click', function() {
+  $('.post-header-cta a').on('click', function() {
     $('.request-demo-form.post-header').slideToggle();
   })
-  $('.pre-footer-cta button').on('click', function() {
+  $('.pre-footer-cta a').on('click', function() {
     $('.request-demo-form.pre-footer').slideToggle();
   })
 
