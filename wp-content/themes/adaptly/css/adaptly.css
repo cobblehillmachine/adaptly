@@ -286,7 +286,7 @@ p.back-to-feed a {  color: black;}
 .mid-cont.benefits .benefit {  width: 29%; padding: 20px 8%; display: inline-block; text-align: center; margin: 0 auto;}
 .mid-cont.benefits .benefit img { display: block; margin: 0 auto 10px;}
 .employee-quotes li { position: relative;}
-.employee-quotes .quote { width: 40%; left: 10%; position: absolute; top: 0; font-size: 22px;}
+.employee-quotes .quote { width: 40%; left: 10%; position: absolute; bottom: 287px; font-size: 22px;}
 .employee-quotes .quote p { font-size: 22px;}
 .employee-quotes .quote .title {  font-size: 17px; font-weight :400;}
 
