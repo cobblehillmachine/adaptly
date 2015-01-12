@@ -278,7 +278,7 @@ p.back-to-feed a {  color: black;}
 /*Careers Page*/
 /*.header-slider.careers {  margin-top: -100px;}*/
 .header-slider strong { display: none;}
-.wide-cont.careers {  position:relative};
+/*.wide-cont.careers {  position:relative};*/
 .wide-cont.careers div{ width: 40%;text-align: left; position: absolute; z-index:10; left: 10%; bottom: 269px; }
 .wide-cont.careers a {  width: 400px; padding: 5px 20px; color:white; background-color: #b1aba9; border-radius: 5px; transition: background-color 0.5s ease; text-transform: uppercase;}
 .mid-cont.benefits {  padding: 50px 0;}
