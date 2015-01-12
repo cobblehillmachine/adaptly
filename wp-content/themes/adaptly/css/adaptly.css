@@ -77,6 +77,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .client-testimonial-carousel p.client-name {  font-size: 17px; padding-top: 15px; opacity: 0.5;}
 .flexslider.client-testimonial-carousel { border:0; margin: 0 auto;background:transparent; border-radius:0; padding: 50px; box-shadow: none; -webkit-box-shadow: none;}
 .header-slider .flexslider, .employee-quotes.flexslider { border:0; margin: 0 auto;background:transparent; border-radius:0; padding: 50px 0 0 0; box-shadow: none; -webkit-box-shadow: none; width: 100%;}
+.header-slider .flexslider {  padding-top: 0;}
 
 .client-wrapper { background: #F0F0F1; margin-bottom:100px;}
 .client-wrapper ul {  margin: 0;}
@@ -277,7 +278,8 @@ p.back-to-feed a {  color: black;}
 /*Careers Page*/
 /*.header-slider.careers {  margin-top: -100px;}*/
 .header-slider strong { display: none;}
-.wide-cont.careers div{ width: 40%;text-align: left; position: absolute; z-index:10; left: 10%; top: 150px; }
+.wide-cont.careers {  position:relative};
+.wide-cont.careers div{ width: 40%;text-align: left; position: absolute; z-index:10; left: 10%; bottom: 269px; }
 .wide-cont.careers a {  width: 400px; padding: 5px 20px; color:white; background-color: #b1aba9; border-radius: 5px; transition: background-color 0.5s ease; text-transform: uppercase;}
 .mid-cont.benefits {  padding: 50px 0;}
 .mid-cont.benefits h3 { font-weight: 400;}
