@@ -15,6 +15,9 @@ $(window).load(function() {
   });
   if ($(window).width() > 450px) {
     homepageAnimation();
+    $('.animation-text-wrapper').css('height', height + 179);
+    $('.home.page footer').show();
+    clientTestimonialSlider();
   }
 
   $('.employee-quotes.flexslider').flexslider({
