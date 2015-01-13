@@ -13,8 +13,8 @@
     </ul>
   </div>
 
-<div class='press resources'>
-  <div class="press-feed mid-cont" id="press">
+<div class='press'>
+  <div class="press-feed mid-cont resources" id="press">
     <?php query_posts( array( 'post_type' => 'press posts', 'order' => 'DESC', 'posts_per_page' => 4, "paged" => get_query_var( 'paged' ))); ?>
     <?php while ( have_posts() ) : the_post(); ?>
       <div class="post">
