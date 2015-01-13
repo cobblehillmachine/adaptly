@@ -386,7 +386,7 @@ p.back-to-feed a {  color: black;}
   /*common*/
   .pre-footer-cta { display: none;}
   /*homepage*/
-  .icon-container img { width: 50%; padding: 0 10%;}
+  .icon-container img { width: 50%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
   .client-wrapper li {  width: 30%;}
   .wide-cont.clients {  padding: 40px 0 25px 0;}
@@ -397,9 +397,9 @@ p.back-to-feed a {  color: black;}
   /*partners*/
   .partner.featured { display: block; width: 100%;}*/
   .partner.data { width: 49%; padding: 0 10%;}
-  technology
-  /*.work-smarter ul {  width: 100%; display: block;}
-  /*resources*/
+  /*technology*/
+  .work-smarter ul {  width: 100%; display: block;}
+  /*resources
   .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
   .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
   .resources.mid-cont.subnav ul li {  width: 32%;}
@@ -426,7 +426,7 @@ p.back-to-feed a {  color: black;}
 }
 
 @media only screen and (max-width: 1000px) {
-  .icon-container svg { width: 35%;vertical-align: middle}*/
+  .icon-container img { width: 35%;vertical-align: middle}*/
 /*  .computer-animation { width: 400px;}
   .computer-animation video { top: -11px; left: 74px;}*/
 }
@@ -434,5 +434,5 @@ p.back-to-feed a {  color: black;}
 @media only screen and (max-width: 444px) {
   .desktop.video-bg { display: none;}
   .rest-of-homepage { display: block;}
-  .mid-cont.* { width: 95%;}
+  .mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources { width: 90%;}
 }
