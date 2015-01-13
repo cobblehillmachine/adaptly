@@ -418,7 +418,7 @@ p.back-to-feed a {  color: black;}
   .pre-footer-cta.mobile .newsletter-signup,.pre-footer-cta.mobile .mailchimp-signup { display: block; margin-bottom: 20px;}
   .resources-feed.case-study-grid { margin-top: 50px;}
   .resources-feed.case-study-grid .case-study .color-overlay { display: none;}
-  .resources-feed.case-study-grid .case-study .text-overlay { background-color: #F0F0F1; position: relative; transform: none; -moz-transform: none; -webskit-transform: none;margin-top: -5px; padding: 10px;}
+  .resources-feed.case-study-grid .case-study .text-overlay { background-color: #F0F0F1; position: relative; transform: none; -moz-transform: none; -webkit-transform: none;margin-top: -5px; padding: 10px;}
   .resources-feed.case-study-grid .case-study .text-overlay h3 {  padding-top: 10px;}
   .single-casestudies .stats-wrapper ul { width: 100%; display: block;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
