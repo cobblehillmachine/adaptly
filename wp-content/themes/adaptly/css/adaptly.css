@@ -371,7 +371,7 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile .sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span { -webkit-box-shadow: none; box-shadow: none;}
   .main-nav.mobile .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { line-height: 48px}
   .single .main-nav.mobile .blue-hamburger {  display: none}
-  .single .main-nav.mobile .white-hamburger { display: inline-block;}
+  .single .main-nav.mobile .white-hamburger, .page-id-13 .main-nav.mobile .white-hamburger { display: inline-block;}
   footer .section { display: block; width: 100%; margin: 0 auto;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
   footer .social p {  display: block;}
@@ -438,5 +438,6 @@ p.back-to-feed a {  color: black;}
 @media only screen and (max-width: 444px) {
   .desktop.video-bg { display: none;}
   .rest-of-homepage { display: block;}
-  .mobile.mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources { width: 90%;}
+  .mid-cont.about h2 {  width: 100%;}
+  .mobile.mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources, .mid-cont.about { width: 90%;}
 }
