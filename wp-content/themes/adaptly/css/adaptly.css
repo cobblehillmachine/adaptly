@@ -312,7 +312,7 @@ p.back-to-feed a {  color: black;}
 .employee-quotes .quote .title {  font-size: 17px; font-weight :400;}
 
 
-
+/*
 /*MEDIA QUERY FOR COMPUTERS WHEN MIDCONT REACHES 880PX*/
 @media only screen and (max-width: 1466px) {
 
@@ -320,12 +320,12 @@ p.back-to-feed a {  color: black;}
   .computer-animation video  {top: -12px; left: 111px; height: 102%}*/
 }
 
-@media only screen and (max-width: 1350px) {
+/*@media only screen and (max-width: 1350px) {
   .case-study-grid .case-study .text-overlay {  padding: 0 10px;}
   .case-study-grid .case-study .text-overlay p {  margin: 10px 0;}
-}
+}*/
 
-@media only screen and (max-width: 1250px) {
+/*@media only screen and (max-width: 1250px) {
   .deploy-manage-analyze {  padding-bottom: 150px;}
 
   }
@@ -347,7 +347,7 @@ p.back-to-feed a {  color: black;}
   .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
 
 }
-
+*/
 /*MEDIA QUERY FOR COMPUTERS WHEN MIDCONT REACHES 600PX*/
 @media only screen and (max-width: 1000px) {
 
@@ -364,7 +364,7 @@ p.back-to-feed a {  color: black;}
   h4 { font-size: 21px;}
   p {  font-size: 18px;}
   /*header nav*/
-  .main-nav.desktop { display: none;}
+/*  .main-nav.desktop { display: none;}
   .main-nav.mobile {  display: inline-block; float:right;}
   .main-nav.mobile a {  color: #1AA2D1; }
   .main-nav.mobile a img {  width: 50px;}
@@ -382,27 +382,27 @@ p.back-to-feed a {  color: black;}
   /*footer*/
   footer .section { display: block; width: 100%; margin: 0 auto;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
-  footer .social p {  display: block;}
+  footer .social p {  display: block;}*/
   /*common*/
-  .pre-footer-cta { display: none;}
+  /*.pre-footer-cta { display: none;}*/
   /*homepage*/
-  .video-bg { display: none;}
+/*  .video-bg { display: none;}
   .rest-of-homepage { margin-top: -345px;}
   .icon-container img { width: 50%; padding: 0 10%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
   .client-wrapper li {  width: 30%;}
   .wide-cont.clients {  padding: 40px 0 25px 0;}
   .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%;}
-  .client-testimonial-carousel p {  font-size: 21px;}
+  .client-testimonial-carousel p {  font-size: 21px;}*/
   /*services*/
 
   /*partners*/
-  .partner.featured { display: block; width: 100%;}
-  .partner.data { width: 49%; padding: 0 10%;}
+  /*.partner.featured { display: block; width: 100%;}*//*
+  .partner.data { width: 49%; padding: 0 10%;}*/
   /*technology*/
-  .work-smarter ul {  width: 100%; display: block;}
+  /*.work-smarter ul {  width: 100%; display: block;}*/
   /*resources*/
-  .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
+ /* .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
   .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
   .resources.mid-cont.subnav ul li {  width: 32%;}
   .resources.mid-cont.subnav.blog ul li:last-child { display: none;}
@@ -420,15 +420,15 @@ p.back-to-feed a {  color: black;}
   .single-casestudies .stats-wrapper ul { width: 100%; display: block;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   .single .blog-post {  padding: 25px 0;}
-  p.back-to-feed {  padding-left: 5%;}
+  p.back-to-feed {  padding-left: 5%;}*/
   /*contact page*/
-  .contact .wpcf7 { width: 100%; padding: 0;}
+  /*.contact .wpcf7 { width: 100%; padding: 0;}
   .contact ul { width: 100%; text-align: center;}
-  .map .location {  width: 100%; display: block;}
-}
+  .map .location {  width: 100%; display: block;}*/
+/*}
 
 @media only screen and (max-width: 1000px) {
-  .icon-container svg { width: 35%;vertical-align: middle}
+  .icon-container svg { width: 35%;vertical-align: middle}*/
 /*  .computer-animation { width: 400px;}
   .computer-animation video { top: -11px; left: 74px;}*/
 }
@@ -436,4 +436,5 @@ p.back-to-feed a {  color: black;}
 @media only screen and (max-width: 444px) {
   .desktop.video-bg { display: none;}
   .rest-of-homepage { display: block;}
+  .mid-cont.* { width: 95%;}
 }
