@@ -364,7 +364,7 @@ p.back-to-feed a {  color: black;}
   h4 { font-size: 21px;}
   p {  font-size: 18px;}
   /*header nav*/
-/*  .main-nav.desktop { display: none;}
+  .main-nav.desktop { display: none;}
   .main-nav.mobile {  display: inline-block; float:right;}
   .main-nav.mobile a {  color: #1AA2D1; }
   .main-nav.mobile a img {  width: 50px;}
@@ -379,30 +379,28 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { line-height: 48px}
   .single .main-nav.mobile .blue-hamburger {  display: none}
   .single .main-nav.mobile .white-hamburger { display: inline-block;}
-  /*footer*/
+  footer
   footer .section { display: block; width: 100%; margin: 0 auto;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
-  footer .social p {  display: block;}*/
+  footer .social p {  display: block;}
   /*common*/
-  /*.pre-footer-cta { display: none;}*/
+  .pre-footer-cta { display: none;}
   /*homepage*/
-/*  .video-bg { display: none;}
-  .rest-of-homepage { margin-top: -345px;}
   .icon-container img { width: 50%; padding: 0 10%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
   .client-wrapper li {  width: 30%;}
   .wide-cont.clients {  padding: 40px 0 25px 0;}
   .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%;}
-  .client-testimonial-carousel p {  font-size: 21px;}*/
+  .client-testimonial-carousel p {  font-size: 21px;}
   /*services*/
 
   /*partners*/
-  /*.partner.featured { display: block; width: 100%;}*//*
-  .partner.data { width: 49%; padding: 0 10%;}*/
-  /*technology*/
-  /*.work-smarter ul {  width: 100%; display: block;}*/
+  .partner.featured { display: block; width: 100%;}*/
+  .partner.data { width: 49%; padding: 0 10%;}
+  technology
+  /*.work-smarter ul {  width: 100%; display: block;}
   /*resources*/
- /* .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
+  .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
   .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
   .resources.mid-cont.subnav ul li {  width: 32%;}
   .resources.mid-cont.subnav.blog ul li:last-child { display: none;}
@@ -420,12 +418,12 @@ p.back-to-feed a {  color: black;}
   .single-casestudies .stats-wrapper ul { width: 100%; display: block;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   .single .blog-post {  padding: 25px 0;}
-  p.back-to-feed {  padding-left: 5%;}*/
+  p.back-to-feed {  padding-left: 5%;}
   /*contact page*/
-  /*.contact .wpcf7 { width: 100%; padding: 0;}
+  .contact .wpcf7 { width: 100%; padding: 0;}
   .contact ul { width: 100%; text-align: center;}
-  .map .location {  width: 100%; display: block;}*/
-/*}
+  .map .location {  width: 100%; display: block;}
+}
 
 @media only screen and (max-width: 1000px) {
   .icon-container svg { width: 35%;vertical-align: middle}*/
