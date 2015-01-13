@@ -16,7 +16,7 @@
 </div>
 
 <div class='rest-of-homepage'>
-  <div class="mid-cont home-page">
+  <div class="mid-cont home-page desktop mobile">
     <div class='tech-intro'><?php the_field('technology_intro'); ?></div>
     <div class="icon-container">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_facebook.gif">
@@ -41,7 +41,7 @@
       <?php query_posts( array( 'post_type' => 'client testimonials') ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <li>
-          <div class="mid-cont home-page">
+          <div class="mid-cont home-page desktop mobile">
             <?php the_content(); ?>
             <p class="client-name bold-type"><?php the_title(); ?></p>
           </div>
@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <div class="mid-cont home-page">
+  <div class="mid-cont home-page desktop mobile">
     <?php the_field('case_study_intro'); ?>
     <div class="case-study-grid">
       <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'ASC', 'posts_per_page' => 6) ); ?>

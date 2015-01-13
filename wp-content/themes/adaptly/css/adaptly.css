@@ -5,7 +5,7 @@ img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
 
 .mid-cont {margin: 0 auto;}
-.mid-cont.home-page { width: 845px;}
+.desktop.mid-cont.home-page { width: 845px;}
 .mid-cont.services  { width: 780px;}
 
 .mobile { display: none;}
@@ -349,7 +349,6 @@ p.back-to-feed a {  color: black;}
 }
 
 @media only screen and (max-width: 750px) {
-  .mid-cont { width: 90%;}
   .wide-cont {  width: 90%;}
   .desktop{ display: none;}
   .mobile { display: block;}
@@ -435,5 +434,5 @@ p.back-to-feed a {  color: black;}
 @media only screen and (max-width: 444px) {
   .desktop.video-bg { display: none;}
   .rest-of-homepage { display: block;}
-  .mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources { width: 90%;}
+  .mobile.mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources { width: 90%;}
 }
