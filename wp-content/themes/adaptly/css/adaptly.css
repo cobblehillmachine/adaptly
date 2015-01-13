@@ -205,7 +205,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 
 
-.maximum-effect { background: url('../images/technology_carousel_bg.png') rgba(0, 0, 0, 0.6); padding: 50px 0 0 0; background-size: cover;}
+.maximum-effect { background: url('../images/technology_carousel_bg.png') rgba(0, 0, 0, 0.6); padding: 50px 0; background-size: cover;}
 
 .dg-container{  width: 100%;  height: 415px;  position: relative; margin-top:75px;}
 .dg-wrapper{  width: 481px; height: 316px;  margin: 0 auto; position: relative; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d;-o-transform-style: preserve-3d;  -ms-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 1000px;  -moz-perspective: 1000px;-o-perspective: 1000px;
