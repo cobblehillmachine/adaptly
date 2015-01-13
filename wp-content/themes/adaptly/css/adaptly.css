@@ -434,5 +434,5 @@ p.back-to-feed a {  color: black;}
 }
 
 @media only screen and (max-width: 444px) {
-
+  .desktop.video-bg { display: none;}
 }
