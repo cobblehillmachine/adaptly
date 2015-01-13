@@ -404,7 +404,7 @@ p.back-to-feed a {  color: black;}
   .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
   .work-smarter ul {  width: 100%; display: block;}
   .dg-container { display: none;}
-  /*resources
+  /*resources*/
   .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
   .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
   .resources.mid-cont.subnav ul li {  width: 32%;}
@@ -424,7 +424,7 @@ p.back-to-feed a {  color: black;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   .single .blog-post {  padding: 25px 0;}
   p.back-to-feed {  padding-left: 5%;}
-  /*contact page*/
+  /*contact page
   .contact .wpcf7 { width: 100%; padding: 0;}
   .contact ul { width: 100%; text-align: center;}
   .map .location {  width: 100%; display: block;}
