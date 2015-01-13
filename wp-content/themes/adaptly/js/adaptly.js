@@ -13,7 +13,10 @@ $(window).load(function() {
     side: 'right',
     onOpen: navClose()
   });
-  homepageAnimation();
+  if ($(window).width() > 450px) {
+    homepageAnimation();
+  }
+
   $('.employee-quotes.flexslider').flexslider({
     animation:'slide',
     controlNav:false,
