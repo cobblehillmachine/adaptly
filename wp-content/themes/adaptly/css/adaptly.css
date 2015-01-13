@@ -338,12 +338,7 @@ p.back-to-feed a {  color: black;}
   .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
   .post-share div { width: 100%; display: block; margin: 20px auto; }
   .post-share a { padding: 10px 50px;}
-  .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto;}
-  .case-study-grid .case-study:nth-child(2n) {  margin-right: auto;}
-  .case-study-grid .case-study .text-overlay { opacity: 1; color: black;}
-  .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%;}
-  .case-study-grid .case-study .text-overlay a {  color: black;}
-  .case-study-grid .case-study .text-overlay a.learn-more { display: none;}
+
   .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
 
 }
@@ -362,12 +357,13 @@ p.back-to-feed a {  color: black;}
   h2 {  font-size: 37px;}
   h3 { font-size: 29px;}
   h4 { font-size: 21px;}
-  p {  font-size: 18px;}
+  p {  font-size: 16px;}
   /*header nav*/
   .main-nav.desktop { display: none;}
-  .main-nav.mobile {  display: inline-block; float:right;}
+  header .logo {  width: 120px;}
+  .main-nav.mobile {  display: inline-block; float:right; margin-top:-10px;}
   .main-nav.mobile a {  color: #1AA2D1; }
-  .main-nav.mobile a img {  width: 50px;}
+  .main-nav.mobile a img {  width: 50px; }
   .main-nav.mobile .blue-hamburger { display: inline-block;}
   .main-nav.mobile .white-hamburger { display: none;}
   .main-nav.mobile #sidr {  display: none;}
@@ -379,12 +375,17 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { line-height: 48px}
   .single .main-nav.mobile .blue-hamburger {  display: none}
   .single .main-nav.mobile .white-hamburger { display: inline-block;}
-  footer
   footer .section { display: block; width: 100%; margin: 0 auto;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
   footer .social p {  display: block;}
   /*common*/
   .pre-footer-cta { display: none;}
+  .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto;}
+  .case-study-grid .case-study:nth-child(2n) {  margin-right: auto;}
+  .case-study-grid .case-study .text-overlay { opacity: 1; color: black;}
+  .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%;}
+  .case-study-grid .case-study .text-overlay a {  color: black;}
+  .case-study-grid .case-study .text-overlay a.learn-more { display: none;}
   /*homepage*/
   .icon-container img { width: 50%;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}

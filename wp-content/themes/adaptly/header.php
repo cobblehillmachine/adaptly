@@ -62,7 +62,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
 		<div class="main-nav mobile">
-			<a id="sidr-trigger" href="#sidr"><img src="<?php echo get_template_directory_uri(); ?>/images/hamburger_white.svg" class='white-hamburger'><img src="<?php echo get_template_directory_uri(); ?>/images/hamburger_blue.svg" class='blue-hamburger'></a>
+			<a id="sidr-trigger" href="#sidr"><img src="<?php echo get_template_directory_uri(); ?>/images/hamburger_white.svg" class='white-hamburger'><img src="<?php echo get_template_directory_uri(); ?>/images/Blue-hamburger.png" class='blue-hamburger'></a>
 			<div id="sidr">
 				<?php wp_nav_menu( array( 'menu' => '3' ) ); ?>
 			</div>
