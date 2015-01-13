@@ -188,7 +188,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .deploy-manage-analyze ul li:nth-child(2n+1) {  font-size:20px; color: #1AA2D1;margin-top:30px;}
 
-.computer-container {  width: 437px; height: auto; display: inline-block; position: relative; margin-top: 50px;}
+.computer-container {  width: 437px; height: auto; display: inline-block; position: relative; margin-top: 20px;}
 .computer-container img:first-child { width: 100%; height: 100%;}
 .home-page .computer-container {  width: 100%; display: block;}
 
