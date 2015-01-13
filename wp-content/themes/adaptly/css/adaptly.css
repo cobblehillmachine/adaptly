@@ -333,9 +333,7 @@ p.back-to-feed a {  color: black;}
 
 @media only screen and (max-width: 1100px) {
 
-  .deploy-manage-analyze {  padding-bottom : 50px;}
-  .deploy-manage-analyze ul { width: 100%; display: block; float: none; text-align: center;}
-  .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
+
   .post-share div { width: 100%; display: block; margin: 20px auto; }
   .post-share a { padding: 10px 50px;}
 
@@ -398,6 +396,11 @@ p.back-to-feed a {  color: black;}
   .partner.featured { display: block; width: 100%;}*/
   .partner.data { width: 49%; padding: 0 10%;}
   /*technology*/
+  .computer-animation { width: 400px;}
+  .computer-animation video { top: -11px; left: 74px;}
+  .deploy-manage-analyze {  padding-bottom : 50px;}
+  .deploy-manage-analyze ul { width: 100%; display: block; float: none; text-align: center;}
+  .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
   .work-smarter ul {  width: 100%; display: block;}
   /*resources
   .resources.mid-cont h4, .resources.mid-cont ul {  display: none;}
@@ -427,8 +430,7 @@ p.back-to-feed a {  color: black;}
 
 @media only screen and (max-width: 1000px) {
   .icon-container img { width: 35%;vertical-align: middle}
-/*  .computer-animation { width: 400px;}
-  .computer-animation video { top: -11px; left: 74px;}*/
+/*  */
 }
 
 @media only screen and (max-width: 444px) {
