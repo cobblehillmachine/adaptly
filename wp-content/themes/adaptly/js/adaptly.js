@@ -13,7 +13,7 @@ $(window).load(function() {
     side: 'right',
     onOpen: navClose()
   });
-  if ($(window).width() > 450px) {
+  if ($(window).width() > 450) {
     homepageAnimation();
 
   } else {
