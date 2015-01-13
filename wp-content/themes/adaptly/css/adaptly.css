@@ -246,9 +246,9 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .resources .pagination {  margin: 50px 0;}
 .resources .pagination a {  padding: 25px 25px; color: #1AA2D1; font-size: 20px;}
 
-.resources.press .heading p { display: inline-block; padding-right: 10px; font-weight: 400}
-.resources.press .heading p:first-child { text-transform: uppercase; color: #1AA2D1; font-size: 18px;}
-.resources.press h4 { margin-top: 0; font-weight: 400; margin-bottom: 0;}
+..press .heading p { display: inline-block; padding-right: 10px; font-weight: 400}
+..press .heading p:first-child { text-transform: uppercase; color: #1AA2D1; font-size: 18px;}
+..press h4 { margin-top: 0; font-weight: 400; margin-bottom: 0;}
 
 .mid-cont.blog-post { width: 834px;}
 .single header {  padding-bottom: 20px;}
@@ -407,7 +407,7 @@ p.back-to-feed a {  color: black;}
   /*resources*/
   /*.resources.mid-cont h4, .resources.mid-cont ul {  display: none;}*/
   .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
-  .resources.mid-cont.subnav ul li {  width: 32%;}
+  .resources.mid-cont.subnav ul li {  width: auto; padding: 0 15px;}
   .resources.mid-cont.subnav.blog ul li:last-child { display: none;}
   .blog.resources img, .blog-feed .excerpt .bottom-cont { display: none;}
   .blog-feed .excerpt { width: 100%; display: block;}
