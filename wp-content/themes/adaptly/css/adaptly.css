@@ -407,7 +407,7 @@ p.back-to-feed a {  color: black;}
   /*resources*/
   /*.resources.mid-cont h4, .resources.mid-cont ul {  display: none;}*/
   .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
-  .resources.mid-cont.subnav ul li {  width: auto; padding: 0 12px;}
+  .resources.mid-cont.subnav ul li {  width: auto; padding: 0 10px;}
   .resources.mid-cont.subnav.blog ul li:last-child { display: none;}
   .blog.resources img, .blog-feed .excerpt .bottom-cont { display: none;}
   .blog-feed .excerpt { width: 100%; display: block;}
