@@ -360,7 +360,7 @@ p.back-to-feed a {  color: black;}
   /*header nav*/
   .main-nav.desktop { display: none;}
   header .logo {  width: 120px;}
-  .main-nav.mobile {  display: inline-block; float:right; margin-top:-10px;}
+  .main-nav.mobile {  display: inline-block; float:right; margin-top:-10px; z-index: 10; position: relative}
   .main-nav.mobile a {  color: #1AA2D1; }
   .main-nav.mobile a img {  width: 50px; }
   .main-nav.mobile .blue-hamburger { display: inline-block;}
