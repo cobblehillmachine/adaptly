@@ -7,7 +7,7 @@ get_header(); ?>
   if ($if_has_demo) {?>
 <div class="post-header-cta-wrapper">
   <div class="post-header-cta mid-cont">
-    <p class="case-study-download">Download the full case study.<button>DOWNLOAD</button></p>
+    <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
   </div>
 </div>
   <div class="request-demo-form contact case-study mid-cont post-header">
@@ -32,17 +32,17 @@ get_header(); ?>
 
   <p  class="back-to-feed"><a href="/resources/case-studies">< All Case Studies</a></p>
 
-<div class="mid-cont">
+<div class="mid-cont case-study">
 	<?php the_content() ?>
 </div>
 <div class="stats-wrapper">
-	<div class="mid-cont">
+	<div class="mid-cont case-study">
 		<div><?php the_field('stats'); ?></div>
 	</div>
   <div class="tooltip"></div>
 </div>
 
-<div class="mid-cont bottom-content-wrapper">
+<div class="mid-cont case-study bottom-content-wrapper">
   <? $full = get_field('bottom_content_full_width');
   if ($full) { ?>
     <div class="bottom-content full">
@@ -63,7 +63,7 @@ get_header(); ?>
 <?php $if_has_demo = get_field('pdf_for_download');
   if ($if_has_demo) {?>
 <div class="pre-footer-cta">
-  <p class="case-study-download">Download the full case study.<button>DOWNLOAD</button></p>
+  <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
 </div>
 <div class="request-demo-form contact case-study mid-cont pre-footer">
     <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="download-pdf-request">

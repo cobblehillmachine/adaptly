@@ -16,7 +16,7 @@ get_header(); ?>
   </form>
 </div>
 
-  <p  class="back-to-feed"><a href="/resources/case-studies">< All Articles</a></p>
+  <p  class="back-to-feed"><a href="/resources/blog">< All Articles</a></p>
 
 <div class="mid-cont blog-post">
 
@@ -24,7 +24,7 @@ get_header(); ?>
   <span class='date'><?php the_field('date'); ?></span>
   <?php the_content(); ?>
 </div>
-<div class="post-share mid-cont">
+<div class="post-share mid-cont blog-post">
   <div class="twitter"><a href="http://twitter.com/share?url=<?php the_permalink(); ?>">Twitter</a></div>
   <div class="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>">Facebook</a></div>
   <div class="email"><a HREF="mailto:?body=Hi,check out this post by Adaptly: <?php the_permalink(); ?>">Send</a></div>
@@ -33,7 +33,7 @@ get_header(); ?>
 <?php $author = get_field('author');
   if ($author) { ?>
 <div class="author-wrapper">
-  <div class="author mid-cont">
+  <div class="author mid-cont blog-post">
     <img src="<?php the_field('author_image'); ?>" class="headshot">
     <div class="author-info">
       <?php the_field('author'); ?>

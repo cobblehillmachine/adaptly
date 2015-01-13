@@ -250,6 +250,8 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .resources.press .heading p:first-child { text-transform: uppercase; color: #1AA2D1; font-size: 18px;}
 .resources.press h4 { margin-top: 0; font-weight: 400; margin-bottom: 0;}
 
+.mid-cont.blog-post { width: 834px;}
+.single header {  padding-bottom: 20px;}
 .single header { background-color: black; margin-bottom: 0;}
 
 .single .main-nav.desktop a { color:white;}
@@ -258,6 +260,8 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 p.back-to-feed {  text-align: left; margin-top: 10px; padding-left: 50px;}
 p.back-to-feed a {  color: black;}
+
+.mid-cont.case-study {  width: 700px;}
 .single-casestudies .stats-wrapper {  background: #1AA2D1; margin-top: 50px;}
 .single-casestudies .stats-wrapper ul { margin: 0; width: 30%; display: inline-block; padding: 50px 2%; vertical-align: top;}
 .single-casestudies .stats-wrapper li { color: white; font-weight: 400;}
@@ -272,19 +276,20 @@ p.back-to-feed a {  color: black;}
 .single-casestudies .bottom-content-wrapper { padding: 75px 0;}
 
 .single .blog-post {  padding: 0 0 50px 0; text-align: left;}
-.single .blog-post  h3 {  font-size:31px; font-weight: 400; margin-bottom: 0;}
+.single .blog-post  h3 {  font-size:31px; font-weight: 400; margin-bottom: 0; width: 745px;}
 .single .blog-post .date { font-size:16px; font-weight: 400;}
 .single .blog-post h5 { font-weight: 500; font-size: 18px; margin-bottom: -15px;}
 .single .blog-post ul { list-style: disc; font-size: 18px; margin-left: 20px;}
 .single .blog-post li { margin-bottom: 15px;}
-.single .blog-post img {  float:right;}
+.single .blog-post img {  float:right; padding: 15px 0 15px 15px}
 
-.post-share div { width: 32%; padding: 3%; display: inline-block; vertical-align: top; margin-bottom: 50px;}
-.post-share a { padding: 10px 75px;  border-radius: 5px;color: white;}
-.post-share .facebook a { background-color: #2E3190;}
-.post-share .twitter a {  background-color: #00ACED;}
-.post-share .email a {  background-color: #404041;}
+.post-share div { width: 245px;  display: inline-block; vertical-align: top; margin: 0 15px 50px;;padding: 10px 75px; border-radius: 5px; text-align: center;}
+.post-share a { color: white;}
+.post-share .facebook { background-color: #2E3190;}
+.post-share .twitter {  background-color: #00ACED;}
+.post-share .email {  background-color: #404041;}
 
+.single .blog-post.author img {  padding :0; float:none;}
 .author-wrapper { background-color: #F0F0F1; padding: 50px 0; border-bottom: 1px black solid;}
 .author img.headshot { width: 30%; display: inline-block; vertical-align: top}
 .author-info {  width: 69%; display: inline-block; text-align: left; padding: 0 3%; vertical-align: top;}
@@ -302,7 +307,7 @@ p.back-to-feed a {  color: black;}
 .mid-cont.benefits .benefit {  width: 29%; padding: 25px 43px; vertical-align: top; display: inline-block; text-align: center; margin: 0 auto;}
 .mid-cont.benefits .benefit img { display: block; margin: 0 auto 10px;}
 .employee-quotes li { position: relative;}
-.employee-quotes .quote { width: 40%; left: 10%; position: absolute; bottom: 287px; font-size: 22px;}
+.employee-quotes .quote { width: 585px; left: 6%; position: absolute; bottom: 287px; font-size: 22px;}
 .employee-quotes .quote p { font-size: 22px;}
 .employee-quotes .quote .title {  font-size: 17px; font-weight :400;}
 
