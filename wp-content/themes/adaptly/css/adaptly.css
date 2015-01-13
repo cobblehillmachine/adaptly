@@ -426,7 +426,7 @@ p.back-to-feed a {  color: black;}
 }
 
 @media only screen and (max-width: 1000px) {
-  .icon-container img { width: 35%;vertical-align: middle}*/
+  .icon-container img { width: 35%;vertical-align: middle}
 /*  .computer-animation { width: 400px;}
   .computer-animation video { top: -11px; left: 74px;}*/
 }
