@@ -66,7 +66,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 
 /*Home page*/
 .animation-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); text-align: center; width: 560px;}
-.animation-text-wrapper { position: relative; margin-top: -179px; z-index: -1;}
+.animation-text-wrapper { position: relative; margin-top: -179px; z-index: 1;}
 .video-bg{ position: absolute; z-index: -5; width: 100%; top: 0;}
 .video-bg video { position: absolute; top: 0; left: 0;  width: auto; height: 100%;}
 .rest-of-homepage { display: none;}
