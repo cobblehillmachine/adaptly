@@ -339,7 +339,7 @@ p.back-to-feed a {  color: black;}
   .post-share div { width: 100%; display: block; margin: 20px auto; }
   .post-share a { padding: 10px 50px;}
 
-  .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
+
 
 }
 */
@@ -393,7 +393,7 @@ p.back-to-feed a {  color: black;}
   .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%;}
   .client-testimonial-carousel p {  font-size: 21px;}
   /*services*/
-
+  .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
   /*partners*/
   .partner.featured { display: block; width: 100%;}*/
   .partner.data { width: 49%; padding: 0 10%;}
