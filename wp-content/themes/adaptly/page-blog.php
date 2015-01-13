@@ -15,7 +15,7 @@
   </div>
 
 <div class="blog resources">
-  <div id="blog" class="blog-feed mid-cont">
+  <div id="blog" class="blog-feed mid-cont resources">
     <?php query_posts( array(  'order' => "DESC", "posts_per_page" => 4, "paged" => get_query_var( 'paged' )) );
       while ( have_posts() ) : the_post(); ?>
       <div class="post">

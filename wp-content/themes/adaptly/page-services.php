@@ -22,7 +22,7 @@
   <?php the_post_thumbnail('full'); ?>
 </div>
 
-<div class="mid-cont case-study-wrapper">
+<div class="mid-cont services case-study-wrapper">
   <?php the_field('case_study_intro'); ?>
   <div class="case-study-grid">
     <?php query_posts( array( 'post_type' => 'case studies', 'posts_per_page' => 8, 'order' => "ASC") ); ?>

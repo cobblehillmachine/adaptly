@@ -9,7 +9,7 @@
     <div><?php the_content(); ?></div>
   <?php endwhile; wp_reset_query(); ?>
 </div>
-<div class="mid-cont benefits">
+<div class="mid-cont benefits careers">
   <?php the_field("benefits"); ?>
   <?php query_posts( array( 'post_type' => 'benefits', 'order' => "ASC", 'posts_per_page' => 10) ); ?>
   <?php while ( have_posts() ) : the_post(); ?>

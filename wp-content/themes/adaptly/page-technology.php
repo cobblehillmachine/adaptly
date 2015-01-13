@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="mid-cont services">
+<div class="mid-cont technology">
   <?php while ( have_posts() ) : the_post(); ?>
     <?php the_content(); ?>
     <div class="computer-animation">
@@ -15,7 +15,7 @@
 </div>
 
 <div class="deploy-manage-analyze">
-  <div class="mid-cont">
+  <div class="mid-cont technology">
     <?php the_field('deploy_manage_analyze'); ?>
     <div class="computer-container">
       <img src="<?php echo get_template_directory_uri(); ?>/images/technology_computer.png">
@@ -25,7 +25,7 @@
 </div>
 
 <div class="maximum-effect">
-  <div class="mid-cont">
+  <div class="mid-cont technology">
     <?php the_field('maximum_effect'); ?>
     <section id="dg-container" class="dg-container">
       <div class="dg-wrapper">
@@ -37,12 +37,12 @@
   </div>
 </div>
 
-<div class="work-smarter mid-cont">
+<div class="work-smarter mid-cont technology">
   <?php the_field('work_smarter'); ?>
 </div>
 
 <div class="emphasize-adaptability">
-  <div class="mid-cont">
+  <div class="mid-cont technology">
     <?php the_field('emphasize_adaptability'); ?>
   </div>
 </div>
@@ -51,7 +51,7 @@
 <div class="pre-footer-cta">
   <p class="request-demo-cta ">Start using Adaptly technology today<a>Request Demo</a></p>
 </div>
-<div class="request-demo-form technology contact mid-cont">
+<div class="request-demo-form technology contact mid-cont technology">
   <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
     <input type=hidden name="oid" value="00Dd0000000ezSf">
     <input type=hidden name="retURL" value="http://www.adaptly.com">

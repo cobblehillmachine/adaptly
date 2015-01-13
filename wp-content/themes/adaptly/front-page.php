@@ -41,7 +41,7 @@
       <?php query_posts( array( 'post_type' => 'client testimonials') ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
         <li>
-          <div class="mid-cont">
+          <div class="mid-cont home-page">
             <?php the_content(); ?>
             <p class="client-name bold-type"><?php the_title(); ?></p>
           </div>

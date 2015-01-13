@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="about-header">
   <?php while ( have_posts() ) : the_post(); ?>
-    <div class="mid-cont">
+    <div class="mid-cont about">
       <?php the_content(); ?>
     </div>
 </div>
@@ -14,13 +14,13 @@
     </ul>
   </div>
 </div>
-<div id="what" class="about frontlines">
-    <div class="mid-cont">
+<div id="what" class="frontlines">
+    <div class="mid-cont about">
       <?php the_field('on_the_frontlines') ?>
     </div>
 </div>
 <div id="why" class="about something-bigger">
-    <div class="mid-cont">
+    <div class="mid-cont about">
       <?php the_field('something_bigger') ?>
     </div>
 </div>
