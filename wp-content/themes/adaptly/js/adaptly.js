@@ -15,6 +15,7 @@ $(window).load(function() {
   });
   if ($(window).width() > 450px) {
     homepageAnimation();
+    var height = $(window).height();
     $('.animation-text-wrapper').css('height', height + 179);
     $('.home.page footer').show();
     clientTestimonialSlider();
