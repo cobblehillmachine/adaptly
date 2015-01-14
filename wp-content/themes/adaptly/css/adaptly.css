@@ -65,7 +65,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .svg-container img {  width: 22%; height: auto; padding: 2%;}
 
 /*Home page*/
-.home.page {  display: none;}
+.animation-text-wrapper {  display: none;}
 .animation-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); text-align: center; width: 560px;}
 .animation-text-wrapper { position: relative; margin-top: -179px; z-index: 1;}
 .video-bg{ position: absolute; z-index: -5; width: 100%; top: 0;}

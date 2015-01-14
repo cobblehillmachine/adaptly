@@ -1,14 +1,12 @@
-document.onreadystatechange = function(e)
-{
-    if (document.readyState === 'complete')
-    {
+document.onreadystatechange = function(e) {
+    if (document.readyState === 'complete') {
         //dom is ready, window.onload fires later
         $('.video-bg video')[0].play();
     }
 };
 
 $(window).load(function() {
-  $('.home.page').show();
+  $('.animation-text-wrapper').show();
   $('.sidr').show();
   $('#sidr-trigger').sidr( {
     side: 'right'
@@ -149,12 +147,6 @@ function svgColorChange() {
       $('.icon-container path, .icon-container circle, .icon-container line, .icon-container ellipse, .icon-container rect, .icon-container polygon').attr('stroke', "#1AA2D1");
       $('.icon-container g g g g path').attr('fill', "#1AA2D1");
     }
-  })
-}
-
-function navClose() {
-  $('body').on('click', function() {
-     $.sidr('close', 'sidr-main');
   })
 }
 
