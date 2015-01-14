@@ -8,6 +8,7 @@ document.onreadystatechange = function(e)
 };
 
 $(window).load(function() {
+  $('.home.page').show();
   $('.sidr').show();
   $('#sidr-trigger').sidr( {
     side: 'right',
