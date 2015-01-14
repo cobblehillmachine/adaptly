@@ -437,7 +437,7 @@ p.back-to-feed a {  color: black;}
   .frontlines li {  width: 100%; margin: 50px 0;}
   .frontlines img {width: 100%;}
   .frontlines ul {background: url('../images/about_arrow.png') 50% 50% no-repeat; margin-top: 0;}
-  .team-member .icons a { margin: 6px;}
+  .team-member .icons a { margin:  0 6px;}
 }
 
 @media only screen and (max-width: 1000px) {
