@@ -424,7 +424,7 @@ p.back-to-feed a {  color: black;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   .single .blog-post {  padding: 25px 0;}
   p.back-to-feed {  padding-left: 5%;}
-  /*contact page
+  /*contact page*/
   .contact .wpcf7 { width: 100%; padding: 0;}
   .contact ul { width: 100%; text-align: center;}
   .map .location {  width: 100%; display: block;}
@@ -432,12 +432,12 @@ p.back-to-feed a {  color: black;}
 
 @media only screen and (max-width: 1000px) {
   .icon-container img { width: 35%;vertical-align: middle}
-/*  */
 }
 
 @media only screen and (max-width: 444px) {
   .desktop.video-bg { display: none;}
   .rest-of-homepage { display: block;}
+  .about {  padding: 15px 0 25px;}
   .mid-cont.about h2, .frontlines h3, .team-member {  width: 100%;}
   .mobile.mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources, .mid-cont.about, .about-header .mid-cont.about, .subnav ul, .about .wide-cont, .partners.mid-cont { width: 90%;}
 }
