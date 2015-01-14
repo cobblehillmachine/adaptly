@@ -429,7 +429,9 @@ p.back-to-feed a {  color: black;}
   .contact ul { width: 100%; text-align: center;}
   .map .location {  width: 100%; display: block;}
   /*careers*/
-  .wide-cont.careers { position: relative;}
+  .wide-cont.careers { position: initial; text-align:center;}
+  .mid-cont.benefits .benefit { width: 100%;}
+  .employee-quotes .quote { position: initial; width: 90%; margin: 0 auto; left: 5%;}
 }
 
 @media only screen and (max-width: 1000px) {
