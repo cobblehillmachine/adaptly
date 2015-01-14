@@ -5,12 +5,17 @@ document.onreadystatechange = function(e) {
     }
 };
 
-$(window).load(function() {
-  $('.home-page').show();
-  $('.sidr').show();
+$(document).ready(function()
+{
   $('#sidr-trigger').sidr( {
     side: 'right'
   });
+})
+
+$(window).load(function() {
+  $('.home-page').show();
+  $('.sidr').show();
+
   if ($(window).width() > 450) {
     homepageAnimation();
 
@@ -50,13 +55,11 @@ function homepageAnimation() {
       clientTestimonialSlider();
     })
     if (videoScrollDistance === 0) {
-      console.log(videoScrollDistance)
+
       $('.video-bg video')[0].play();
       $('.video-bg').show();
     }
   })
-
-
 }
 
 
@@ -136,8 +139,7 @@ function careersHeaderSlider() {
         }
 
       }
-    })
-
+  })
 }
 
 function svgColorChange() {

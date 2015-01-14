@@ -14,7 +14,7 @@
     </div>
   <?php endwhile; wp_reset_query(); ?>
 
-  <?php the_field('team_intro'); ?>
+ <div class="services-secondary-header"><?php the_field('team_intro'); ?></div>
 
 </div>
 

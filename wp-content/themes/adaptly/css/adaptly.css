@@ -24,7 +24,7 @@ header, .footer-wrapper {  width: 100%; margin: 0 auto; text-align:left;}
 header {  padding: 25px 3% 60px}
 .footer-wrapper { padding:6px 3% 10px}
 /*.page-id-13 header {  padding-top: -113px;}*/
-header {  margin-bottom:0px;}
+header {  margin-bottom:0px; position:relative; z-index:99; }
 header .logo {  width: 150px; display: inline-block; }
 header .logo img {  max-width: 100%;}
 header .main-nav.desktop {  float:right;}
@@ -54,7 +54,18 @@ footer .section.social img {  margin: 0 5px 25px;}
 .mailchimp-signup input.email:-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email::-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email:-ms-input-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
-#mc-embedded-subscribe { width: 28px; -webkit-appearance: none; background-color: #1AA2D1; margin-left: -14px; border-radius: 3px; border: 0; color: white; height: 28px; display: inline-block; cursor:pointer;}
+#mc-embedded-subscribe {
+  width: 28px;
+  -webkit-appearance: none;
+  background-color: #1AA2D1;
+  margin-left: -14px;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  height: 28px;
+  display: inline-block;
+  cursor:pointer;
+}
 form .clear { display: inline-block; vertical-align: top}
 .cta-arrow {  position: absolute; width: 27px; right: 0; top:0;}
 
@@ -94,6 +105,9 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .single-service img { display: block; margin: 0 auto 10px auto; width: 110px;}
 .single-service h4 {  font-weight: 400; margin: 0;}
 .single-service p { margin-top: 0;}
+.services-secondary-header{
+  margin-top:200px;
+}
 
 /*Case study grid (multi-page)*/
 .case-study-wrapper { padding-top: 50px;}
@@ -102,7 +116,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .case-study-grid .case-study:nth-child(2n) {   margin-right: 0;}
 .case-study-grid .case-study .photo { z-index: -1;}
 .case-study-grid .case-study .photo img { widht: 100%; height: auto;}
-.case-study-grid .case-study .color-overlay{  position: absolute; width: 100%; height: 98%; top: 0; opacity: 0; background-color: #1AA2D1;  transition: opacity 0.5s ease; ;}
+.case-study-grid .case-study .color-overlay{  position: absolute; width: 100%; height: 98%; top: 0; opacity: 0; background-color: #1AA2D1;  transition: opacity 0.5s ease;}
 .case-study-grid .case-study .text-overlay { position: absolute; width: 100%; top: 50%; transform: translate(0,-50%); -moz-transform: translate(0,-50%); -webkit-transform: translate(0,-50%); opacity: 0; color:white; transition: opacity 0.5s ease; padding: 0 45px; font-size: 21px;}
 .case-study-grid .case-study:hover .text-overlay { opacity: 1;}
 .case-study-grid .case-study:hover .color-overlay{opacity: 0.75}
@@ -202,8 +216,16 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 .computer-animation { position: relative; width: 100%; height: auto; margin: 0 auto 50px;}
 /*.computer-animation img { position: absolute; top: 0;width: 100%; height: 100%;}*/
-.computer-animation video { position: absolute; top: -12px;  width: 499px; left: 150px;  height: 500px;}
+/* .computer-animation video */
+ .video-container{ position: absolute; top:70px; left: 149px;  width: 502px; border-radius:2px; overflow:hidden; height: 337px; border:1px solid #cdcdcd;}
+.video-container video{
+  display:block;
+  width:502px;
+  position:relative;
+  top:-1px;
+  left:0;
 
+}
 
 
 .maximum-effect { background: url('../images/technology_carousel_bg.png') rgba(0, 0, 0, 0.6); padding: 50px 0; background-size: cover;}
@@ -262,7 +284,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 p.back-to-feed {  text-align: left; margin-top: 10px; padding-left: 50px;}
 p.back-to-feed a {  color: black;}
 
-.mid-cont.case-study {  width: 700px;}
+.mid-cont.case-study {  width: 600px;}
 .single-casestudies .stats-wrapper {  background: #1AA2D1; margin-top: 50px;}
 .single-casestudies .stats-wrapper ul { margin: 0; width: 30%; display: inline-block; padding: 50px 2%; vertical-align: top;}
 .single-casestudies .stats-wrapper li { color: white; font-weight: 400;}
@@ -301,7 +323,7 @@ p.back-to-feed a {  color: black;}
 /*.header-slider.careers {  margin-top: -100px;}*/
 .header-slider strong { display: none;}
 
-.wide-cont.careers {  position: absolute; top: 225px; width: 585px; text-align: left; left: 5%;}
+.wide-cont.careers {  position: absolute; top: 150px; width: 585px; text-align: left; left: 5%;}
 .wide-cont.careers a {  width: 400px; padding: 5px 20px; color:white; background-color: #b1aba9; border-radius: 5px; transition: background-color 0.5s ease; text-transform: uppercase;}
 .mid-cont.benefits {  padding: 50px 0; width: 745px;}
 .mid-cont.benefits h3 { font-weight: 400;}
@@ -348,65 +370,90 @@ p.back-to-feed a {  color: black;}
 }
 
 @media only screen and (max-width: 750px) {
-  .wide-cont {  width: 90%;}
-  .desktop{ display: none;}
-  .mobile { display: block;}
-  .animation-text { width: 90%;}
-  h2 {  font-size: 37px;}
-  h3 { font-size: 29px;}
-  h4 { font-size: 21px;}
-  p {  font-size: 16px;}
+  .wide-cont {  width: 90%; }
+  .desktop{ display: none; }
+  .mobile { display: block; }
+  .animation-text { width: 90%; }
+  h2 {  font-size: 37px; }
+  h3 { font-size: 29px; }
+  h4 { font-size: 21px; }
+  p {  font-size: 16px; }
   /*header nav*/
   .main-nav.desktop { display: none;}
   header .logo {  width: 120px;}
+  #sidr-trigger{
+    display:block;
+    font-size:40px;
+    border:1px solid transparent;
+    padding-right:5px;
+    margin-top:-5px;
+  }
+   #sidr-trigger.white{
+     color:#fff;
+   }
+   .mid-cont.case-study{
+     width:100%;
+     padding:0 15px;
+   }
+
+   .blog-header{
+     display: none;
+   }
+
+   #mc-embedded-subscribe {
+    width: 35px;
+    margin-top:2px;
+    height:30px;
+    margin-left:-16px;
+  }
   .main-nav.mobile {  display: inline-block; float:right; margin-top:-10px; z-index: 10; position: relative}
   .main-nav.mobile a {  color: #1AA2D1; }
   .main-nav.mobile a img {  width: 50px; }
-  .main-nav.mobile .blue-hamburger { display: inline-block;}
-  .main-nav.mobile .white-hamburger { display: none;}
-  .main-nav.mobile #sidr {  display: none;}
+  .main-nav.mobile .blue-hamburger { display: inline-block; }
+  .main-nav.mobile .white-hamburger { display: none; }
+  .main-nav.mobile #sidr {  display: none; }
   .main-nav.mobile .sidr { background-color: #1AA2D1; -webkit-box-shadow: none; box-shadow: none;}
-  .main-nav.mobile .sidr a {  color: white;}
+  .main-nav.mobile .sidr a {  color: white; }
   .main-nav.mobile .sidr ul li {  border-bottom: 0; border-top: 0;}
-  .main-nav.mobile .sidr ul { border-bottom: 0;}
-  .main-nav.mobile .sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span { -webkit-box-shadow: none; box-shadow: none;}
-  .main-nav.mobile .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { line-height: 48px}
-  .single .main-nav.mobile .blue-hamburger, .page-id-13 .main-nav.mobile .blue-hamburger {  display: none}
-  .single .main-nav.mobile .white-hamburger, .page-id-13 .main-nav.mobile .white-hamburger { display: inline-block;}
-  footer .section { display: block; width: 100%; margin: 0 auto;}
-  footer .careers img, footer .contact img, footer .partners img, footer p  { display: none;}
-  footer .social p {  display: block;}
+  .main-nav.mobile .sidr ul { border-bottom: 0; }
+  .main-nav.mobile .sidr ul li:hover > a, .sidr ul li:hover>span, .sidr ul li.active > a, .sidr ul li.active > span, .sidr ul li.sidr-class-active > a, .sidr ul li.sidr-class-active > span { -webkit-box-shadow: none; box-shadow: none; }
+  .main-nav.mobile .sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { line-height: 48px; }
+  .single .main-nav.mobile .blue-hamburger, .page-id-13 .main-nav.mobile .blue-hamburger {  display: none }
+  .single .main-nav.mobile .white-hamburger, .page-id-13 .main-nav.mobile .white-hamburger { display: inline-block; }
+  footer .section { display: block; width: 100%; margin: 0 auto; }
+  footer .careers img, footer .contact img, footer .partners img, footer p  { display: none; }
+  footer .social p {  display: block; }
   /*common*/
-  .pre-footer-cta { display: none;}
-  .pre-footer-cta.mobile {  display: block;}
-  .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto;}
-  .case-study-grid .case-study:nth-child(2n) {  margin-right: auto;}
-  .case-study-grid .case-study .text-overlay { opacity: 1; color: black;}
-  .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%;}
-  .case-study-grid .case-study .text-overlay a {  color: black;}
-  .case-study-grid .case-study .text-overlay a.learn-more { display: none;}
+  .pre-footer-cta { display: none; }
+  .pre-footer-cta.mobile {  display: block; }
+  .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto; }
+  .case-study-grid .case-study:nth-child(2n) {  margin-right: auto; }
+  .case-study-grid .case-study .text-overlay { opacity: 1; color: black; }
+  .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%; }
+  .case-study-grid .case-study .text-overlay a {  color: black; }
+  .case-study-grid .case-study .text-overlay a.learn-more { display: none; }
   /*homepage*/
-  .icon-container img { width: 50%;}
-  .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png');}
-  .client-wrapper li {  width: 30%;}
-  .wide-cont.clients {  padding: 40px 0 25px 0;}
-  .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%;}
-  .client-testimonial-carousel p {  font-size: 21px;}
+  .icon-container img { width: 50%; }
+  .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png'); }
+  .client-wrapper li {  width: 30%; }
+  .wide-cont.clients {  padding: 40px 0 25px 0; }
+  .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%; }
+  .client-testimonial-carousel p {  font-size: 21px; }
   /*services*/
-  .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto;}
+  .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto; }
   /*partners*/
-  .partner.featured { display: block; width: 100%;}
-  .partner.data { width: 49%; padding: 0 10%;}
-  .partners.mid-cont {  padding-bottom: 40px;}
+  .partner.featured { display: block; width: 100%; margin-bottom:45px; }
+  .partner.data { width: 49%; padding: 0 10%; }
+  .partners.mid-cont {  padding-bottom: 40px; }
   /*technology*/
-  .mid-cont.technology h2 { width: 100%;}
-  .computer-animation { display: none;}
-  .computer-animation video { top: -11px; left: 74px;}
-  .deploy-manage-analyze {  padding-bottom : 50px;}
-  .deploy-manage-analyze ul { width: 100%; display: block; float: none; text-align: center;}
-  .deploy-manage-analyze .computer-container {  display: none; width: 100%;}
-  .work-smarter ul {  width: 100%; display: block;}
-  .dg-container { display: none;}
+  .mid-cont.technology h2 { width: 100%; }
+  .computer-animation { display: none; }
+  .computer-animation video { top: -11px; left: 74px; }
+  .deploy-manage-analyze {  padding-bottom : 50px; }
+  .deploy-manage-analyze ul { width: 100%; display: block; float: none; text-align: center; }
+  .deploy-manage-analyze .computer-container {  display: none; width: 100%; }
+  .work-smarter ul {  width: 100%; display: block; }
+  .dg-container { display: none; }
   /*resources*/
   /*.resources.mid-cont h4, .resources.mid-cont ul {  display: none;}*/
   .resources.mid-cont.subnav ul { display: inline-block; width: 100%;}
@@ -444,9 +491,9 @@ p.back-to-feed a {  color: black;}
   .employee-quotes .quote { position: initial; width: 90%; margin: 0 auto; left: 5%;}
   .employee-quotes.flexslider { padding-top: 0; padding-bottom: 25px;}
   /*about*/
-  .frontlines li {  width: 100%; margin: 50px 0;}
-  .frontlines img {width: 100%;}
-  .frontlines ul {background: url('../images/about_arrow.png') 50% 50% no-repeat; margin-top: 0;}
+  .frontlines li {  width: 100%; margin: 0 0 15px 0; font-size:26px;}
+  .frontlines img { display:block;  width: 100%; }
+  .frontlines ul { background-image:none; margin-top:0;}
 }
 
 @media only screen and (max-width: 1000px) {

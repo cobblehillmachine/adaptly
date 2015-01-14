@@ -27,7 +27,6 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_speech.gif">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_picture.gif">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_phone.gif">
-
     </div>
     <?php the_field('work_smarter'); ?>
     <div class="computer-container">
@@ -73,7 +72,7 @@
       <?php while ( have_posts() ) : the_post(); ?>
       <div class="case-study">
         <a href="<?php the_permalink(); ?>">
-          <div class="photo"><?php the_post_thumbnail('full'); ?></div>
+          <div class="photo"><?php the_post_thumbnail('large'); ?></div>
           <div class="color-overlay"></div>
           <div class="text-overlay">
             <h3><?php the_title(); ?></h3>

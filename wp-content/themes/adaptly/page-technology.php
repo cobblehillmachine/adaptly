@@ -1,15 +1,18 @@
 <?php get_header(); ?>
+
 <div class="mid-cont technology">
   <?php while ( have_posts() ) : the_post(); ?>
     <?php the_content(); ?>
     <div class="computer-animation">
       <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
-      <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" data-setup='{"example_option":true}' autoplay='true'>
+      <div class="video-container">
+        <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" data-setup='{"example_option":true}' autoplay='true'>
         <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.ogv#t=1,17" type="video/ogv">
         <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.webm#t=1,17" type="video/webm">
         <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4#t=1,17" type="video/mp4">
         <!--[if IE]><div style='clear: both; height: 112px; padding:0; position: relative;'><a href="http://www.theie8countdown.com/ie-users-info"><img src="" border="0" height="112" width="348" alt="" /></a></div><![endif]-->
       </video>
+      </div>
     </div>
   <?php endwhile; wp_reset_query(); ?>
 </div>
@@ -19,7 +22,6 @@
     <?php the_field('deploy_manage_analyze'); ?>
     <div class="computer-container">
       <img src="<?php echo get_template_directory_uri(); ?>/images/technology_computer.png">
-
     </div>
   </div>
 </div>
