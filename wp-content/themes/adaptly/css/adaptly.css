@@ -397,6 +397,7 @@ p.back-to-feed a {  color: black;}
   /*partners*/
   .partner.featured { display: block; width: 100%;}
   .partner.data { width: 49%; padding: 0 10%;}
+  .partners.mid-cont {  padding-bottom: 40px;}
   /*technology*/
   .mid-cont.technology h2 { width: 100%;}
   .computer-animation { display: none;}
