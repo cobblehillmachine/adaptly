@@ -132,8 +132,11 @@ function careersHeaderSlider() {
       prevText: '',
       nextText: '',
       before: function(slider) {
-        var currentColor = colorList[slider.currentSlide]
-        $('.wide-cont.careers a').css('background-color', currentColor);
+        if ($(window).width() > 450) {
+          var currentColor = colorList[slider.currentSlide]
+          $('.wide-cont.careers a').css('background-color', currentColor);
+        }
+
       }
     })
 
