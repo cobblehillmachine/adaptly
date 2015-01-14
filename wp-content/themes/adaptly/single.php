@@ -3,7 +3,7 @@
 get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="header-image"><?php the_post_thumbnail('full'); ?></div>
-<div class="pre-footer-cta">
+<div class="pre-footer-cta mobile">
   <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
   <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
@@ -53,7 +53,7 @@ get_header(); ?>
   </div>
 </div>
 <?php } ?>
-<div class="pre-footer-cta">
+<div class="pre-footer-cta mobile">
   <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
   <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">

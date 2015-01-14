@@ -6,7 +6,7 @@ document.onreadystatechange = function(e) {
 };
 
 $(window).load(function() {
-  $('.animation-text-wrapper').show();
+  $('.home-page').show();
   $('.sidr').show();
   $('#sidr-trigger').sidr( {
     side: 'right'

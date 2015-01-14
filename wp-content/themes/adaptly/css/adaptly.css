@@ -65,7 +65,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .svg-container img {  width: 22%; height: auto; padding: 2%;}
 
 /*Home page*/
-.animation-text-wrapper {  display: none;}
+.home-page {  display: none;}
 .animation-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); text-align: center; width: 560px;}
 .animation-text-wrapper { position: relative; margin-top: -179px; z-index: 1;}
 .video-bg{ position: absolute; z-index: -5; width: 100%; top: 0;}
@@ -247,9 +247,9 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .resources .pagination {  margin: 50px 0;}
 .resources .pagination a {  padding: 25px 25px; color: #1AA2D1; font-size: 20px;}
 
-..press .heading p { display: inline-block; padding-right: 10px; font-weight: 400}
-..press .heading p:first-child { text-transform: uppercase; color: #1AA2D1; font-size: 18px;}
-..press h4 { margin-top: 0; font-weight: 400; margin-bottom: 0;}
+.press .heading p { display: inline-block; paddingright: 10px; font-weight: 400}
+.press .heading p:first-child { text-transform: uppercase; color: #1AA2D1; font-size: 18px;}
+.press h4 { margin-top: 0; font-weight: 400; margin-bottom: 0;}
 
 .mid-cont.blog-post { width: 834px;}
 .single header {  padding-bottom: 20px;}
@@ -378,6 +378,7 @@ p.back-to-feed a {  color: black;}
   footer .social p {  display: block;}
   /*common*/
   .pre-footer-cta { display: none;}
+  .pre-footer-cta.mobile {  display: block;}
   .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto;}
   .case-study-grid .case-study:nth-child(2n) {  margin-right: auto;}
   .case-study-grid .case-study .text-overlay { opacity: 1; color: black;}
@@ -416,7 +417,9 @@ p.back-to-feed a {  color: black;}
   .blog-feed .post:nth-child(4) .excerpt p {  border-bottom: 0; padding-bottom: 0;}
   .blog-feed .excerpt h4 {  margin-bottom: 0; font-weight: 400;}
   .pre-footer-cta.mobile {  display: block;}
-  .pre-footer-cta.mobile .newsletter-signup,.pre-footer-cta.mobile .mailchimp-signup { display: block; margin-bottom: 20px;}
+  .cta-arrow {  right: 3px;}
+  body .pre-footer-cta.mobile .newsletter-signup { width: 100%;}
+  .pre-footer-cta.mobile .newsletter-signup,.pre-footer-cta.mobile .mailchimp-signup { display: block; margin: 10px auto; width: 230px;}
   .resources-feed.case-study-grid { margin-top: 50px;}
   .resources-feed.case-study-grid .case-study .color-overlay { display: none;}
   .resources-feed.case-study-grid .case-study .text-overlay { background-color: #F0F0F1; position: relative; transform: none; -moz-transform: none; -webkit-transform: none;margin-top: -5px; padding: 10px;}
@@ -425,6 +428,9 @@ p.back-to-feed a {  color: black;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   .single .blog-post {  padding: 25px 0;}
   p.back-to-feed {  padding-left: 5%;}
+  .post-share div { margin :20px auto;}
+  .press .heading p:first-child { margin-bottom: 0;}
+  .press p {  margin: 10px 0;}
   /*contact page*/
   .contact .wpcf7 { width: 100%; padding: 0;}
   .contact ul { width: 100%; text-align: center;}
@@ -448,6 +454,6 @@ p.back-to-feed a {  color: black;}
   .desktop.video-bg, .header-slider { display: none;}
   .rest-of-homepage { display: block;}
   .about {  padding: 15px 0 25px;}
-  .mid-cont.about h2, .frontlines h3, .team-member, .contact.mid-cont h2, .contact.big-logo img {  width: 100%;}
-  .mobile.mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources, .mid-cont.about, .about-header .mid-cont.about, .subnav ul, .about .wide-cont, .partners.mid-cont, .mid-cont.careers, .wide-cont.careers { width: 90%;}
+  .mid-cont.about h2, .frontlines h3, .team-member, .contact.mid-cont h2, .contact.big-logo img, .single .blog-post h3, .post-share div {  width: 100%;}
+  .mobile.mid-cont.home-page, .mid-cont.services, .mid-cont.technology, .mid-cont.contact, .mid-cont.resources, .mid-cont.about, .about-header .mid-cont.about, .subnav ul, .about .wide-cont, .partners.mid-cont, .mid-cont.careers, .wide-cont.careers, .blog-post.mid-cont { width: 90%;}
 }

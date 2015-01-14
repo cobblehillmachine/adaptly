@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="video-bg desktop">
+<div class="video-bg desktop home-page">
   <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" data-setup='{"example_option":true}'>
     <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.ogv#t=1,17" type="video/ogv">
     <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.webm#t=1,17" type="video/webm">
@@ -15,7 +15,7 @@
 <?php endwhile; wp_reset_query(); ?>
 </div>
 
-<div class='rest-of-homepage'>
+<div class='rest-of-homepage home-page'>
   <div class="mid-cont home-page desktop mobile">
     <div class='tech-intro'><?php the_field('technology_intro'); ?></div>
     <div class="icon-container">
