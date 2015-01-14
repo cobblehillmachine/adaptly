@@ -11,8 +11,7 @@ $(window).load(function() {
   $('.home.page').show();
   $('.sidr').show();
   $('#sidr-trigger').sidr( {
-    side: 'right',
-    onOpen: navClose()
+    side: 'right'
   });
   if ($(window).width() > 450) {
     homepageAnimation();
