@@ -433,6 +433,8 @@ p.back-to-feed a {  color: black;}
   .press .heading p:first-child { margin-bottom: 0;}
   .press p {  margin: 10px 0;}
   /*contact page*/
+  .contact.mid-cont { padding-bottom:0;}
+  .contact h4 { padding-bottom: 0;}
   .contact .wpcf7 { width: 100%; padding: 0;}
   .contact ul { width: 100%; text-align: center;}
   .map .location {  width: 100%; display: block;}
