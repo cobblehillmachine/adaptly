@@ -1,25 +1,35 @@
 <?php get_header(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-  <div class="resources mid-cont">
-    <?php the_content(); ?>
-  </div>
-<?php endwhile; wp_reset_query(); ?>
 
-  <div class="resources subnav mid-cont blog">
+<div class="resources mid-cont">
+  <h2>Remarkable advertising advice.</h2>
+
+  <div class="blog-header">
+    <h4>Here's what you can expect from us:</h4>
     <ul>
-      <li class="blog"><a href=<?php site_url(); ?>'/resources/blog' class='active'>Blog</a></li>
-      <li class="case-studies"><a href=<?php site_url(); ?>'/resources/case-studies'>Case Studies</a></li>
-      <li class='press'><a href=<?php site_url(); ?>'/resources/press'>Press</a></li>
-      <li><?php get_search_form(  ); ?></li>
+    	<li> - A snapshot of insights across the digital media landscape</li>
+    	<li> - How-to guides and actionable advice on social advertising best practices</li>
+    	<li> - Point of view on the latest trends in social advertising and beyond</li>
     </ul>
   </div>
+</div>
+
+<div class="resources subnav mid-cont blog">
+  <ul data-create-select="true">
+    <li class="blog"><a href=<?php site_url(); ?>'/resources/blog' class='active'>Blog</a></li>
+    <li class="case-studies"><a href=<?php site_url(); ?>'/resources/case-studies'>Case Studies</a></li>
+    <li class='press'><a href=<?php site_url(); ?>'/resources/press'>Press</a></li>
+    <li><?php get_search_form(); ?></li>
+  </ul>
+</div>
 
 <div class="blog resources">
   <div id="blog" class="blog-feed mid-cont resources">
     <?php query_posts( array(  'order' => "DESC", "posts_per_page" => 4, "paged" => get_query_var( 'paged' )) );
       while ( have_posts() ) : the_post(); ?>
       <div class="post">
-        <a href="<?php the_permalink(); ?>"><img src="<?php the_field('thumbnail'); ?>"></a>
+        <a href="<?php the_permalink(); ?>">
+          <img src="<?php the_field('thumbnail'); ?>">
+        </a>
         <div class="excerpt">
           <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
           <?php the_excerpt('...'); ?>
@@ -32,7 +42,7 @@
           </div>
         </div>
       </div>
-      <?php endwhile;  ?>
+      <?php endwhile; ?>
       <div class="pagination">
         <?php previous_posts_link( 'Newer >' ); ?>
         <?php next_posts_link( '> Older', 0 ); wp_reset_postdata(); ?>
@@ -53,5 +63,4 @@
   </form>
 </div>
 
-<?php
-get_footer(); ?>
+<?php get_footer(); ?>

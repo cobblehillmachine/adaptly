@@ -1,9 +1,17 @@
 <?php get_header(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-  <div class="resources mid-cont">
-    <?php the_content(); ?>
+
+<div class="resources mid-cont">
+  <h2>Remarkable advertising advice.</h2>
+
+  <div class="blog-header">
+    <h4>Here's what you can expect from us:</h4>
+    <ul>
+    	<li> - A snapshot of insights across the digital media landscape</li>
+    	<li> - How-to guides and actionable advice on social advertising best practices</li>
+    	<li> - Point of view on the latest trends in social advertising and beyond</li>
+    </ul>
   </div>
-<?php endwhile; wp_reset_query(); ?>
+</div>
 
   <div class="resources subnav mid-cont">
     <ul>

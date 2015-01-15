@@ -1,27 +1,37 @@
 <?php get_header(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-  <div class="resources mid-cont">
-    <?php the_content(); ?>
-  </div>
-<?php endwhile; wp_reset_query(); ?>
 
-  <div class="resources subnav mid-cont">
+<div class="resources mid-cont">
+  <h2>Remarkable advertising advice.</h2>
+
+  <div class="blog-header">
+    <h4>Here's what you can expect from us:</h4>
     <ul>
-      <li class="blog"><a href=<?php site_url(); ?>'/resources/blog'>Blog</a></li>
-      <li class="case-studies"><a href=<?php site_url(); ?>'/resources/case-studies'>Case Studies</a></li>
-      <li class='press'><a href=<?php site_url(); ?>'/resources/press' class='active'>Press</a></li>
+    	<li> - A snapshot of insights across the digital media landscape</li>
+    	<li> - How-to guides and actionable advice on social advertising best practices</li>
+    	<li> - Point of view on the latest trends in social advertising and beyond</li>
     </ul>
   </div>
+</div>
+
+<div class="resources subnav mid-cont">
+  <ul>
+    <li class="blog"><a href=<?php site_url(); ?>'/resources/blog'>Blog</a></li>
+    <li class="case-studies"><a href=<?php site_url(); ?>'/resources/case-studies'>Case Studies</a></li>
+    <li class='press'><a href=<?php site_url(); ?>'/resources/press' class='active'>Press</a></li>
+  </ul>
+</div>
 
 <div class='press'>
   <div class="press-feed mid-cont resources" id="press">
-    <?php query_posts( array( 'post_type' => 'press posts', 'order' => 'DESC', 'posts_per_page' => 4, "paged" => get_query_var( 'paged' ))); ?>
+    <?php query_posts( array( 'post_type' => 'press posts','meta_key' => 'date',  'order' => 'DESC', 'orderby' => 'meta_value_num', 'posts_per_page' => 4, "paged" => get_query_var( 'paged' ))); ?>
     <?php while ( have_posts() ) : the_post(); ?>
       <div class="post">
         <div class="excerpt">
           <div class="heading">
             <p><?php the_field('source'); ?></p>
-            <p><?php the_field('press_date'); ?></p>
+            <p><?php
+            $date = DateTime::createFromFormat('Ymd', get_field('date'));
+            echo $date->format('F j, Y'); ?></p>
           </div>
           <a href="<?php the_field('external_link'); ?>" target=_blank><h4><?php the_title(); ?></h4></a>
           <?php the_content(); ?>
@@ -49,7 +59,4 @@
   </form>
 </div>
 
-
-
-<?php
-get_footer(); ?>
+<?php get_footer(); ?>
