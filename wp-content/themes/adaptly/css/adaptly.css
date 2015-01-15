@@ -436,7 +436,7 @@ p.back-to-feed a {  color: black;}
   .case-study-grid .case-study .text-overlay a {  color: black; }
   .case-study-grid .case-study .text-overlay a.learn-more { display: none; }
   /*homepage*/
-  .rest-of-homepage { margin-top: -175px; }
+  .rest-of-homepage { margin-top: -150px; }
   .icon-container img { width: 50%; }
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png'); }
   .client-wrapper li {  width: 30%; }
