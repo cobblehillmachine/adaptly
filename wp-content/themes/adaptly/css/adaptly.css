@@ -82,7 +82,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .animation-text h4 {  font-size: 23px; }
 .video-bg{ position: absolute; z-index: -5; width: 100%; top: 0;}
 .video-bg video { position: absolute; top: 0; left: 0;  width: auto; height: 100%;}
-.rest-of-homepage { display: none; margin-top: -175px;}
+.rest-of-homepage { display: none; margin-top: -140px;}
 .home.page footer{ display: none;}
 
 .tech-intro { margin-bottom:25px;}
@@ -436,7 +436,7 @@ p.back-to-feed a {  color: black;}
   .case-study-grid .case-study .text-overlay a {  color: black; }
   .case-study-grid .case-study .text-overlay a.learn-more { display: none; }
   /*homepage*/
-  .rest-of-homepage { margin-top: 0; }
+  .rest-of-homepage { margin-top: -200px; }
   .icon-container img { width: 50%; }
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png'); }
   .client-wrapper li {  width: 30%; }
