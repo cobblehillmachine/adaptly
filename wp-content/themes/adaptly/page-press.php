@@ -23,14 +23,15 @@
 
 <div class='press'>
   <div class="press-feed mid-cont resources" id="press">
-  
     <?php query_posts( array( 'post_type' => 'press posts','meta_key' => 'date',  'order' => 'DESC', 'orderby' => 'meta_value_num', 'posts_per_page' => 4, "paged" => get_query_var( 'paged' ))); ?>
     <?php while ( have_posts() ) : the_post(); ?>
       <div class="post">
         <div class="excerpt">
           <div class="heading">
             <p><?php the_field('source'); ?></p>
-            <p><?php the_field('date'); ?></p>
+            <p><?php
+            $date = DateTime::createFromFormat('Ymd', get_field('date'));
+            echo $date->format('F j, Y'); ?></p>
           </div>
           <a href="<?php the_field('external_link'); ?>" target=_blank><h4><?php the_title(); ?></h4></a>
           <?php the_content(); ?>
