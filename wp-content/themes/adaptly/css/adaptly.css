@@ -82,7 +82,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .animation-text h4 {  font-size: 23px; }
 .video-bg{ position: absolute; z-index: -5; width: 100%; top: 0;}
 .video-bg video { position: absolute; top: 0; left: 0;  width: auto; height: 100%;}
-.rest-of-homepage { display: none; margin-top: -140px;}
+.rest-of-homepage { display: none; margin-top: -175px;}
 .home.page footer{ display: none;}
 
 .tech-intro { margin-bottom:25px;}
