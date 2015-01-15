@@ -447,13 +447,6 @@ p.back-to-feed a {  color: black;}
   .frontlines li {  width: 100%; margin: 50px 0;}
   .frontlines img {width: 100%;}
   .frontlines ul {background: url('../images/about_arrow.png') 50% 50% no-repeat; margin-top: 0;}
-}
-
-@media only screen and (max-width: 1000px) {
-  .icon-container img { width: 35%;vertical-align: middle}
-}
-
-@media only screen and (max-width: 444px) {
   .desktop.video-bg, .header-slider { display: none;}
   .rest-of-homepage { display: block;}
   .about {  padding: 15px 0 25px;}
