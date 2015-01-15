@@ -30,7 +30,7 @@
         <div class="excerpt">
           <div class="heading">
             <p><?php the_field('source'); ?></p>
-            <p><?php the_field('press_date'); ?></p>
+            <p><?php the_field('date'); ?></p>
           </div>
           <a href="<?php the_field('external_link'); ?>" target=_blank><h4><?php the_title(); ?></h4></a>
           <?php the_content(); ?>
