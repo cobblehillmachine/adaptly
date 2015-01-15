@@ -10,12 +10,11 @@ $(document).ready(function()
   $('#sidr-trigger').sidr( {
     side: 'right'
   });
+  $('.home-page').show();
+  $('.sidr').show();
 })
 
 $(window).load(function() {
-  $('.home-page').show();
-  $('.sidr').show();
-
   if ($(window).width() > 450) {
     homepageAnimation();
 
