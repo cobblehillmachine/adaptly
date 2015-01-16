@@ -36,7 +36,6 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.gallery.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.53451.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.sidr.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/adaptly.js"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/adaptly.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/flexslider.css" />
@@ -45,10 +44,12 @@
 </head>
 
 <body>
-	<div class="side-nav">
+	<div id="side-nav">
 		<?php wp_nav_menu( array( 'menu' => '3' ) ); ?>
 	</div>
+
 <div class="body">
+
 	<header id="masthead" class="site-header" role="banner">
 		<div class="logo">
 			<a href="/">
@@ -65,12 +66,11 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
 		<div class="main-nav mobile">
-			<a id="nav-trigger" class="<?php is_page('13') || is_single() ? print 'white' : print 'blue' ; ?>">
+			<a class="nav-trigger" class="<?php is_page('13') || is_single() ? print 'white' : print 'blue' ; ?>">
   			&#9776;
   			<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/white_hamburger.png" class='white-hamburger'>
   			<img src="<?php echo get_template_directory_uri(); ?>/images/Blue-hamburger.png" class='blue-hamburger'>-->
   		</a>
-
 		</div>
 	</header><!-- #masthead -->
 

@@ -5,7 +5,8 @@ img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
 .mid-cont {margin: 0 auto;}
 /*for mobile nav push*/
-.body { }
+.body { width: 100%;
+  float: left;}
 
 /*FIXED WIDTH ELEMENTS*/
 .mid-cont.home-page { width: 845px;}
@@ -47,7 +48,7 @@ header .main-nav.desktop li { display: inline-block; padding: 0 25px; font-size:
 header .main-nav.desktop a {  text-decoration:none; color:black;}
 header ul { margin: 0;  margin-top: 10px;}
 
-footer { background-color: #231F20; padding: 20px 0;}
+footer { background-color: #231F20; padding: 20px 0; display: none;}
 footer .section { display:inline-block; width: 24%; text-align: center; vertical-align: top}
 footer a {  color: inherit;}
 footer .section h3 { color: white; text-transform: uppercase; font-size: 19px; font-weight:300;}
@@ -380,11 +381,26 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile a img {  width: 50px; }
   .main-nav.mobile .blue-hamburger { display: inline-block; }
   .main-nav.mobile .white-hamburger { display: none; }
-  .side-nav  { background-color: #1AA2D1;  position: absolute; height: 2000px;  width: 200px; top: -15px; right: -200px; display: none;}
-  .side-nav  a {  color: white; }
-  .side-nav  ul li {  border-bottom: 0; border-top: 0;}
-  .side-nav  ul { border-bottom: 0; }
-  .side-nav ul li { line-height: 48px; text-align:left; padding: 0 20px }
+  #side-nav { transition: width 0.5s ease; }
+  .body { transition: margin 0.5s ease; }
+  #side-nav:target {
+    width: 200px;
+  }
+  #side-nav:target + .body{
+  margin-right: 200px;
+  margin-left: -200px;
+}
+  #side-nav  { background-color: #1AA2D1;   width: 0;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;}
+  #side-nav  a {  color: white; }
+  #side-nav  ul li {  border-bottom: 0; border-top: 0;}
+  #side-nav  ul { border-bottom: 0; }
+  #side-nav ul li { line-height: 48px; text-align:left; padding: 0 20px }
   .single .main-nav.mobile .blue-hamburger, .page-id-13 .main-nav.mobile .blue-hamburger {  display: none }
   .single .main-nav.mobile .white-hamburger, .page-id-13 .main-nav.mobile .white-hamburger { display: inline-block; }
   /*footer*/

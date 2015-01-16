@@ -3,20 +3,32 @@ $(document).ready(function() {
 })
 
 $(window).load(function() {
-  $('#nav-trigger').on('click', function(e) {
+  $('.nav-trigger').on('click', function(e) {
     e.preventDefault();
-    if ($('.side-nav').css('right') == '-200px') {
-      showNav();
-    } else {
-      hideNav();
-    }
+    showNav();
+
   })
-  $('.body').on('click', function(e) {
-    e.preventDefault();
-    if ($('.side-nav').css('right') == '0px') {
-      hideNav();
+
+  $('.body').on('click', function() {
+    if ($('#side-nav').css('width') == '200px') {
+       hideNav();
     }
+
   })
+  // $('#nav-trigger').on('click', function(e) {
+  //   e.preventDefault();
+  //   if ($('.side-nav').css('right') == '-200px') {
+  //     showNav();
+  //   } else {
+  //     hideNav();
+  //   }
+  // })
+  // $('.body').on('click', function(e) {
+  //   e.preventDefault();
+  //   if ($('.side-nav').css('right') == '0px') {
+  //     hideNav();
+  //   }
+  // })
 
   homepageAnimation();
 
@@ -37,29 +49,19 @@ $(window).load(function() {
 });
 
 function showNav() {
-
-  $('.side-nav').show(function() {
-    $(this).animate({
-        right: 0
-    }, 500)
-    $('.body').animate({
-      marginRight : 200,
-      marginLeft: -200
-    }, 500)
+  $('#side-nav').css('width', 200)
+  $('.body').css({
+    marginLeft: -200,
+    marginRight: 200
   })
 }
 
 function hideNav() {
-  $('.side-nav').animate({
-     right: -200
-  }, 500, function() {
-    $('.side-nav').hide();
+  $('#side-nav').css('width', 0)
+  $('.body').css({
+    marginLeft: 0,
+    marginRight: 0
   })
-  $('.body').animate({
-    marginRight : 0,
-    marginLeft: 0
-  }, 500)
-
 }
 
 function homepageAnimation() {
