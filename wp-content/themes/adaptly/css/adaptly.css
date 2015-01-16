@@ -439,7 +439,8 @@ p.back-to-feed a {  color: black;}
   .mid-cont.case-study{padding:0 15px; }
   .blog-header{display: none;}
   /*homepage*/
-  .rest-of-homepage { margin-top: -200px; }
+  .rest-of-homepage { margin-top: -100px; }
+  .icon-container, .client-wrapper { margin-bottom: 50px;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png'); }
   .client-wrapper li {  width: 30%; max-width: 175px;}
   .wide-cont.clients {  padding: 40px 0 25px 0; }
