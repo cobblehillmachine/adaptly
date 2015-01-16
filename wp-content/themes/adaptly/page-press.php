@@ -40,8 +40,8 @@
       </div>
       <?php endwhile; ?>
       <div class="pagination">
-        <?php previous_posts_link( '< Newer Entries' ); ?>
-        <?php next_posts_link( 'Older Entries >', 0 ); wp_reset_postdata(); ?>
+        <?php next_posts_link( '< Older Entries', 0 ); ?>
+        <?php previous_posts_link( 'Newer Entries >' ); wp_reset_postdata(); ?>
       </div>
   </div>
 </div>
