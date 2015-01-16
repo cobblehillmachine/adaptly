@@ -181,9 +181,13 @@ function svgColorChange() {
 
 
 function blogPhotoWrap() {
-  if (parseInt($('.mid-cont.blog-post p img').css("width")) >560) {
-    $('.mid-cont.blog-post p img').css('float', 'none')
-  } else {
-    $('.mid-cont.blog-post p img').css('float', 'right')
-  }
+  $('.mid-cont.blog-post p img').each(function() {
+    if (($(this)).css('width') > 560) {
+      ($(this)).css('float', 'none')
+    } else {
+      ($(this)).css('float', 'right')
+    }
+  })
+
 }
+
