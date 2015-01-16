@@ -33,9 +33,6 @@ $(window).load(function() {
     nextText: '',
     pauseOnHover: false
   })
-  $('#dg-container').gallery ({
-      interval: 500
-  })
   careersHeaderSlider();
   requestDemoForm();
   blurs();
