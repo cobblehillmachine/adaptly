@@ -100,6 +100,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .client-testimonial-carousel p {  font-size: 31px;}
 .client-testimonial-carousel p.client-name {  font-size: 17px; padding-top: 15px; opacity: 0.5;}
 .flexslider.client-testimonial-carousel { border:0; margin: 0 auto;background:transparent; border-radius:0; padding: 50px; box-shadow: none; -webkit-box-shadow: none;}
+
 .header-slider .flexslider, .employee-quotes.flexslider { border:0; margin: 0 auto;background:transparent; border-radius:0; padding: 50px 0 0 0; box-shadow: none; -webkit-box-shadow: none; width: 100%;}
 .header-slider .flexslider {  padding-top: 0;}
 
@@ -325,7 +326,7 @@ p.back-to-feed a {  color: black;}
 .author-info a {  width: 30px; display: inline-block;}
 
 /*Careers Page*/
-/*.header-slider.careers {  margin-top: -100px;}*/
+.header-slider.careers {  margin-top: -67px;}
 .header-slider strong { display: none;}
 
 .wide-cont.careers {  position: absolute; top: 211px; width: 585px; text-align: left; left: 5%;}
