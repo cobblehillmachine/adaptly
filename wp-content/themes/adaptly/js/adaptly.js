@@ -46,6 +46,7 @@ $(window).load(function() {
   blurs();
   smoothScroll();
   shareCounter();
+  blogPhotoWrap();
 });
 
 function showNav() {
@@ -179,3 +180,10 @@ function svgColorChange() {
 }
 
 
+function blogPhotoWrap() {
+  if (parseInt($('.mid-cont.blog-post p img').css("width")) >560) {
+    $('.mid-cont.blog-post p img').css('float', 'none')
+  } else {
+    $('.mid-cont.blog-post p img').css('float', 'right')
+  }
+}

@@ -304,7 +304,7 @@ p.back-to-feed a {  color: black;}
 .single .blog-post h5 { font-weight: 500; font-size: 18px; margin-bottom: -15px;}
 .single .blog-post ul { list-style: disc; font-size: 18px; margin-left: 20px;}
 .single .blog-post li { margin-bottom: 15px;}
-.single .blog-post img {  float:right; padding: 15px 0 15px 15px}
+.single .blog-post img {  /*float:right;*/ padding: 15px 0 15px 15px}
 
 .post-share div { width: 245px;  display: inline-block; vertical-align: top; margin: 0 15px 50px;;padding: 10px 75px; border-radius: 5px; text-align: center;}
 .post-share a { color: white;}
