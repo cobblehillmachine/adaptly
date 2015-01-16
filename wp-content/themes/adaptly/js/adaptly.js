@@ -31,6 +31,7 @@ $(window).load(function() {
   blurs();
   smoothScroll();
   shareCounter();
+  blogPhotoWrap();
 });
 
 function showNav() {
@@ -162,6 +163,6 @@ function svgColorChange() {
   })
 }
 
-blogPhotoWrap() {
+function blogPhotoWrap() {
   $('.mid-cont.blog-post img.aligncenter').parent().css('text-align', 'center')
 }
