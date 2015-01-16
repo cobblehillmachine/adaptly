@@ -7,9 +7,9 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
       <div class="video-container">
         <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" data-setup='{"example_option":true}' autoplay='true' loop>
-        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.ogv#t=1,17" type="video/ogv">
-        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.webm#t=1,17" type="video/webm">
-        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4#t=1,17" type="video/mp4">
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.ogv" type="video/ogv">
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.webm" type="video/webm">
+        <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4" type="video/mp4">
         <!--[if IE]><div style='clear: both; height: 112px; padding:0; position: relative;'><a href="http://www.theie8countdown.com/ie-users-info"><img src="" border="0" height="112" width="348" alt="" /></a></div><![endif]-->
       </video>
       </div>
