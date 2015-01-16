@@ -37,27 +37,29 @@ $(window).load(function() {
 });
 
 function showNav() {
-  $('.body').animate({
-    marginRight : 200,
-    marginLeft: -200
-  }, 500)
+
   $('.side-nav').show(function() {
     $(this).animate({
         right: 0
+    }, 500)
+    $('.body').animate({
+      marginRight : 200,
+      marginLeft: -200
     }, 500)
   })
 }
 
 function hideNav() {
+  $('.side-nav').animate({
+     right: -200
+  }, 500, function() {
+    $('.side-nav').hide();
+  })
   $('.body').animate({
     marginRight : 0,
     marginLeft: 0
   }, 500)
-  $('.side-nav').hide(function() {
-    $(this).animate({
-       right: -200
-    }, 500)
-  })
+
 }
 
 function homepageAnimation() {
