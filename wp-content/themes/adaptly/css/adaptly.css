@@ -380,7 +380,7 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile a img {  width: 50px; }
   .main-nav.mobile .blue-hamburger { display: inline-block; }
   .main-nav.mobile .white-hamburger { display: none; }
-  #side-nav { transition: width 0.5s ease; }
+  #side-nav { transition: width 0.5s ease; display: block;}
   .body { transition: margin 0.5s ease; }
   #side-nav:target {
     width: 200px;
