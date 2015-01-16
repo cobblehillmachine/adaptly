@@ -351,16 +351,18 @@ p.back-to-feed a {  color: black;}
   .about .wide-cont { width: 95%;}
   .header-slider { display: none;}
   .wide-cont.careers { position: initial; text-align:center;}
-  .employee-quotes .quote { position: initial; width: 90%; margin: 0 auto; left: 5%;}
-  .employee-quotes.flexslider { padding-top: 0; padding-bottom: 25px;}
+
 }
 
 /*hide the rotating screens*/
 @media only screen and (max-width: 1088px) {
   .dg-container { display: none;}
   .maximum-effect .mobile { display: block; width: 100%; padding-top: 25px;}
+}
 
-
+@media only screen and (max-width: 1000px) {
+  .employee-quotes .quote { position: initial; width: 90%; margin: 0 auto; left: 5%;}
+  .employee-quotes.flexslider { padding-top: 0; padding-bottom: 25px;}
 }
 
 /*TABLET*/
