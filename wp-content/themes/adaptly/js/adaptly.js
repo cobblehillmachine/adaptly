@@ -182,7 +182,7 @@ function svgColorChange() {
 
 function blogPhotoWrap() {
   $('.mid-cont.blog-post p img').each(function() {
-    if (($(this)).css('width') > 560) {
+    if (parseInt(($(this)).css('width')) > 560) {
       ($(this)).css('float', 'none')
     } else {
       ($(this)).css('float', 'right')
