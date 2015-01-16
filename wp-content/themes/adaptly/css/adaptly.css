@@ -412,6 +412,7 @@ p.back-to-feed a {  color: black;}
   .single .post-share { padding-bottom :50px;}
   .post-share div { width: 100%; max-width: 300px; display: block; margin: 50px auto 0;}
   .work-smarter ul {  max-width: 400px; width: 100%; display:  block; margin: 0 auto;}
+  .case-study-download a {  display: block; width: 130px; margin: 20px auto;}
   /*technology*/
   .mid-cont.technology h2 { width: 100%; }
   .computer-animation { display: none; }
