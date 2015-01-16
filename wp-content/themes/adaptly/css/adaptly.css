@@ -397,6 +397,7 @@ p.back-to-feed a {  color: black;}
   .animation-text-wrapper { margin-top: 0; padding-bottom: 50px;}
   .animation-text { position: relative; transform: none; -moz-transform: none; -webkit-transform: none; margin: 0 auto; width: 90%; left: 0; top :0;}
   .rest-of-homepage { margin-top: 0;}
+  .home.page footer { display: block;}
   /*blog*/
   .blog-feed .excerpt h4 {  margin-bottom: 0;}
   .blog-feed .excerpt .bottom-cont {  margin-top: 20px;}
