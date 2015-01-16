@@ -180,14 +180,3 @@ function svgColorChange() {
 }
 
 
-function blogPhotoWrap() {
-  $('.mid-cont.blog-post p img').each(function() {
-    if (parseInt(($(this)).css('width')) > 560) {
-      ($(this)).css('float', 'none')
-    } else {
-      ($(this)).css('float', 'right')
-    }
-  })
-
-}
-
