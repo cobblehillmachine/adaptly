@@ -1,9 +1,9 @@
 $(document).ready(function() {
-
+  $('.video-bg video')[0].play();
 })
 
 $(window).load(function() {
-  // $('.video-bg video')[0].play();
+
   $('.nav-trigger').on('click', function(e) {
     e.preventDefault();
     showNav();
@@ -69,7 +69,6 @@ function homepageAnimation() {
     })
   } else {
     clientTestimonialSlider();
-    $('.video-bg').hide();
   }
 }
 

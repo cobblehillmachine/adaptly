@@ -85,7 +85,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .animation-text { position: absolute; left: 50%; top: 43%; transform: translate(-50%,-43%); -webkit-transform: translate(-50%,-43%); -moz-transform: translate(-50%,-43%); text-align: center; width: 560px;}
 .animation-text-wrapper { position: relative; margin-top: -179px; z-index: 1;}
 .animation-text h4 {  font-size: 23px; }
-.video-bg{ position: absolute; z-index: -5; width: 100%; top: 0;}
+.video-bg{ position: absolute; z-index: -5; width: 100%; top: 0; display: block;}
 .video-bg video { position: absolute; top: 0; left: 0;  width: auto; height: 100%;}
 .rest-of-homepage { display: none; margin-top: -140px;}
 .home.page footer{ display: none;}
