@@ -34,7 +34,7 @@ get_header(); ?>
   if ($author) { ?>
 <div class="author-wrapper">
   <div class="author mid-cont blog-post">
-    <div class="author-name mobile"> By <?php the_field('author_name'); ?></div>
+    <div class="author-name mobile"><h4> By <?php the_field('author_name'); ?></h4></div>
     <img src="<?php the_field('author_image'); ?>" class="headshot">
     <div class="author-info">
       <div class="author-name desktop"><?php the_field('author_name'); ?></div>
