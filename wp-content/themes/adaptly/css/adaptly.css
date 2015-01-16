@@ -3,7 +3,6 @@ body * {  box-sizing: border-box;}
 body {  margin:0; text-align: center;font-family: "open-sans",sans-serif; font-style: normal; font-weight: 300;}
 img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
-
 .mid-cont {margin: 0 auto;}
 
 /*FIXED WIDTH ELEMENTS*/
@@ -20,11 +19,9 @@ body .mid-cont.case-study-wrapper {  width: 845px;}
 .mid-cont.resources { width: 863px;}
 .mid-cont.benefits {  padding: 50px 0; width: 745px;}
 
-
 .contact.mid-cont h2 {  width: 500px; margin: 40px auto;}
 .mid-cont.about h2 {width: 640px; margin: 0 auto;}
 .mid-cont.technology h2 { width: 630px; margin-left:auto; margin-right: auto;}
-
 
 .mobile { display: none;}
 
@@ -35,8 +32,6 @@ a { color: #1AA2D1; text-decoration: none; font-weight: 400;}
 .bold-type {font-family: "open-sans",sans-serif; font-style: normal; font-weight: 400; }
 .bolder-type { font-family: "open-sans",sans-serif; font-style: normal; font-weight: 600;  }
 *:focus { border: 0;  outline:none;}
-
-
 
 header, .footer-wrapper {  width: 100%; margin: 0 auto; text-align:left;}
 header {  padding: 25px 3% 60px}
@@ -58,6 +53,7 @@ footer .section img { margin-bottom: 15px;}
 footer .section p { color:white; font-size: 16px; margin:0;}
 footer .section.social p {  font-size: 12px; font-weight: 400;}
 footer .section.social img {  margin: 0 5px 25px;}
+
 .pre-footer-cta, .post-header-cta-wrapper {  width: 100%; background-color: #F0F0F1; text-align: center; padding: 10px 0; display: block;}
 .pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px; cursor: pointer; font-weight: 300;}
 .request-demo-form {  display:none; background: white;}
@@ -72,18 +68,7 @@ footer .section.social img {  margin: 0 5px 25px;}
 .mailchimp-signup input.email:-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email::-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email:-ms-input-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
-#mc-embedded-subscribe {
-  width: 28px;
-  -webkit-appearance: none;
-  background-color: #1AA2D1;
-  margin-left: -14px;
-  border-radius: 3px;
-  border: 0;
-  color: white;
-  height: 28px;
-  display: inline-block;
-  cursor:pointer;
-}
+#mc-embedded-subscribe {width: 28px;-webkit-appearance: none;background-color: #1AA2D1;margin-left: -14px;border-radius: 3px;border: 0;color: white;height: 28px;display: inline-block;cursor:pointer;}
 form .clear { display: inline-block; vertical-align: top}
 .cta-arrow {  position: absolute; width: 27px; right: 0; top:0;}
 
@@ -366,8 +351,8 @@ p.back-to-feed a {  color: black;}
 @media only screen and (max-width: 1088px) {
   .dg-container { display: none;}
   .maximum-effect .mobile { display: block; width: 100%; padding-top: 25px;}
-  
-  
+
+
 }
 
 /*TABLET*/
@@ -407,7 +392,11 @@ p.back-to-feed a {  color: black;}
   footer .careers img, footer .contact img, footer .partners img, footer p  { display: none; }
   footer .social p {  display: block; }
   /*homepage*/
+  .home-page {  display: block;}
   .video-bg { display: none;}
+  .animation-text-wrapper { margin-top: 0; padding-bottom: 50px;}
+  .animation-text { position: relative; transform: none; -moz-transform: none; -webkit-transform: none; margin: 0 auto; width: 90%; left: 0; top :0;}
+  .rest-of-homepage { margin-top: 0;}
   /*blog*/
   .blog-feed .excerpt h4 {  margin-bottom: 0;}
   .blog-feed .excerpt .bottom-cont {  margin-top: 20px;}
@@ -433,7 +422,6 @@ p.back-to-feed a {  color: black;}
   .wide-cont {  width: 90%; }
   .desktop{ display: none; }
   .mobile { display: block; }
-  .animation-text { width: 90%; }
   h2 {  font-size: 37px; }
   h3 { font-size: 29px; }
   h4 { font-size: 21px; }
@@ -441,7 +429,6 @@ p.back-to-feed a {  color: black;}
   .mid-cont.case-study{padding:0 15px; }
   .blog-header{display: none;}
   /*homepage*/
-  .rest-of-homepage { margin-top: -100px; }
   .icon-container, .client-wrapper { margin-bottom: 50px;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png'); }
   .client-wrapper li {  width: 30%; max-width: 175px;}
@@ -481,7 +468,7 @@ p.back-to-feed a {  color: black;}
   .press p {  margin: 10px 0;}
   .author img.headshot { width: 100%; display: block; max-width: 200px; margin: 0 auto; }
   .author-info {  text-align: center; width: 100%; display: block; max-width: 400px; margin: 0 auto; }
-  .author-name.mobile h4:first-child {margin-bottom: 0; } 
+  .author-name.mobile h4:first-child {margin-bottom: 0; }
   /*contact page*/
   .contact.mid-cont { padding-bottom:0;}
   .contact h4 { padding-bottom: 0;}

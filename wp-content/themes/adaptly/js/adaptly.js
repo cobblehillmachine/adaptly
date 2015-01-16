@@ -1,29 +1,15 @@
-document.onreadystatechange = function(e) {
-    if (document.readyState === 'complete') {
-        //dom is ready, window.onload fires later
-        $('.video-bg video')[0].play();
-    }
-};
-
 $(document).ready(function() {
     $('#sidr-trigger').sidr( {
         side: 'right'
     });
-    $('.home-page').show();
-    $('.sidr').show();
+    $('.video-bg video')[0].play();
 })
 
 $(window).load(function() {
-  if ($(window).width() > 920) {
-    homepageAnimation();
 
-  } else {
-    var height = $(window).height();
-    $('.animation-text-wrapper').css('height', height + 179);
-    $('.home.page footer').show();
-    clientTestimonialSlider();
-    $('.video-bg').hide();
-  }
+  $('.sidr').show();
+
+    homepageAnimation();
 
   $('.employee-quotes.flexslider').flexslider({
     animation:'slide',
@@ -43,23 +29,26 @@ $(window).load(function() {
 
 function homepageAnimation() {
   var height = $(window).height();
-
-  $('.animation-text-wrapper').css('height', height + 179)
-  $('.video-bg').css('height', height);
-  $(document).scroll(function() {
-    var videoScrollDistance = $(this).scrollTop()
-    $('.video-bg').fadeOut('fast');
-    $('.home.page footer').show();
-    $('.rest-of-homepage').fadeIn('fast', function() {
-      // svgColorChange();
-      clientTestimonialSlider();
+  if ($(window).width() > 920) {
+    $('.home-page').show();
+    $('.animation-text-wrapper').css('height', height + 179)
+    $('.video-bg').css('height', height);
+    $(document).scroll(function() {
+      var videoScrollDistance = $(this).scrollTop()
+      $('.video-bg').fadeOut('fast');
+      $('.home.page footer').show();
+      $('.rest-of-homepage').fadeIn('fast', function() {
+        clientTestimonialSlider();
+      })
+      if (videoScrollDistance === 0) {
+        $('.video-bg video')[0].play();
+        $('.video-bg').show();
+      }
     })
-    if (videoScrollDistance === 0) {
-
-      $('.video-bg video')[0].play();
-      $('.video-bg').show();
-    }
-  })
+  } else {
+    clientTestimonialSlider();
+    $('.video-bg').hide();
+  }
 }
 
 
