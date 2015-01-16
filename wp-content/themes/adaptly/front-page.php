@@ -30,7 +30,8 @@
     </div>
     <?php the_field('work_smarter'); ?>
     <div class="computer-container">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/homepage_computer.png">
+      <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/Product Mock 1 .png"> -->
+      <img src="<?php echo get_template_directory_uri(); ?>/images/computer.png">
     </div>
   </div>
 

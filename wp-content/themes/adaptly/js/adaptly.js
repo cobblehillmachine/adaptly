@@ -1,15 +1,22 @@
 $(document).ready(function() {
-    $('#sidr-trigger').sidr( {
-        side: 'right'
-    });
     $('.video-bg video')[0].play();
 })
 
 $(window).load(function() {
+  $('#nav-trigger').on('click', function(e) {
+    if ($('.side-nav').css('right') == '-300px') {
+      showNav();
+    } else {
+      hideNav();
+    }
+  })
+  $('.body').on('click', function(e) {
+    if ($('.side-nav').css('right') == '0px') {
+      hideNav();
+    }
+  })
 
-  $('.sidr').show();
-
-    homepageAnimation();
+  homepageAnimation();
 
   $('.employee-quotes.flexslider').flexslider({
     animation:'slide',
@@ -26,6 +33,27 @@ $(window).load(function() {
   smoothScroll();
   shareCounter();
 });
+
+function showNav() {
+  $('.body').animate({
+        marginRight : 300,
+        marginLeft: -300
+      }, 500)
+      $('.side-nav').animate({
+        right: 0
+      }, 500)
+
+}
+
+function hideNav() {
+  $('.body').animate({
+        marginRight : 0,
+        marginLeft: 0
+      }, 500)
+      $('.side-nav').animate({
+        right: -300
+      }, 500)
+}
 
 function homepageAnimation() {
   var height = $(window).height();
