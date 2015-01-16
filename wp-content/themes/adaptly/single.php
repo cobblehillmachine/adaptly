@@ -34,9 +34,11 @@ get_header(); ?>
   if ($author) { ?>
 <div class="author-wrapper">
   <div class="author mid-cont blog-post">
+    <div class="author-name mobile"> By <?php the_field('author_name'); ?></div>
     <img src="<?php the_field('author_image'); ?>" class="headshot">
     <div class="author-info">
-      <?php the_field('author'); ?>
+      <div class="author-name desktop"><?php the_field('author_name'); ?></div>
+      <?php the_field('author_bio'); ?>
       <?php $has_facebook = get_field('author_facebook_link');
       $has_twitter = get_field('author_twitter_link');
       $has_linkedin = get_field('author_linkedin_link');
