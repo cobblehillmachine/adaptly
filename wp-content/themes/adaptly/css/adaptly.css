@@ -364,7 +364,7 @@ p.back-to-feed a {  color: black;}
 /*hide the rotating screens*/
 @media only screen and (max-width: 1088px) {
   .dg-container { display: none;}
-  .maximum-effect .mobile { display: block; width: 100%;}
+  .maximum-effect .mobile { display: block; width: 100%; padding-top: 25px;}
   
   
 }
