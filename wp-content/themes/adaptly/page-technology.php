@@ -6,7 +6,7 @@
     <div class="computer-animation">
       <img src="<?php echo get_template_directory_uri(); ?>/images/computer_graphic.svg">
       <div class="video-container">
-        <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" data-setup='{"example_option":true}' autoplay='true'>
+        <video id="example_video_1" class="video-js vjs-default-skin"  preload="auto" data-setup='{"example_option":true}' autoplay='true' loop>
         <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.ogv#t=1,17" type="video/ogv">
         <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.webm#t=1,17" type="video/webm">
         <source src="<?php echo get_template_directory_uri(); ?>/images/technology_animation.mp4#t=1,17" type="video/mp4">
