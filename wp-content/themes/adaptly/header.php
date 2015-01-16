@@ -43,7 +43,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class() ?>>
 	<div id="side-nav">
 		<?php wp_nav_menu( array( 'menu' => '3' ) ); ?>
 	</div>
@@ -66,10 +66,12 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
 		<div class="main-nav mobile">
-			<a class="nav-trigger" class="<?php is_page('13') || is_single() ? print 'white' : print 'blue' ; ?>">
-  			&#9776;
-  			<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/white_hamburger.png" class='white-hamburger'>
-  			<img src="<?php echo get_template_directory_uri(); ?>/images/Blue-hamburger.png" class='blue-hamburger'>-->
+			<a class="nav-trigger">
+				<?php if (is_page('13') || is_single()){ ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/white_hamburger.png" class='white-hamburger'>
+				 <?php }  else { ?>
+				 	<img src="<?php echo get_template_directory_uri(); ?>/images/Blue-hamburger.png" class='blue-hamburger'>
+				 <?php } ?>
   		</a>
 		</div>
 	</header><!-- #masthead -->

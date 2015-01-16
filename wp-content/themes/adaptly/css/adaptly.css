@@ -5,8 +5,7 @@ img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
 .mid-cont {margin: 0 auto;}
 /*for mobile nav push*/
-.body { width: 100%;
-  float: left;}
+.body { width: 100%;}
 
 /*FIXED WIDTH ELEMENTS*/
 .mid-cont.home-page { width: 845px;}
@@ -26,7 +25,7 @@ body .mid-cont.case-study-wrapper {  width: 845px;}
 .mid-cont.about h2 {width: 640px; margin: 0 auto;}
 .mid-cont.technology h2 { width: 630px; margin-left:auto; margin-right: auto;}
 
-.mobile { display: none;}
+.mobile, #side-nav { display: none;}
 
 ul {  list-style:none; padding:0;}
 a { color: #1AA2D1; text-decoration: none; font-weight: 400;}
