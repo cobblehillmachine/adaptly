@@ -450,6 +450,7 @@ p.back-to-feed a {  color: black;}
   .blog-header{display: none;}
   /*homepage*/
   .icon-container, .client-wrapper { margin-bottom: 100px;}
+
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png'); }
   .client-wrapper li {  width: 30%; max-width: 175px;}
   .wide-cont.clients {  padding: 40px 0 25px 0; }
@@ -515,5 +516,6 @@ p.back-to-feed a {  color: black;}
 
 
 @media only screen and (max-width: 600px) {
-  .icon-container img { width: 49%; padding: 20px 10%;}
+  .icon-container img { width: 49%; padding: 20px 7%;}
+   .icon-container { max-width: 300px; margin: 0 auto;}
 }
