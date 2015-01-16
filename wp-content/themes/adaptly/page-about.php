@@ -5,19 +5,19 @@
       <?php the_content(); ?>
     </div>
 </div>
-<div class="subnav-wrapper">
-  <div class="subnav mid-cont about">
-    <ul>
-      <li><a href="#what">what</a></li>
-      <li><a href="#why">why</a></li>
-      <li><a href="#who">who</a></li>
-    </ul>
-  </div>
-</div>
-<div id="what" class="frontlines">
-    <div class="mid-cont about">
-      <?php the_field('on_the_frontlines') ?>
+<div id="what">
+  <div class="subnav-wrapper">
+    <div class="subnav mid-cont about">
+      <ul>
+        <li><a href="#what">what</a></li>
+        <li><a href="#why">why</a></li>
+        <li><a href="#who">who</a></li>
+      </ul>
     </div>
+  </div>
+  <div class="mid-cont about frontlines">
+    <?php the_field('on_the_frontlines') ?>
+  </div>
 </div>
 <div id="why" class="about something-bigger">
     <div class="mid-cont about">
