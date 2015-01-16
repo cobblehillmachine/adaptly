@@ -5,13 +5,15 @@ document.onreadystatechange = function(e) {
     }
 };
 
-$(document).ready(function()
-{
-  $('#sidr-trigger').sidr( {
-    side: 'right'
-  });
-  $('.home-page').show();
-  $('.sidr').show();
+$(document).ready(function() {
+    $('#sidr-trigger').on('click', function(e) {
+        e.preventDefault;
+        $('#sidr-trigger').sidr( {
+            side: 'right'
+          });
+    })
+    $('.home-page').show();
+    $('.sidr').show();
 })
 
 $(window).load(function() {
