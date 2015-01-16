@@ -124,9 +124,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .single-service img { display: block; margin: 0 auto 10px auto; width: 110px;}
 .single-service h4 {  font-weight: 400; margin: 0;}
 .single-service p { margin-top: 0;}
-.services-secondary-header{
-  margin-top:200px;
-}
+.services-secondary-header{margin-top:100px;}
 
 /*Case study grid (multi-page)*/
 .case-study-wrapper { padding-top: 50px;}
