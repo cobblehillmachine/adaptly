@@ -33,6 +33,7 @@ $(window).load(function() {
     nextText: '',
     pauseOnHover: false
   })
+  $('.computer-animation video').loop = true;
   careersHeaderSlider();
   requestDemoForm();
   blurs();
