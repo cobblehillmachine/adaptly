@@ -15,7 +15,7 @@ $(document).ready(function()
 })
 
 $(window).load(function() {
-  if ($(window).width() > 450) {
+  if ($(window).width() > 920) {
     homepageAnimation();
 
   } else {
@@ -23,6 +23,7 @@ $(window).load(function() {
     $('.animation-text-wrapper').css('height', height + 179);
     $('.home.page footer').show();
     clientTestimonialSlider();
+    $('.video-bg').hide();
   }
 
   $('.employee-quotes.flexslider').flexslider({
