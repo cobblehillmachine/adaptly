@@ -380,7 +380,7 @@ p.back-to-feed a {  color: black;}
   .main-nav.mobile a img {  width: 50px; }
   .main-nav.mobile .blue-hamburger { display: inline-block; }
   .main-nav.mobile .white-hamburger { display: none; }
-  .side-nav  { background-color: #1AA2D1;  position: absolute; height: 2000px;  width: 300px; top: -15px; right: -300px;}
+  .side-nav  { background-color: #1AA2D1;  position: absolute; height: 2000px;  width: 200px; top: -15px; right: -200px; display: none;}
   .side-nav  a {  color: white; }
   .side-nav  ul li {  border-bottom: 0; border-top: 0;}
   .side-nav  ul { border-bottom: 0; }

@@ -4,13 +4,15 @@ $(document).ready(function() {
 
 $(window).load(function() {
   $('#nav-trigger').on('click', function(e) {
-    if ($('.side-nav').css('right') == '-300px') {
+    e.preventDefault();
+    if ($('.side-nav').css('right') == '-200px') {
       showNav();
     } else {
       hideNav();
     }
   })
   $('.body').on('click', function(e) {
+    e.preventDefault();
     if ($('.side-nav').css('right') == '0px') {
       hideNav();
     }
@@ -36,23 +38,26 @@ $(window).load(function() {
 
 function showNav() {
   $('.body').animate({
-        marginRight : 300,
-        marginLeft: -300
-      }, 500)
-      $('.side-nav').animate({
+    marginRight : 200,
+    marginLeft: -200
+  }, 500)
+  $('.side-nav').show(function() {
+    $(this).animate({
         right: 0
-      }, 500)
-
+    }, 500)
+  })
 }
 
 function hideNav() {
   $('.body').animate({
-        marginRight : 0,
-        marginLeft: 0
-      }, 500)
-      $('.side-nav').animate({
-        right: -300
-      }, 500)
+    marginRight : 0,
+    marginLeft: 0
+  }, 500)
+  $('.side-nav').hide(function() {
+    $(this).animate({
+       right: -200
+    }, 500)
+  })
 }
 
 function homepageAnimation() {
