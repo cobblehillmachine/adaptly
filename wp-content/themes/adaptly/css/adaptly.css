@@ -329,7 +329,8 @@ p.back-to-feed a {  color: black;}
 .author-wrapper { background-color: #F0F0F1; padding: 50px 0; border-bottom: 1px black solid;}
 .author img.headshot { width: 30%; display: inline-block; vertical-align: top}
 .author-info {  width: 69%; display: inline-block; text-align: left; padding: 0 3%; vertical-align: top;}
-.author-info h5 { font-size: 18px; font-weight: 400; margin-top: 0;}
+.author h4 { font-size: 18px; font-weight: 400; margin-top: 0;}
+.author .mobile h4 {  text-align:center;}
 .author-info a {  width: 30px; display: inline-block;}
 
 /*Careers Page*/
