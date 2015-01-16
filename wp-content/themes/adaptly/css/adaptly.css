@@ -479,6 +479,7 @@ p.back-to-feed a {  color: black;}
   .press p {  margin: 10px 0;}
   .author img.headshot { width: 100%; display: block; max-width: 200px; margin: 0 auto; }
   .author-info {  text-align: center; width: 100%; display: block; max-width: 400px; margin: 0 auto; }
+  .author-name.mobile h4:first-child {margin-bottom: 0; } 
   /*contact page*/
   .contact.mid-cont { padding-bottom:0;}
   .contact h4 { padding-bottom: 0;}
