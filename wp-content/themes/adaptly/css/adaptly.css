@@ -94,7 +94,9 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .icon-container { margin-bottom: 100px;}
 .icon-container img { width: 24%;padding: 20px 4%; max-width: 190px; }
 
-.client-testimonial-wrapper { background-image: url(../images/quote_photo.jpg); background-size: cover; color:white; margin-top:100px;}
+.home-page .computer-container {  padding-bottom: 100px;}
+
+.client-testimonial-wrapper { background-image: url(../images/quote_photo.jpg); background-size: cover; color:white;}
 .client-testimonial-carousel p {  font-size: 31px;}
 .client-testimonial-carousel p.client-name {  font-size: 17px; padding-top: 15px; opacity: 0.5;}
 .flexslider.client-testimonial-carousel { border:0; margin: 0 auto;background:transparent; border-radius:0; padding: 50px; box-shadow: none; -webkit-box-shadow: none;}
@@ -200,6 +202,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 
 
 /*Tehcnology*/
+.mid-cont.technology.header { padding-bottom: 50px;}
 .deploy-manage-analyze {  background: #F0F0F1; padding: 50px 0 125px; }
 .deploy-manage-analyze ul { width: 373px; display: inline-block; text-align: left; float:right; padding-left: 2%;}
 body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
@@ -304,7 +307,7 @@ p.back-to-feed a {  color: black;}
 .single .blog-post h5 { font-weight: 500; font-size: 18px; margin-bottom: -15px;}
 .single .blog-post ul { list-style: disc; font-size: 18px; margin-left: 20px;}
 .single .blog-post li { margin-bottom: 15px;}
-.single .blog-post img {  float:right; padding: 15px 0 15px 15px}
+.single .blog-post img {  float:right; padding: 15px}
 .single .blog-post img.aligncenter {  float: none; margin: 0 auto;}
 
 .post-share div { width: 245px;  display: inline-block; vertical-align: top; margin: 0 15px 50px;;padding: 10px 75px; border-radius: 5px; text-align: center;}
@@ -446,12 +449,13 @@ p.back-to-feed a {  color: black;}
   .mid-cont.case-study{padding:0 15px; }
   .blog-header{display: none;}
   /*homepage*/
-  .icon-container, .client-wrapper { margin-bottom: 50px;}
+  .icon-container, .client-wrapper { margin-bottom: 100px;}
   .client-testimonial-wrapper { background-image: url('../images/quote_photo_mobile.png'); }
   .client-wrapper li {  width: 30%; max-width: 175px;}
   .wide-cont.clients {  padding: 40px 0 25px 0; }
   .flexslider.client-testimonial-carousel { padding: 50px 0; width: 90%; }
   .client-testimonial-carousel p {  font-size: 21px; }
+
   /*services*/
   .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto; }
   /*partners*/

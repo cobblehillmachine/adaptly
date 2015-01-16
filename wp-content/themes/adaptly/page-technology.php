@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="mid-cont technology">
+<div class="mid-cont technology header">
   <?php while ( have_posts() ) : the_post(); ?>
     <?php the_content(); ?>
     <div class="computer-animation">
