@@ -37,7 +37,7 @@ get_header(); ?>
     <div class="author-name mobile"><h4><strong> By <?php the_field('author_name'); ?></strong></h4><h4><?php the_field('author_title'); ?></h4></div>
     <img src="<?php the_field('author_image'); ?>" class="headshot">
     <div class="author-info">
-      <div class="author-name desktop"><?php the_field('author_name'); ?>, <?php the_field('author_title'); ?></div>
+      <div class="author-name desktop"><h4><?php the_field('author_name'); ?>, <?php the_field('author_title'); ?></h4></div>
       <?php the_field('author_bio'); ?>
       <?php $has_facebook = get_field('author_facebook_link');
       $has_twitter = get_field('author_twitter_link');
