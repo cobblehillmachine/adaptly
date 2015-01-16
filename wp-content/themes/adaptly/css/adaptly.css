@@ -181,10 +181,10 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 /*Partners Page*/
 
 .partner.featured { width: 386px; padding: 3%; display: inline-block; vertical-align: top}
-.partner.featured .logo {  width: 18%; margin: 0 auto;}
+.partner.featured .logo {  width:64px; margin: 0 auto;}
 .partner.featured.Twitter {  width: 400px;}
 .partner.featured.Facebook { width: 380px;}
-.partner.featured.Kik .logo { width: 28%;}
+.partner.featured.Kik .logo { width: 33%;}
 
 .partner.data { width: 30%; padding: 2% 4%; display: inline-block; vertical-align: middle;}
 
