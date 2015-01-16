@@ -76,7 +76,7 @@
   $(function() {
     $('#dg-container').gallery({
       autoplay  : true,
-      interval : 1000
+      interval : 2500
     });
   });
 </script/>
