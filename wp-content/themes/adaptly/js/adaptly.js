@@ -162,4 +162,6 @@ function svgColorChange() {
   })
 }
 
-
+blogPhotoWrap() {
+  $('.mid-cont.blog-post img.aligncenter').parent().css('text-align', 'center')
+}
