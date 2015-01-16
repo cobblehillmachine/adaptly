@@ -475,7 +475,7 @@ p.back-to-feed a {  color: black;}
   .single-casestudies .stats-wrapper ul { width: 100%; display: block; padding: 25px 2%;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   p.back-to-feed {  padding-left: 5%;}
-  .press .heading p:first-child { margin-bottom: 0;}
+  .press .heading p:first-child { margin-bottom: 0; display: block;}
   .press p {  margin: 10px 0;}
   .author img.headshot { width: 100%; display: block; max-width: 200px; margin: 0 auto; }
   .author-info {  text-align: center; width: 100%; display: block; max-width: 400px; margin: 0 auto; }
