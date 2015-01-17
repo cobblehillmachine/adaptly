@@ -72,13 +72,5 @@
   </form>
 </div>
 
-<script type="text/javascript">
-  $(function() {
-    $('#dg-container').gallery({
-      autoplay  : true,
-      interval : 2500
-    });
-  });
-</script/>
 
 <?php get_footer(); ?>

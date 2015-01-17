@@ -3,20 +3,16 @@ $(document).ready(function() {
 })
 
 $(window).load(function() {
-
   $('.nav-trigger').on('click', function(e) {
     e.preventDefault();
     showNav();
   })
-
   $('.body').on('click', function() {
     if ($('#side-nav').css('width') == '200px') {
        hideNav();
     }
   })
-
   homepageAnimation();
-
   $('.employee-quotes.flexslider').flexslider({
     animation:'slide',
     controlNav:false,
@@ -32,7 +28,15 @@ $(window).load(function() {
   smoothScroll();
   shareCounter();
   blogPhotoWrap();
+  gallery();
 });
+
+function gallery() {
+  $('#dg-container').gallery({
+      autoplay  : true,
+      interval : 2500
+    });
+}
 
 function showNav() {
   $('#side-nav').css('width', 200)
