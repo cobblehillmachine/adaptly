@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$( document ).ready(function() {
   $('.video-bg video')[0].play();
 })
 
-$(window).load(function() {
+$( window ).load(function() {
   $('.nav-trigger').on('click', function(e) {
     e.preventDefault();
     showNav();
@@ -13,16 +13,8 @@ $(window).load(function() {
     }
   })
   homepageAnimation();
-  $('.employee-quotes.flexslider').flexslider({
-    animation:'slide',
-    controlNav:false,
-    directionNav: false,
-    prevText: '',
-    nextText: '',
-    pauseOnHover: false
-  })
   $('.computer-animation video').loop = true;
-  careersHeaderSlider();
+  careersSlider();
   requestDemoForm();
   blurs();
   smoothScroll();
@@ -30,6 +22,11 @@ $(window).load(function() {
   blogPhotoWrap();
   gallery();
 });
+
+$( window ).resize(function() {
+  homepageAnimation();
+
+})
 
 function gallery() {
   $('#dg-container').gallery({
@@ -61,7 +58,7 @@ function homepageAnimation() {
     $('.animation-text-wrapper').css('height', height + 179)
     $('.video-bg').css('height', height);
     $(document).scroll(function() {
-      var videoScrollDistance = $(this).scrollTop()
+      var videoScrollDistance = $(this).scrollTop();
       $('.video-bg').fadeOut('fast');
       $('.home.page footer').show();
       $('.rest-of-homepage').fadeIn('fast', function() {
@@ -73,11 +70,12 @@ function homepageAnimation() {
       }
     })
   } else {
+    $('.animation-text-wrapper').css('height', 'initial')
+    $('.rest-of-homepage').show();
+    $('.home.page footer').show();
     clientTestimonialSlider();
   }
 }
-
-
 
 function clientTestimonialSlider() {
   $('.client-testimonial-carousel.flexslider').flexslider({
@@ -138,7 +136,7 @@ function shareCounter() {
   })
 }
 
-function careersHeaderSlider() {
+function careersSlider() {
   var colorList = ['#b1aba9', 'black', '#171735', '#461b25', '#9d9d9d']
   $('.header-slider ul').addClass('slides');
   $('.header-slider .flexslider').flexslider({
@@ -152,18 +150,15 @@ function careersHeaderSlider() {
           var currentColor = colorList[slider.currentSlide]
           $('.wide-cont.careers a').css('background-color', currentColor);
         }
-
       }
   })
-}
-
-function svgColorChange() {
-  var scrollDistance = $('.icon-container').offset().top;
-  $(document).scroll(function() {
-    if($(this).scrollTop() > scrollDistance) {
-      $('.icon-container path, .icon-container circle, .icon-container line, .icon-container ellipse, .icon-container rect, .icon-container polygon').attr('stroke', "#1AA2D1");
-      $('.icon-container g g g g path').attr('fill', "#1AA2D1");
-    }
+  $('.employee-quotes.flexslider').flexslider({
+    animation:'slide',
+    controlNav:false,
+    directionNav: false,
+    prevText: '',
+    nextText: '',
+    pauseOnHover: false
   })
 }
 
