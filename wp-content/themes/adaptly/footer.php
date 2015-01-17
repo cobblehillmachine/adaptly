@@ -22,7 +22,12 @@
 						<p><a href="mailto:<?php the_field('main_email_address', 'user_2') ?>"><?php the_field('main_email_address', 'user_2') ?></a></p>
 					</div>
 				</a>
-				<a href="/careers">
+				<a href="https://jobs.lever.co/adaptly " class="mobile">
+					<div class="section careers">
+						<h3>Join Our Team</h3>
+					</div>
+				</a>
+				<a href="/careers" class="desktop">
 					<div class="section careers">
 						<h3>Join Our Team</h3>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/footer_connect.png">
