@@ -65,12 +65,12 @@ footer .section.social img {  margin: 0 5px 25px;}
 .request-demo-form label {  text-align: left;}
 .newsletter-signup, .partner-signup {  display: inline-block;}
 .mailchimp-signup { display: inline-block; position: relative}
-.mailchimp-signup input.email { background-color: #93D8F7; color :white; text-align:center; -webkit-appearance: none; -moz-appearance: none; margin: 0; border: 0;  margin-left: 10px; width: 190px; font-weight:300;}
+.mailchimp-signup input.email { background-color: #93D8F7; color :white; text-align:center; -webkit-appearance: none; -moz-appearance: none; border: 0;  margin-left: 10px; width: 190px; font-weight:300;}
 .mailchimp-signup input.email::-webkit-input-placeholder { color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email:-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email::-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email:-ms-input-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
-#mc-embedded-subscribe {width: 28px;-webkit-appearance: none;background-color: #1AA2D1;margin-left: -14px;border-radius: 3px;border: 0;color: white;height: 30px;display: inline-block;cursor:pointer; vertical-align: top;}
+#mc-embedded-subscribe {width: 28px;-webkit-appearance: none;background-color: #1AA2D1;margin-left: -14px;border-radius: 3px;border: 0;color: white;height: 28px;display: inline-block;cursor:pointer;}
 form .clear { display: inline-block; vertical-align: top}
 .cta-arrow {  position: absolute; width: 27px; right: 0; top:0;}
 
@@ -479,7 +479,7 @@ p.back-to-feed a {  color: black;}
   .blog-feed .post:nth-child(4) .excerpt p {  border-bottom: 0; padding-bottom: 0;}
   .blog-feed .excerpt h4 {  margin-bottom: 0; font-weight: 400;}
   .pre-footer-cta.mobile {  display: block;}
-  .cta-arrow {  right: 8px;}
+  .cta-arrow {  right: 3px;}
   body .pre-footer-cta.mobile .newsletter-signup { width: 100%;}
   .pre-footer-cta.mobile .newsletter-signup,.pre-footer-cta.mobile .mailchimp-signup { display: block; margin: 10px auto; width: 230px;}
   .resources-feed.case-study-grid { margin-top: 50px;}
