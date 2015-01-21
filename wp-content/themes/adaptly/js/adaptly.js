@@ -1,8 +1,10 @@
 $( document ).ready(function() {
+  careersSlider();
   $('.video-bg video')[0].play();
 })
 
 $( window ).load(function() {
+
   $('.nav-trigger').on('click', function(e) {
     e.preventDefault();
     showNav();
@@ -14,7 +16,7 @@ $( window ).load(function() {
   })
   homepageAnimation();
   $('.computer-animation video').loop = true;
-  careersSlider();
+
   requestDemoForm();
   blurs();
   smoothScroll();
@@ -141,9 +143,11 @@ function careersSlider() {
   $('.header-slider ul').addClass('slides');
   $('.header-slider .flexslider').flexslider({
       animation:'slide',
+      // startAt:1,
       controlNav:false,
       directionNav: false,
       prevText: '',
+      animationLoop: false,
       nextText: '',
       before: function(slider) {
         if ($(window).width() > 450) {
