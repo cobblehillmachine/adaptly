@@ -57,7 +57,7 @@ function homepageAnimation() {
     $('.animation-text-wrapper').css('height', height + 179)
     $('.video-bg').css('height', height);
     $(document).scroll(function() {
-      var targetHeight = target.outerHeight();
+      var targetHeight = $('.video-bg').outerHeight();
       var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
       if(scrollPercent >= 0){
           $('.video-bg').css('opacity', scrollPercent);
