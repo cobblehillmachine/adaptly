@@ -57,7 +57,6 @@
 <div class="request-demo-form technology contact mid-cont technology">
   <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
     <input type=hidden name="oid" value="00Dd0000000ezSf">
-    <input type=hidden name="retURL" value="http://www.adaptly.com/">
     <div class="form-left">
       <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
       <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
