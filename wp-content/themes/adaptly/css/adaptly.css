@@ -1,6 +1,6 @@
 
 body * {  box-sizing: border-box;}
-body {  margin:0; text-align: center;font-family: "open-sans",sans-serif; font-style: normal; font-weight: 300; overflow-x:; hidden;}
+body {  margin:0; text-align: center;font-family: "open-sans",sans-serif; font-style: normal; font-weight: 300;}
 img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
 .mid-cont {margin: 0 auto;}
@@ -57,7 +57,8 @@ footer .section.social p {  font-size: 12px; font-weight: 400;}
 footer .section.social img {  margin: 0 5px 25px;}
 
 .pre-footer-cta, .post-header-cta-wrapper {  width: 100%; background-color: #F0F0F1; text-align: center; padding: 10px 0; display: block;}
-.pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 5px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px; cursor: pointer; font-weight: 300;}
+.pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 3px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px; cursor: pointer; font-weight: 300;}
+.case-study-download {  margin:10px auto}
 .request-demo-form {  display:none; background: white;}
 .request-demo-form .form-left,.request-demo-form .form-right { width: 49%; display: inline-block; padding: 3%; text-align: left;}
 .request-demo-form input {  background: #F0F0F1; margin-bottom:20px; color:black;}
@@ -486,12 +487,13 @@ p.back-to-feed a {  color: black;}
   .pre-footer-cta.mobile {  display: block;}
   .cta-arrow {  right: 3px;}
   body .pre-footer-cta.mobile .newsletter-signup { width: 100%;}
-  .pre-footer-cta.mobile .newsletter-signup,.pre-footer-cta.mobile .mailchimp-signup { display: block; margin: 10px auto; width: 230px;}
+  .pre-footer-cta.mobile .newsletter-signup,.pre-footer-cta.mobile .mailchimp-signup, .post-header-cta a, .pre-footer-cta a { display: block; margin: 10px auto; width: 230px;}
+  /*.case-study-download a {  display: block; width: 200px; margin: 10px auto;}*/
   .resources-feed.case-study-grid { margin-top: 50px;}
   .resources-feed.case-study-grid .case-study .color-overlay { display: none;}
   .resources-feed.case-study-grid .case-study .text-overlay { background-color: #F0F0F1; position: relative; transform: none; -moz-transform: none; -webkit-transform: none;margin-top: -5px; padding: 10px;}
   .resources-feed.case-study-grid .case-study .text-overlay h3 {  padding-top: 10px;}
-  .case-study-download a {  display: block; width: 130px; margin: 20px auto;}
+  .case-study-download a {  display: block; width: 130px; margin: 10px auto;}
   .single-casestudies .stats-wrapper ul { width: 100%; display: block; padding: 25px 2%;}
   .single-casestudies .bottom-content.half div {  width: 100%; display: block; padding: 25px 0;}
   p.back-to-feed {  padding-left: 5%;}
