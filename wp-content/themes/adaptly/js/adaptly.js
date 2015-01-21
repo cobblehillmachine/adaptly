@@ -135,7 +135,7 @@ function shareCounter() {
 }
 
 function careersSlider() {
-  var colorList = ['black', '#171735', '#461b25', '#9d9d9d', '#b1aba9']
+  var colorList = ['#b1aba9', 'black', '#171735', '#461b25', '#9d9d9d' ]
   $('.header-slider ul').addClass('slides');
   $('.header-slider .flexslider').flexslider({
       animation:'slide',
