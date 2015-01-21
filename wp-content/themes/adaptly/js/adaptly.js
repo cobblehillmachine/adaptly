@@ -143,7 +143,7 @@ function careersSlider() {
       controlNav:false,
       directionNav: false,
       prevText: '',
-      animationLoop: false,
+      // animationLoop: false,
       nextText: '',
       before: function(slider) {
         if ($(window).width() > 450) {
