@@ -173,7 +173,7 @@ function blogPhotoWrap() {
 }
 
 function widowVanquisher() {
-  $('p, h2, h4, h3, li').each(function(){
+  $('p, h2, h4, h3').each(function(){
     var string = $(this).html();
     string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
     $(this).html(string);
