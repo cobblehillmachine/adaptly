@@ -349,7 +349,6 @@ p.back-to-feed a {  color: black;}
 @media only screen and (max-width: 1200px) {
   .wide-cont.careers {width: 503px; top: 140px;}
   .header-slider.careers {  margin-top: -20px;}
-  .employee-quotes .quote { top: 0;}
 }
 
 @media only screen and (max-width: 1090px) {
