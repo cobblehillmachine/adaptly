@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   careersSlider();
   blurs();
+  widowVanquisher();
   $('.video-bg video')[0].play();
 })
 
@@ -169,4 +170,12 @@ function careersSlider() {
 
 function blogPhotoWrap() {
   $('.mid-cont.blog-post img.aligncenter').parent().css('text-align', 'center')
+}
+
+function widowVanquisher() {
+  $('p, h2, h4, h3, li').each(function(){
+    var string = $(this).html();
+    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+    $(this).html(string);
+});
 }
