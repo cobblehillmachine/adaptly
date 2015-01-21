@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-  var sliderHeight = $('.header-slider li').height();
-  $('.header-slider').css('height', sliderHeight);
-$('.header-slider li').show();
+//   var sliderHeight = $('.header-slider li').height();
+//   $('.header-slider').css('height', sliderHeight);
+// $('.header-slider li').show();
 careersSlider();
   $('.video-bg video')[0].play();
 })
@@ -157,6 +157,10 @@ function careersSlider() {
           var currentColor = colorList[slider.currentSlide]
           $('.wide-cont.careers a').css('background-color', currentColor);
         }
+      },
+      start: function(slider) {
+        $('.header-slider .flexslider').show();
+        $('.wide-cont.careers').show();
       }
   })
   $('.employee-quotes.flexslider').flexslider({
