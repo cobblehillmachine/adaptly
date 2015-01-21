@@ -1,13 +1,9 @@
 $( document ).ready(function() {
-//   var sliderHeight = $('.header-slider li').height();
-//   $('.header-slider').css('height', sliderHeight);
-// $('.header-slider li').show();
-careersSlider();
+  careersSlider();
   $('.video-bg video')[0].play();
 })
 
 $( window ).load(function() {
-
   $('.nav-trigger').on('click', function(e) {
     e.preventDefault();
     showNav();
@@ -19,7 +15,6 @@ $( window ).load(function() {
   })
   homepageAnimation();
   $('.computer-animation video').loop = true;
-
   requestDemoForm();
   blurs();
   smoothScroll();
@@ -30,7 +25,6 @@ $( window ).load(function() {
 
 $( window ).resize(function() {
   homepageAnimation();
-
 })
 
 function gallery() {
@@ -63,16 +57,15 @@ function homepageAnimation() {
     $('.animation-text-wrapper').css('height', height + 179)
     $('.video-bg').css('height', height);
     $(document).scroll(function() {
-      var videoScrollDistance = $(this).scrollTop();
-      $('.video-bg').fadeOut('fast');
+      var targetHeight = target.outerHeight();
+      var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
+      if(scrollPercent >= 0){
+          $('.video-bg').css('opacity', scrollPercent);
+      }
       $('.home.page footer').show();
       $('.rest-of-homepage').fadeIn('fast', function() {
         clientTestimonialSlider();
       })
-      if (videoScrollDistance === 0) {
-        $('.video-bg video')[0].play();
-        $('.video-bg').show();
-      }
     })
   } else {
     $('.animation-text-wrapper').css('height', 'initial')
