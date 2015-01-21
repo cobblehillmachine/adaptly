@@ -54,12 +54,10 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="logo">
 			<a href="/">
-				<?php if (is_page('13')) { ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_white.png">
-				<?php } else if (is_single()) { ?>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_white.png">
-				 <?php } else { ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo.png">
+				<?php if (is_page('13') || is_single()) { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_white.gif">
+				<?php } else { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_blue.gif">
 				<?php } ?>
 			</a>
 		</div>
@@ -69,9 +67,9 @@
 		<div class="main-nav mobile">
 			<a class="nav-trigger">
 				<?php if (is_page('13') || is_single()){ ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/white_hamburger.png" class='white-hamburger'>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/white_hamburger.gif" class='white-hamburger'>
 				 <?php }  else { ?>
-				 	<img src="<?php echo get_template_directory_uri(); ?>/images/Blue-hamburger.png" class='blue-hamburger'>
+				 	<img src="<?php echo get_template_directory_uri(); ?>/images/blue_hamburger.gif" class='blue-hamburger'>
 				 <?php } ?>
   		</a>
 		</div>
