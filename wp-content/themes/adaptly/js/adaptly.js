@@ -1,5 +1,8 @@
 $( document ).ready(function() {
-  careersSlider();
+  var sliderHeight = $('.header-slider .flex-viewport').height();
+  $('.header-slider').css('height', sliderHeight);
+$('.header-slider li').show();
+careersSlider();
   $('.video-bg video')[0].play();
 })
 
