@@ -44,9 +44,9 @@
 				</a>
 				<div class="section social">
 					<h3>Let's Connect</h3>
-					<a href="<?php the_field('facebook_link', 'user_2') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_facebook.png"></a>
-					<a href="<?php the_field('twitter_link', 'user_2') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_twitter.png"></a>
-					<a href="<?php the_field('pinterest_link', 'user_2') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_pinterest.png"></a>
+					<a target=_blank href="<?php the_field('facebook_link', 'user_2') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_facebook.png"></a>
+					<a target=_blank href="<?php the_field('twitter_link', 'user_2') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_twitter.png"></a>
+					<a target=_blank href="<?php the_field('pinterest_link', 'user_2') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_pinterest.png"></a>
 					<p><?php the_field("copyright", "user_2") ?></p>
 				</div>
 			</div>
