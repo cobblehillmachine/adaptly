@@ -1,5 +1,6 @@
 $( document ).ready(function() {
   careersSlider();
+  blurs();
   $('.video-bg video')[0].play();
 })
 
@@ -16,7 +17,7 @@ $( window ).load(function() {
   homepageAnimation();
   $('.computer-animation video').loop = true;
   requestDemoForm();
-  blurs();
+
   smoothScroll();
   shareCounter();
   blogPhotoWrap();
