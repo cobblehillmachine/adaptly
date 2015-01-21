@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="video-bg desktop home-page">
-  <video id="example_video_1" class="video-js vjs-default-skin" autoplay='true' preload="auto" data-setup='{"example_option":true}'>
+  <video id="example_video_1" class="video-js vjs-default-skin" autoplay='true' preload="auto" data-setup='{"example_option":true}' poster="http://dummyimage.com/320x240/ffffff/fff">
     <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.ogv#t=1,17" type="video/ogv">
     <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.webm#t=1,17" type="video/webm">
     <source src="<?php echo get_template_directory_uri(); ?>/images/homepage_animation.mp4#t=1,17" type="video/mp4">
