@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  var sliderHeight = $('.header-slider .flex-viewport').height();
+  var sliderHeight = $('.header-slider').height();
   $('.header-slider').css('height', sliderHeight);
 $('.header-slider li').show();
 careersSlider();
