@@ -511,7 +511,7 @@ p.back-to-feed a {  color: black;}
 
   /*about*/
   .frontlines li {  width: 100%; margin: 0 0 15px 0; font-size:26px;}
-  .frontlines li img {  padding:10px 75px 25px; }
+  .frontlines li img {  padding:10px 75px 25px; max-width: 100% }
   .frontlines img { display:block;  width: 100%; }
   .frontlines ul { background-image:none; margin-top:0;}
 
