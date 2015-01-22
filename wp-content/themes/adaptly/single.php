@@ -30,7 +30,7 @@ get_header(); ?>
   <div class="email"><a HREF="mailto:?body=Hi,check out this post by Adaptly: <?php the_permalink(); ?>">Send</a></div>
 
 </div>
-<?php $author = get_field('author');
+<?php $author = get_field('author_name');
   if ($author) { ?>
 <div class="author-wrapper">
   <div class="author mid-cont blog-post">
