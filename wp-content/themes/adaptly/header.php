@@ -20,6 +20,16 @@
 <!--<![endif]-->
 <head>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/Favicon.png" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-58869702-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 	<script src="//use.typekit.net/jjt5ytw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
