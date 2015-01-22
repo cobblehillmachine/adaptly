@@ -103,11 +103,11 @@ function requestDemoForm() {
 }
 
 function blurs() {
-  $('.map').blurjs({
-    source: '.map',
-    radius: 2,
-    overlay: 'rgba(0,100,100,0.1)'
-  });
+  // $('.map').blurjs({
+  //   source: '.map',
+  //   radius: 2,
+  //   overlay: 'rgba(0,100,100,0.1)'
+  // });
   $('.maximum-effect').blurjs({
     source: '.maximum-effect',
     radius: 0,
