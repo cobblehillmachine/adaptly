@@ -384,7 +384,7 @@ p.back-to-feed a {  color: black;}
   p.back-to-feed {  padding-left: 5%;}
   .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto; }
   .case-study-grid .case-study:nth-child(2n) {  margin-right: auto; }
-  .case-study-grid .case-study .text-overlay { opacity: 1; color: black; }
+  .case-study-grid .case-study .text-overlay { opacity: 1; color: black; padding:10px; }
   .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%; }
   .case-study-grid .case-study .text-overlay a {  color: black; }
   .case-study-grid .case-study .text-overlay a.learn-more { display: none; }
