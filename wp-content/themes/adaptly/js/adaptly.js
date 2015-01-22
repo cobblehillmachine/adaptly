@@ -174,11 +174,11 @@ function blogPhotoWrap() {
   $('.mid-cont.blog-post img.aligncenter').parent().css('text-align', 'center')
 }
 
-function widowVanquisher() {
-  $('p, h2, h4, h3').each(function(){
+// function widowVanquisher() {
+//   $('p, h2, h4, h3').each(function(){
 
-    var string = $(this).html();
-    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
-    $(this).html(string);
-});
-}
+//     var string = $(this).html();
+//     string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+//     $(this).html(string);
+// });
+// }
