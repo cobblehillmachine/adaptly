@@ -224,7 +224,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .work-smarter { padding: 50px 0;}
 .work-smarter img { width: auto; height: 100%;}
 .work-smarter ul {  width: 264px; display: inline-block; padding:5% 1%; vertical-align: top;}
-.work-smarter ul li:nth-child(2) { font-size:20px; margin: 20px 0; font-weight: 400;}
+.work-smarter ul li:nth-child(2) { font-size:20px; margin: -15px 0 10px 0; font-weight: 400;}
 
 .emphasize-adaptability { background-color: #1AA2D1; color:white; padding: 50px 0;}
 
