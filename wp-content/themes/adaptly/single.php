@@ -4,7 +4,7 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="header-image"><?php the_post_thumbnail('full'); ?></div>
 <div class="pre-footer-cta mobile">
-  <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
+  <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
   <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
     <div id="mce-responses" class="clear">
@@ -30,7 +30,7 @@ get_header(); ?>
   <div class="email"><a HREF="mailto:?body=Hi,check out this post by Adaptly: <?php the_permalink(); ?>">Send</a></div>
 
 </div>
-<?php $author = get_field('author');
+<?php $author = get_field('author_name');
   if ($author) { ?>
 <div class="author-wrapper">
   <div class="author mid-cont blog-post">
@@ -56,7 +56,7 @@ get_header(); ?>
 </div>
 <?php } ?>
 <div class="pre-footer-cta mobile">
-  <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
+  <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
   <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
     <div id="mce-responses" class="clear">

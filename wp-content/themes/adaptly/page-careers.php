@@ -34,7 +34,7 @@
   </ul>
 </div>
 <div class="pre-footer-cta careers">
-  <p class="newsletter-signup">Start receiving Adaptly emails weekly</p>
+  <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
   <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
     <div id="mce-responses" class="clear">

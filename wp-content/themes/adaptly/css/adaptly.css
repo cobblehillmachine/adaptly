@@ -312,6 +312,7 @@ p.back-to-feed a {  color: black;}
 .single-casestudies .bottom-content-wrapper { padding: 75px 0;}
 
 .single .blog-post {  padding: 0 0 50px 0; text-align: left;}
+.single .blog-post.author { padding :0;}
 .single .blog-post  h3 {  font-size:31px; font-weight: 400; margin-bottom: 10px; width: 745px;}
 .single .blog-post .date { font-size:16px; font-weight: 400;}
 .single .blog-post h5 { font-weight: 500; font-size: 18px; margin-bottom: -15px;}
@@ -383,7 +384,7 @@ p.back-to-feed a {  color: black;}
   p.back-to-feed {  padding-left: 5%;}
   .case-study-grid .case-study {  width: 100%; display: block; max-width: 600px; margin: 20px auto; }
   .case-study-grid .case-study:nth-child(2n) {  margin-right: auto; }
-  .case-study-grid .case-study .text-overlay { opacity: 1; color: black; }
+  .case-study-grid .case-study .text-overlay { opacity: 1; color: black; padding:10px; }
   .case-study-grid .case-study .color-overlay{opacity: 0.75; background-color: rgba(255,255,255,1.75); height: 99%; }
   .case-study-grid .case-study .text-overlay a {  color: black; }
   .case-study-grid .case-study .text-overlay a.learn-more { display: none; }
