@@ -60,7 +60,7 @@ footer .section.social img {  margin: 0 5px 25px;}
 .pre-footer-cta button, .pre-footer-cta a, .post-header-cta button, .post-header-cta a, .pre-footer-cta input[type="email"]  {  background-color: #1AA2D1; color:white; padding: 3px 20px; -webkit-appearance: none; -moz-appearance: none; border: 0; border-radius: 5px; margin-left: 15px; font-size: 16px; cursor: pointer; font-weight: 300;}
 .case-study-download {  margin:10px auto}
 .request-demo-form {  display:none; background: white;}
-.request-demo-form.contact form { width: 100%; padding: 0;}
+.request-demo-form.contact form { width: 100%; padding: 0; text-align: center;}
 .request-demo-form .form-left,.request-demo-form .form-right { width: 49%; display: inline-block; padding: 3%; text-align: left;}
 .request-demo-form input {  background: #F0F0F1; margin-bottom:20px; color:black;}
 .request-demo-form input[type="submit"] { color:white;}
@@ -192,7 +192,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 
 .contact h4 { padding-bottom: 50px;}
 .contact .location h4 { padding-bottom: 0;}
-.contact form {  width: 70%; text-align: center; display: inline-block; vertical-align: top; padding:0 100px 0 45px;}
+.contact form {  width: 70%; text-align: left; display: inline-block; vertical-align: top; padding:0 100px 0 45px;}
 .contact form input, .contact form textarea { background: #EEEEEE; border-radius: 5px; width: 100%;  -webkit-appearance: none; -moz-appearance: none; border: 1px #CCCCCC solid; font-size: 18px; padding: 10px;}
 .contact form input { height: 40px; }
 .contact p.half {  width: 49%; display: inline-block; vertical-align: top; margin-bottom: 0; padding: 0 2% 0 0; }
