@@ -40,7 +40,6 @@
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_3c53c3da2a" tabindex="-1" value=""></div>
     <div class="clear">
       <input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" >
-      <img src="<?php echo get_template_directory_uri(); ?>/images/cta arrow.svg" class="cta-arrow">
     </div>
   </form>
 </div>

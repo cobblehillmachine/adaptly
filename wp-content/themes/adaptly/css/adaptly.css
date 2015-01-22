@@ -72,7 +72,7 @@ footer .section.social img {  margin: 0 5px 25px;}
 .mailchimp-signup input.email:-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email::-moz-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
 .mailchimp-signup input.email:-ms-input-placeholder{ color: white; font-size: 16px; text-align: center; font-weight: 300;}
-#mc-embedded-subscribe {width: 28px;-webkit-appearance: none;background-color: #1AA2D1;margin-left: -14px;border-radius: 3px;border: 0;color: white;height: 28px;display: inline-block;cursor:pointer;}
+#mc-embedded-subscribe {width: 28px;-webkit-appearance: none;background-color: #1AA2D1;margin-left: -14px;border-radius: 3px;border: 0;color: white;height: 28px;display: inline-block;cursor:pointer; background-image: url('../images/cta arrow.svg');}
 form .clear { display: inline-block; vertical-align: top}
 .cta-arrow {  position: absolute; width: 27px; right: 0; top:0;}
 
