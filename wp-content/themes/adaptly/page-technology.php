@@ -67,7 +67,7 @@
       <label for="company">Company*</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
       <label for="city">City*</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
     </div>
-    <input type="submit" name="submit">
+    <input type="submit" name="submit" onclick="alert('Thank you for your request!')">
   </form>
 </div>
 
