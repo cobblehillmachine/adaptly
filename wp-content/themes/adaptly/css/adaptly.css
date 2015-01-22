@@ -508,8 +508,8 @@ p.back-to-feed a {  color: black;}
   /*contact page*/
   .contact.mid-cont { padding-bottom:0;}
   .contact h4 { padding-bottom: 0;}
-  .contact .wpcf7 { width: 100%; padding: 0;}
-  .contact .half {  width: 100%; padding :0; margin: inherit; }
+  .contact form { width: 100%; padding: 0;}
+  .contact p.half {  width: 100%; padding :0; margin: inherit; }
   .contact ul { width: 100%; text-align: center;}
   .map .location {  width: 100%; display: block;}
   /*careers*/
