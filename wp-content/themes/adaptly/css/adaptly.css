@@ -443,6 +443,7 @@ p.back-to-feed a {  color: black;}
   .deploy-manage-analyze .computer-container {  display: none; width: 100%; }
   .work-smarter ul {  width: 100%; display: block; }
   /*about*/
+  .about.meet-our-team h3 { padding-bottom: 0;}
   .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;} }
 
 /*MOBILE*/
