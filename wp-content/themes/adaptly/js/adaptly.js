@@ -83,7 +83,8 @@ function clientTestimonialSlider() {
     controlNav:false,
     directionNav: false,
     prevText: '',
-    nextText: ''
+    nextText: '',
+    pauseOnHover: false
   });
 }
 
