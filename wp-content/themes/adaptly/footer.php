@@ -35,7 +35,7 @@
 						<p>Check out our job listings</p>
 					</div>
 				</a>
-				<a href="partners">
+				<a href="/partners">
 					<div class="section partners">
 						<h3>Partners</h3>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/footer_partners.png">
