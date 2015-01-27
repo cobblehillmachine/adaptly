@@ -30,6 +30,14 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script type="text/javascript" language="javascript">
+      var tl813v = 21993;
+      (function() {
+	      var tl813 = document.createElement('script'); tl813.type = 'text/javascript'; tl813.async = true;
+	      tl813.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + '1.tl813.com/tl813.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tl813, s);
+	      })();
+	</script>
 	<script src="//use.typekit.net/jjt5ytw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
