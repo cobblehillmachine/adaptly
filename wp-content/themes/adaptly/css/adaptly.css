@@ -352,7 +352,7 @@ p.back-to-feed a {  color: black;}
 .mid-cont.benefits .benefit:nth-of-type(5) img {  padding: 10px 0; }
 .mid-cont.benefits .benefit:nth-of-type(3) img {  padding: 3px 0; }
 .employee-quotes li { position: relative;}
-.employee-quotes .quote { width: 585px; left: 6%; position: absolute; top :50px;font-size: 22px;}
+.employee-quotes .quote { width: 585px; left: 6%; position: absolute; top: 15%; transform: translate(0, -15%);font-size: 22px;}
 .employee-quotes .quote p { font-size: 22px;}
 .employee-quotes .quote .title {  font-size: 17px; font-weight :400;}
 
