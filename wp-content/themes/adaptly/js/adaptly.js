@@ -18,7 +18,6 @@ $( window ).load(function() {
   homepageAnimation();
   $('.computer-animation video').loop = true;
   requestDemoForm();
-
   smoothScroll();
   shareCounter();
   blogPhotoWrap();
@@ -103,11 +102,6 @@ function requestDemoForm() {
 }
 
 function blurs() {
-  // $('.map').blurjs({
-  //   source: '.map',
-  //   radius: 2,
-  //   overlay: 'rgba(0,100,100,0.1)'
-  // });
   $('.maximum-effect').blurjs({
     source: '.maximum-effect',
     radius: 0,
@@ -143,11 +137,9 @@ function careersSlider() {
   $('.header-slider ul').addClass('slides');
   $('.header-slider .flexslider').flexslider({
       animation:'slide',
-      // startAt:1,
       controlNav:false,
       directionNav: false,
       prevText: '',
-      // animationLoop: false,
       nextText: '',
       before: function(slider) {
         if ($(window).width() > 450) {
@@ -176,7 +168,6 @@ function blogPhotoWrap() {
 
 function widowVanquisher() {
   $('p, h4').each(function(){
-
     var string = $(this).html();
     string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
     $(this).html(string);
