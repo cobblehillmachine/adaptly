@@ -20,6 +20,8 @@ body .mid-cont.case-study-wrapper {  width: 845px;}
 .mid-cont.technology {  width: 810px;}
 .mid-cont.resources { width: 863px;}
 .mid-cont.benefits {  padding: 50px 0; width: 745px;}
+.mid-cont.privacy { width: 800px; text-align: left; padding-bottom: 100px;}
+
 
 .contact.mid-cont h2 {  width: 500px; margin: 40px auto;}
 .mid-cont.about h2 {width: 640px; margin: 0 auto;}
@@ -57,7 +59,8 @@ footer a {  color: inherit;}
 footer .section h3 { color: white; text-transform: uppercase; font-size: 19px; font-weight:300;}
 footer .section img { margin-bottom: 15px;}
 footer .section p { color:white; font-size: 16px; margin:0;}
-footer .section.social p {  font-size: 12px; font-weight: 400;}
+footer .section.social p.copyright {  font-size: 12px; font-weight: 400; color: gray}
+footer .section.social p a {  color: gray;}
 footer .section.social img {  margin: 0 5px 25px;}
 
 .pre-footer-cta, .post-header-cta-wrapper {  width: 100%; background-color: #F0F0F1; text-align: center; padding: 10px 0; display: block;}
@@ -355,6 +358,12 @@ p.back-to-feed a {  color: black;}
 .employee-quotes .quote { width: 585px; left: 6%; position: absolute; top: 15%; transform: translate(0, -15%);font-size: 22px;}
 .employee-quotes .quote p { font-size: 22px;}
 .employee-quotes .quote .title {  font-size: 17px; font-weight :400;}
+
+/*PRIVACY*/
+.mid-cont.privacy h2 {  margin-bottom: 30px;}
+.mid-cont.privacy h3 {  margin-bottom: -15px; font-weight: 400}
+.mid-cont.privacy ul {  list-style: disc; padding-left: 40px;}
+.mid-cont.privacy li {  font-size: 18px; font-weight: 300; line-height: 1.5em; list-style: bullet;}
 
 @media only screen and (max-width: 1200px) {
   .wide-cont.careers {width: 503px; top: 140px;}
