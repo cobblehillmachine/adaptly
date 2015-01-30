@@ -390,7 +390,7 @@ p.back-to-feed a {  color: black;}
 
 /*TABLET*/
 @media only screen and (max-width: 920px) {
-  .mid-cont.home-page, .mid-cont.services, .mid-cont.about, .contact.mid-cont, .mid-cont.case-study, .mid-cont.blog-post, .about-header .mid-cont.about, .partners.mid-cont, .mid-cont.technology, .mid-cont.resources, .mid-cont.benefits, body .mid-cont.case-study-wrapper {  width: 90%;}
+  .mid-cont.home-page, .mid-cont.services, .mid-cont.about, .contact.mid-cont, .mid-cont.case-study, .mid-cont.blog-post, .about-header .mid-cont.about, .partners.mid-cont, .mid-cont.technology, .mid-cont.resources, .mid-cont.benefits, body .mid-cont.case-study-wrapper, .mid-cont.privacy {  width: 90%;}
   /*common*/
   .pre-footer-cta { display: none; }
   .pre-footer-cta.mobile {  display: block; }
