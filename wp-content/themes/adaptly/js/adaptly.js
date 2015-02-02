@@ -7,16 +7,7 @@ $( document ).ready(function() {
 })
 
 $( window ).load(function() {
-  $('.nav-trigger').on('click', function(e) {
-    console.log('nav click')
-    e.preventDefault();
-    showNav();
-  })
-  $('.body').on('click', function() {
-    if ($('#side-nav').css('width') == '200px') {
-       hideNav();
-    }
-  })
+  
   homepageAnimation();
   $('.computer-animation video').loop = true;
   requestDemoForm();
