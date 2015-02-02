@@ -3,6 +3,10 @@ $( document ).ready(function() {
   blurs();
   widowVanquisher();
   $('.video-bg video')[0].play();
+  
+})
+
+$( window ).load(function() {
   $('.nav-trigger').on('click', function(e) {
     e.preventDefault();
     showNav();
@@ -12,10 +16,6 @@ $( document ).ready(function() {
        hideNav();
     }
   })
-})
-
-$( window ).load(function() {
-  
   homepageAnimation();
   $('.computer-animation video').loop = true;
   requestDemoForm();
