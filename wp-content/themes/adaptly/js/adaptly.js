@@ -8,6 +8,7 @@ $( document ).ready(function() {
 
 $( window ).load(function() {
   $('.nav-trigger').on('click', function(e) {
+    console.log('nav click')
     e.preventDefault();
     showNav();
   })
