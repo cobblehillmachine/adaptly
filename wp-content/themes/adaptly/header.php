@@ -91,6 +91,18 @@
 				 <?php } ?>
   		</a>
 		</div>
+		<script>
+		$('.nav-trigger').on('click', function(e) {
+    console.log('nav click')
+    e.preventDefault();
+    showNav();
+  })
+  $('.body').on('click', function() {
+    if ($('#side-nav').css('width') == '200px') {
+       hideNav();
+    }
+  })
+  </script>
 	</header><!-- #masthead -->
 
 
