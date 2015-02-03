@@ -12,7 +12,7 @@ $( window ).load(function() {
   $('.computer-animation video').loop = true;
   requestDemoForm();
   smoothScroll();
-  shareCounter();
+  // shareCounter();
   blogPhotoWrap();
   gallery();
 });
@@ -111,20 +111,20 @@ function smoothScroll() {
   });
 }
 
-function shareCounter() {
-  var shareDivs = $('.post');
-  $.each(shareDivs, function(div) {
-    // var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
-    // var twitterCount = $('this' + ' .ssba_sharecount.twitter').textContent || 0;
-    var totalCount = get_tweets(div.find('a').href) + get_shares(div.find('a').href);
-    console.log(div.find('a').href)
-    if (totalCount === 1) {
-      $(' .counter-total').text(totalCount + " share");
-    } else {
-      $(' .counter-total').text(totalCount + " shares");
-    }
-  })
-}
+// function shareCounter() {
+//   var shareDivs = $('.post');
+//   $.each(shareDivs, function(div) {
+//     // var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
+//     // var twitterCount = $('this' + ' .ssba_sharecount.twitter').textContent || 0;
+//     var totalCount = get_tweets(div.find('a').href) + get_shares(div.find('a').href);
+//     console.log(div.find('a').href)
+//     if (totalCount === 1) {
+//       $(' .counter-total').text(totalCount + " share");
+//     } else {
+//       $(' .counter-total').text(totalCount + " shares");
+//     }
+//   })
+// }
 
 function careersSlider() {
   var colorList = ['#b1aba9', 'black', '#171735', '#461b25', '#9d9d9d' ]
@@ -168,23 +168,5 @@ function widowVanquisher() {
 });
 }
 
-function get_tweets($url) {    
 
-  $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
-
-  $json = json_decode($json_string, true);
-
-  return intval( $json['count'] );
-
-}
-
-function get_likes($url) {
-
-  $json_string = file_get_contents('http://graph.facebook.com/?ids=' . $url);
-
-  $json = json_decode($json_string, true);
-
-  return intval( $json[$url]['shares'] );
-
-}
 
