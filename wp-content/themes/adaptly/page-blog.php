@@ -36,7 +36,9 @@
           <div class="bottom-cont">
               <a href="<?php the_permalink(); ?>">Read More ></a>
               <div class="share">
-                <span class="counter-total"></span>
+                <span class="counter-total">
+                <?php echo get_tweets(the_permalink()) + get_likes(the_permalink()); ?>
+                </span>
                 <?php echo do_shortcode( '[ssba]' ); ?>
               </div>
           </div>
