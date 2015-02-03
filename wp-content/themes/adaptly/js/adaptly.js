@@ -117,6 +117,7 @@ function shareCounter() {
     var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
     var twitterCount = $('this' + ' .ssba_sharecount.twitter').textContent || 0;
     var totalCount = parseInt(facebookCount) + parseInt(twitterCount);
+    console.log(facebookCount, twitterCount, totalCount)
     if (totalCount === 1) {
       $(' .counter-total').text(totalCount + " share");
     } else {
