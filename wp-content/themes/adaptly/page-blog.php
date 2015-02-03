@@ -39,7 +39,7 @@
                 <span class="counter-total">
                 <?php 
                 $link = get_permalink();
-                echo get_tweets($link) + get_likes($link); ?> share(s)
+                echo get_tweets($link) + get_likes($link); ?> shares
                 </span>
                 <?php echo do_shortcode( '[ssba]' ); ?>
               </div>
