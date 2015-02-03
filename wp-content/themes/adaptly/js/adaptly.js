@@ -112,10 +112,10 @@ function smoothScroll() {
 }
 
 function shareCounter() {
-  var shareDivs = $('.ssba');
+  var shareDivs = $('div.ssba');
   $.each(shareDivs, function(div) {
     var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
-    var twitterCount = $(' .ssba_sharecount.twitter').textContent || 0;
+    var twitterCount = $('this' + ' .ssba_sharecount.twitter').textContent || 0;
     var totalCount = parseInt(facebookCount) + parseInt(twitterCount);
     if (totalCount === 1) {
       $(' .counter-total').text(totalCount + " share");
