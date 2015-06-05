@@ -69,7 +69,7 @@
   <div class="mid-cont home-page desktop mobile">
     <?php the_field('case_study_intro'); ?>
     <div class="case-study-grid">
-      <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'ASC', 'posts_per_page' => 6) ); ?>
+      <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'DESC', 'posts_per_page' => 20) ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
       <div class="case-study">
         <a href="<?php the_permalink(); ?>">
@@ -95,8 +95,16 @@
         <div class="response" id="mce-success-response" style="display:none"></div>
       </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_db19f9e852" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ><img src="<?php echo get_template_directory_uri(); ?>/images/cta arrow.svg" class="cta-arrow"></div>
+      <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ></div>
     </form>
   </div>
 </div>
 <?php get_footer(); ?>
+
+
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.conversion.trackPid('l47ej', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l47ej&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l47ej&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /></noscript>

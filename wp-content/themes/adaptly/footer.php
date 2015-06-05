@@ -18,7 +18,6 @@
 					<div class="section contact">
 						<h3>Contact</h3>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/footer_contact.png">
-						<p><?php the_field('main_phone_number', 'user_2') ?></p>
 						<p><a href="mailto:<?php the_field('main_email_address', 'user_2') ?>"><?php the_field('main_email_address', 'user_2') ?></a></p>
 					</div>
 				</a>

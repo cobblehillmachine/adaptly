@@ -11,20 +11,19 @@ get_header(); ?>
   </div>
 </div>
   <div class="request-demo-form contact case-study mid-cont post-header">
-    <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
     <input type=hidden name="oid" value="00Dd0000000ezSf">
     <div class="form-left">
-      <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-      <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-      <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+      <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
+       <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
     </div>
     <div class="form-right">
-      <label for="title">Title*</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
-      <label for="company">Company*</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-      <label for="city">City*</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+	    <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br> 
+      <label for="company">Company*</label><input  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
     </div>
-    <input type="submit" name="submit" onclick="window.open('<?php the_field('pdf_for_download'); ?>')">
+    <input type="submit" name="submit" >
   </form>
+
   </div>
 
   <?php } ?>
@@ -65,20 +64,18 @@ get_header(); ?>
   <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
 </div>
 <div class="request-demo-form contact case-study mid-cont pre-footer">
-    <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" >
+    <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
     <input type=hidden name="oid" value="00Dd0000000ezSf">
     <!-- <input type=hidden name="retURL" target=""> -->
     <div class="form-left">
-      <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-      <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-      <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+      <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
+       <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
     </div>
     <div class="form-right">
-      <label for="title">Title*</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
-      <label for="company">Company*</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-      <label for="city">City*</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+	    <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br> 
+      <label for="company">Company*</label><input  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
     </div>
-    <input type="submit" name="submit" onclick="window.open('<?php the_field('pdf_for_download'); ?>')">
+    <input type="submit" name="submit">
   </form>
   </div>
 <?php } ?>

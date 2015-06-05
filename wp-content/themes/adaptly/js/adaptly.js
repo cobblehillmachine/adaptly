@@ -3,7 +3,9 @@ $( document ).ready(function() {
   blurs();
   widowVanquisher();
   $('.video-bg video')[0].play();
-  
+  $('.request-demo-form form').on('click', function() {
+	  console.log('attempt');
+  })
 })
 
 $( window ).load(function() {
@@ -111,20 +113,20 @@ function smoothScroll() {
   });
 }
 
-// function shareCounter() {
-//   var shareDivs = $('.post');
-//   $.each(shareDivs, function(div) {
-//     // var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
-//     // var twitterCount = $('this' + ' .ssba_sharecount.twitter').textContent || 0;
-//     var totalCount = get_tweets(div.find('a').href) + get_shares(div.find('a').href);
-//     console.log(div.find('a').href)
-//     if (totalCount === 1) {
-//       $(' .counter-total').text(totalCount + " share");
-//     } else {
-//       $(' .counter-total').text(totalCount + " shares");
-//     }
-//   })
-// }
+function shareCounter() {
+  var shareDivs = $('.post');
+  $.each(shareDivs, function(div) {
+    // var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
+    // var twitterCount = $('this' + ' .ssba_sharecount.twitter').textContent || 0;
+    var totalCount = get_tweets(div.find('a').href) + get_shares(div.find('a').href);
+    console.log(div.find('a').href)
+    if (totalCount === 1) {
+      $(' .counter-total').text(totalCount + " share");
+    } else {
+      $(' .counter-total').text(totalCount + " shares");
+    }
+  })
+}
 
 function careersSlider() {
   var colorList = ['#b1aba9', 'black', '#171735', '#461b25', '#9d9d9d' ]
@@ -167,6 +169,5 @@ function widowVanquisher() {
     $(this).html(string);
 });
 }
-
 
 

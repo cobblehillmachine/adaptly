@@ -13,7 +13,8 @@
     <?php while ( have_posts() ) : the_post(); ?>
       <div class="location">
         <h4><?php the_title(); ?></h4>
-        <a href="https://maps.google.com?q=<?php the_content(); ?>"><?php the_content(); ?></a>
+        <?php $address = get_the_content(); ?>
+        <a target=_blank href="https://maps.google.com?q=<?php echo $address ?>"><?php the_content() ?></a>
       </div>
     <?php endwhile; wp_reset_query(); ?>
   </div>

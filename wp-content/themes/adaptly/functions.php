@@ -714,5 +714,3 @@ function get_likes($url) {
   $json = json_decode($json_string, true);
   return intval( $json[$url]['shares'] );
 }
-
-

@@ -27,7 +27,7 @@ get_header(); ?>
 <div class="post-share mid-cont blog-post">
   <div class="twitter"><a href="http://twitter.com/share?url=<?php the_permalink(); ?>">Twitter</a></div>
   <div class="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>">Facebook</a></div>
-  <div class="email"><a HREF="mailto:?body=Hi,check out this post by Adaptly: <?php the_permalink(); ?>">Send</a></div>
+  <div class="linkedin"><a HREF="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>&amp;summary=<?php the_excerpt(); ?>" target="_blank">LinkedIn</a></div>
 
 </div>
 <?php $author = get_field('author_name');

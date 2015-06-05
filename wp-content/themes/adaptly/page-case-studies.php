@@ -23,7 +23,7 @@
 
 <div class='mid-cont case-studies resources'>
   <div class="case-study-grid resources-feed" id="case-studies">
-    <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'ASC', 'posts_per_page' => 6) ); ?>
+    <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'DESC', 'posts_per_page' => 20) ); ?>
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="case-study">
       <a href="<?php the_permalink(); ?>">
