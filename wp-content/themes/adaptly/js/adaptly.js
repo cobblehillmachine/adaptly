@@ -184,6 +184,7 @@ function splashCookie() {
   }
   $('#splash-signup .close').on('click', function() {
     $('#home-overlay').fadeOut();
+    $('body').css({'overflow-y':'visible'});
   })
 }
 
