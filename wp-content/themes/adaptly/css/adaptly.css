@@ -481,6 +481,7 @@ p.back-to-feed a {  color: black;}
   .single-service { padding: 20px 0; display: block; width: 100%; max-width: 400px; margin: 0 auto; }
   /*partners*/
   .partner.featured, .partner.featured.Twitter, .partner.featured.Facebook {  margin-bottom:45px; width: 100%; max-width: 400px;}
+  .partner.featured.Pinterest {	padding: 10px 0;}
   .partner.data { width: 49%; padding: 0 10%; }
   .partners.mid-cont {  padding-bottom: 40px; }
   /*resources*/
