@@ -28,6 +28,13 @@ get_header(); ?>
   <div class="twitter"><a href="http://twitter.com/share?url=<?php the_permalink(); ?>">Twitter</a></div>
   <div class="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>">Facebook</a></div>
   <div class="linkedin"><a HREF="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>&amp;summary=<?php the_excerpt(); ?>" target="_blank">LinkedIn</a></div>
+  <div class="pinterest">
+    <?php $post_thumbnail_id = get_post_thumbnail_id();
+    $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id ); ?>
+    <a href="https://www.pinterest.com/pin/create/button/
+?url=<?php the_permalink() ?>&media=<?php echo post_thumbnail_url ?>&description=<?php the_title() ?>, from Adaptly" data-pin-do="buttonPin" data-pin-config="above">
+        <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
+    </a></div>
 
 </div>
 <?php $author = get_field('author_name');
