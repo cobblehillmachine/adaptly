@@ -229,6 +229,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .work-smarter ul li:nth-child(2) { font-size:20px; margin: -15px 0 10px 0; font-weight: 400;}
 
 .emphasize-adaptability { background-color: #1AA2D1; color:white; padding: 50px 0;}
+.emphasize-adaptability a {	color: white; text-decoration: underline;}
 
 .computer-animation { position: relative; width: 100%; height: auto; margin: 0 auto 50px;}
 .video-container{ position: absolute; top:70px; left: 149px;  width: 502px; border-radius:2px; overflow:hidden; height: 337px; border:1px solid #cdcdcd;}
