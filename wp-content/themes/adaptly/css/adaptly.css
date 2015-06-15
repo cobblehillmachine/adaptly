@@ -198,6 +198,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .contact form {  width: 70%; text-align: left; display: inline-block; vertical-align: top; padding:0 100px 0 45px;}
 .contact form input[type="text"], .contact form input[type="email"], .contact form textarea { background: #EEEEEE; border-radius: 5px; width: 100%;  -webkit-appearance: none; -moz-appearance: none; border: 1px #CCCCCC solid; font-size: 18px; padding: 10px;}
 .contact form input { height: 40px; }
+.contact form input[type="radio"] {	-webkit-appearance: radio; appearance: radio; margin-right: 10px; vertical-align: middle;}
 .contact p.half {  width: 49%; display: inline-block; vertical-align: top; margin-bottom: 0; padding: 0 2% 0 0; }
 .contact p.half:nth-child(3) { padding :0}
 .contact form input[type="submit"] {  width: 100px; background: #1AA2D1; border: 0; cursor:pointer; color: white;}
