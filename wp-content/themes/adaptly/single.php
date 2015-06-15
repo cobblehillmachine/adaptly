@@ -8,9 +8,7 @@ get_header(); ?>
 if ($cta_field == 'Contact Us') { ?>
   <div class="pre-footer-cta">
     <p class="request-demo-cta contact-us">Start using Adaptly services today.<a href="/contact">Contact Us</a></p>
-
   </div>
-
 <?php } else if ($cta_field == 'Downloadable PDF') { ?>
   <div class="pre-footer-cta">
     <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
@@ -90,6 +88,31 @@ if ($cta_field == 'Contact Us') { ?>
   </div>
 </div>
 <?php } ?>
+<?php $cta_field = get_field('cta');
+if ($cta_field == 'Contact Us') { ?>
+  <div class="pre-footer-cta">
+    <p class="request-demo-cta contact-us">Start using Adaptly services today.<a href="/contact">Contact Us</a></p>
+  </div>
+<?php } else if ($cta_field == 'Downloadable PDF') { ?>
+  <div class="pre-footer-cta">
+    <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
+  </div>
+  <div class="request-demo-form contact case-study mid-cont pre-footer">
+      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
+      <input type=hidden name="oid" value="00Dd0000000ezSf">
+      <!-- <input type=hidden name="retURL" target=""> -->
+      <div class="form-left">
+        <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
+         <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
+      </div>
+      <div class="form-right">
+        <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br> 
+        <label for="company">Company*</label><input  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
+      </div>
+      <input type="submit" name="submit">
+    </form>
+  </div>
+<?php } else { ?>
 <div class="pre-footer-cta mobile">
   <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
   <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
@@ -102,5 +125,6 @@ if ($cta_field == 'Contact Us') { ?>
     <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ></div></div>
   </form>
 </div>
+<?php } ?>
 <?php endwhile; wp_reset_query(); ?>
 <?php get_footer(); ?>
