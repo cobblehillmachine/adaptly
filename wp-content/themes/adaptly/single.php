@@ -14,7 +14,7 @@ if ($cta_field == 'Contact Us') { ?>
     <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
   </div>
   <div class="request-demo-form contact case-study mid-cont pre-footer">
-      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
+      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('downloadable_pdf'); ?>')">
       <input type=hidden name="oid" value="00Dd0000000ezSf">
       <!-- <input type=hidden name="retURL" target=""> -->
       <div class="form-left">
@@ -98,7 +98,7 @@ if ($cta_field == 'Contact Us') { ?>
     <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
   </div>
   <div class="request-demo-form contact case-study mid-cont pre-footer">
-      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
+      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('downloadable_pdf'); ?>')">
       <input type=hidden name="oid" value="00Dd0000000ezSf">
       <!-- <input type=hidden name="retURL" target=""> -->
       <div class="form-left">
