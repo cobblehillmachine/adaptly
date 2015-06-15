@@ -310,11 +310,12 @@ p.back-to-feed a {  color: black;}
 .single .blog-post img {  float:right; padding: 15px}
 .single .blog-post img.aligncenter {  float: none; margin: 0 auto;}
 
-.post-share div { width: 245px;  display: inline-block; vertical-align: top; margin: 0 15px 50px;;padding: 10px 75px; border-radius: 5px; text-align: center;}
+.post-share div { width: 175px;  display: inline-block; vertical-align: top; margin: 0 15px 50px;;padding: 10px 50px; border-radius: 5px; text-align: center;}
 .post-share a { color: white;}
 .post-share .facebook { background-color: #2E3190;}
 .post-share .twitter {  background-color: #00ACED;}
 .post-share .linkedin {  background-color: #1884BC;}
+.post-share .pinterest {	background-color: #bd2027;}
 
 .single .blog-post.author img {  padding :0; float:none;}
 .author-wrapper { background-color: #F0F0F1; padding: 50px 0; border-bottom: 1px black solid;}
