@@ -6,7 +6,7 @@ get_header(); ?>
 <div class="pre-footer-cta mobile">
   <?php $cta_field = get_field('cta');
   if ($cta_field == 'Contact Us') { ?>
-    <p>contact</p>
+    <p class="request-demo-cta contact-us">Start using Adaptly services today.<a href="/contact">Contact Us</a></p>
   <?php } else if ($cta_field == 'Downloadable PDF') { ?>
     <p>newsletter</p>
   <?php } else { ?>
