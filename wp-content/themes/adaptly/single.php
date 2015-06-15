@@ -3,25 +3,48 @@
 get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="header-image"><?php the_post_thumbnail('full'); ?></div>
-<div class="pre-footer-cta mobile">
-  <?php $cta_field = get_field('cta');
-  if ($cta_field == 'Contact Us') { ?>
+
+<?php $cta_field = get_field('cta');
+if ($cta_field == 'Contact Us') { ?>
+  <div class="pre-footer-cta">
     <p class="request-demo-cta contact-us">Start using Adaptly services today.<a href="/contact">Contact Us</a></p>
-  <?php } else if ($cta_field == 'Downloadable PDF') { ?>
-    <p>newsletter</p>
-  <?php } else { ?>
-    <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
-    <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
-      <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_db19f9e852" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ></div></div>
+
+  </div>
+
+<?php } else if ($cta_field == 'Downloadable PDF') { ?>
+  <div class="pre-footer-cta">
+    <p class="case-study-download">Download the full case study.<a>DOWNLOAD</a></p>
+  </div>
+  <div class="request-demo-form contact case-study mid-cont pre-footer">
+      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
+      <input type=hidden name="oid" value="00Dd0000000ezSf">
+      <!-- <input type=hidden name="retURL" target=""> -->
+      <div class="form-left">
+        <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
+         <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
+      </div>
+      <div class="form-right">
+        <label for="last_name">Last Name*</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br> 
+        <label for="company">Company*</label><input  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
+      </div>
+      <input type="submit" name="submit">
     </form>
-  <?php } ?>
+  </div>
+<?php } else { ?>
+<div class="pre-footer-cta mobile">
+  <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
+  <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_db19f9e852" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ></div></div>
+  </form>
 </div>
+<?php } ?>
+
 
   <p  class="back-to-feed"><a href="/resources/blog">< All Articles</a></p>
 
