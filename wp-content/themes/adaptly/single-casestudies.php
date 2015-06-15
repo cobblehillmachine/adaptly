@@ -41,7 +41,7 @@ get_header(); ?>
 </div>
 
 <div class="mid-cont case-study bottom-content-wrapper">
-  <? $full = get_field('bottom_content_full_width');
+  <?php $full = get_field('bottom_content_full_width');
   if ($full) { ?>
     <div class="bottom-content full">
       <?php the_field('bottom_content_full_width'); ?>
