@@ -4,16 +4,23 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="header-image"><?php the_post_thumbnail('full'); ?></div>
 <div class="pre-footer-cta mobile">
-  <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
-  <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_db19f9e852" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ></div></div>
-  </form>
+  <?php $cta_field = get_field('cta');
+  if ($cta_field == 'Contact Us') { ?>
+    <p>contact</p>
+  <?php } else if ($cta_field == 'Downloadable PDF') { ?>
+    <p>newsletter</p>
+  <?php } else { ?>
+    <p class="newsletter-signup">Start receiving Adaptly emails monthly</p>
+    <form action="//adaptly.us3.list-manage.com/subscribe/post?u=1304346d0242a3209ad4480f9&amp;id=db19f9e852" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email">
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_1304346d0242a3209ad4480f9_db19f9e852" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ></div></div>
+    </form>
+  <?php } ?>
 </div>
 
   <p  class="back-to-feed"><a href="/resources/blog">< All Articles</a></p>
