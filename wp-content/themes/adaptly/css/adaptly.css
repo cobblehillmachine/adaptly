@@ -348,6 +348,22 @@ p.back-to-feed a {  color: black;}
 .mid-cont.privacy ul {  list-style: disc; padding-left: 20px;}
 .mid-cont.privacy li {  font-size: 18px; font-weight: 300; line-height: 1.5em; list-style: bullet;}
 
+/*SPLASH*/
+#home-overlay {position:absolute; width:100%;  top:0; left:0; bottom:0; z-index:1000; overflow:hidden;  }
+#splash-signup {min-height: 300px; position:absolute; background:#fff;left:50%; width: 900px; top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); text-align: center; border: 1px solid black;}
+#splash-signup .close {position:absolute; top:12px; right:15px;font-size:26px; cursor:pointer; color: white; background-color: #15a5d5; padding: 4px 10px; border-radius: 5px;}
+#splash-signup .header {	max-width: 665px; width: 100%; margin: 0 auto; padding: 60px 0;}
+#splash-signup .header h2 {	margin-bottom: 0;}
+#splash-signup .header p {	font-size: 33px; color: #15a5d5; margin: 0 auto 40px;}
+#splash-signup .header .links {	float: left; width: 100%;}
+#splash-signup .header a {	font-family: "merriweather"; font-style: italic; font-weight: 400; font-size: 24px; }
+#splash-signup .header a:first-child {	float: left;}
+#splash-signup .header a:nth-child(2) {	float: right;}
+#splash-signup .header a span {	font-style: normal; font-size: 35px; vertical-align: middle;}
+
+
+
+
 @media only screen and (max-width: 1200px) {
   .wide-cont.careers {width: 503px; top: 140px;}
   .header-slider.careers {  margin-top: -20px;}
@@ -433,7 +449,11 @@ p.back-to-feed a {  color: black;}
   .work-smarter ul {  width: 100%; display: block; }
   /*about*/
   .about.meet-our-team h3 { padding-bottom: 0;}
-  .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;} }
+  .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;}
+  /*splash*/
+  #splash-signup {	width: 96%;}
+  #splash-signup .header a:first-child, #splash-signup .header a:nth-child(2), #splash-signup .header .links {	float: none; display: block; margin: 10px auto;}
+}
 
 /*MOBILE*/
 @media only screen and (max-width: 750px) {

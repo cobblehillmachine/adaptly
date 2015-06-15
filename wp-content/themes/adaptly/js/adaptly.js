@@ -6,6 +6,7 @@ $( document ).ready(function() {
   $('.request-demo-form form').on('click', function() {
 	  console.log('attempt');
   })
+  splashCookie();
 })
 
 $( window ).load(function() {
@@ -168,6 +169,22 @@ function widowVanquisher() {
     string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
     $(this).html(string);
 });
+}
+
+function splashCookie() {
+  var COOKIE_NAME = 'home-page-cookie';
+  $go = $.cookie(COOKIE_NAME);
+  if ($go == null) {
+    $.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
+    $('#home-overlay').fadeIn();
+    $('body').css({'overflow-y':'hidden'});
+  }
+  else {
+    $('#home-overlay').hide();
+  }
+  $('#splash-signup .close').on('click', function() {
+    $('#home-overlay').fadeOut();
+  })
 }
 
 

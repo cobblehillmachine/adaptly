@@ -71,6 +71,7 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/blur.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.gallery.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.53451.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/adaptly.js"></script>

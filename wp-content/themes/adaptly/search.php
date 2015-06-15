@@ -27,8 +27,8 @@ get_header(); ?>
 <h4 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h4>
 
 <?php if ( have_posts() ) : ?>
-<div class="blog resources">
-  <div id="blog" class="blog-feed mid-cont">
+<div class="blog resources mid-cont">
+  <div id="blog" class="blog-feed ">
 		<?php
 			while ( have_posts() ) : the_post();
 				get_template_part( 'content', 'search' );

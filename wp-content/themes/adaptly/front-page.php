@@ -99,6 +99,21 @@
     </form>
   </div>
 </div>
+<div id="home-overlay">
+
+      <div id="splash-signup">
+        <div class="close">✕</div>
+          <div class="header">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/splash-icon.png">
+            <h2>Adaptly Partners with Pinterest!</h2>
+            <p>To celebrate, we created the Adaptly logo entirely out of pushpins!</p>
+            <div class="links">
+              <a href="#">Read More <span>▶</span></a>
+              <a href="#">Behind the Scenes <span>▶</span></a>
+            </div>
+          </div>
+        </div>
+    </div>
 <?php get_footer(); ?>
 
 
