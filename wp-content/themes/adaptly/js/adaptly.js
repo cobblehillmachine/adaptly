@@ -7,6 +7,10 @@ $( document ).ready(function() {
 	  console.log('attempt');
   })
   splashCookie();
+  $('#splash-signup .close').on('click', function() {
+    $('#home-overlay').fadeOut();
+    $('body').css({'overflow-y':'visible'});
+  })
 })
 
 $( window ).load(function() {
@@ -182,10 +186,7 @@ function splashCookie() {
   else {
     $('#home-overlay').hide();
   }
-  $('#splash-signup .close').on('click', function() {
-    $('#home-overlay').fadeOut();
-    $('body').css({'overflow-y':'visible'});
-  })
+
 }
 
 
