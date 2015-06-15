@@ -263,7 +263,7 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 .share { display: inline-block; float:right;}
 .blog-feed .ssba img {  display: inline-block; border: 0; vertical-align: middle; float:none; padding:3px;}
 .ssba_sharecount {  display: none;}
-.resources .ssba, .resources .pinterest {	display: inline-block; vertical-align: middle;}
+.resources .ssba, .resources .pinterest {	display: inline-block; vertical-align: bottom;}
 .resources .excerpt a {  font-size: 16px;color: black; font-weight: 400; vertical-align: middle; display: inline-block;}
 .resources .share { float: right;}
 .resources .counter-total {font-weight: 400;   right: 114px; font-size: 15px;position: absolute; margin-top: 3px;}
