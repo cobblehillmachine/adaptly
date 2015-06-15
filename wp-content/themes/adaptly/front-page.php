@@ -112,6 +112,9 @@
               <a href="#">Behind the Scenes <span>▶</span></a>
             </div>
           </div>
+          <div class="iframe-container">
+            <iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+          </div>
         </div>
     </div>
 <?php get_footer(); ?>
