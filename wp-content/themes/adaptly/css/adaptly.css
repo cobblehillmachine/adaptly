@@ -454,7 +454,10 @@ p.back-to-feed a {  color: black;}
   .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;}
   /*splash*/
   #splash-signup {	width: 96%;}
-  #splash-signup .header a:first-child, #splash-signup .header a:nth-child(2), #splash-signup .header .links {	float: none; display: block; margin: 10px auto;}
+  #splash-signup .header a:first-child, #splash-signup .header a:nth-child(2), #splash-signup .header .links {	float: none; display: block; margin: 10px auto; font-size: 16px;}
+  #splash-signup img {	width: 72px;}
+  #splash-signup h2 {	font-size: 28px;}
+  #splash-signup p, #splash-signup .header a span {	font-size: 18px;}
 }
 
 /*MOBILE*/
