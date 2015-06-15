@@ -42,6 +42,11 @@
                 echo get_tweets($link) + get_likes($link); ?> shares
                 </span>
                 <?php echo do_shortcode( '[ssba]' ); ?>
+                <div class="pinterest">
+                  <?php $post_thumbnail_id = get_post_thumbnail_id();
+                  $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id ); ?>
+                  <a href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo post_thumbnail_url ?>&description=<?php the_title() ?>, from Adaptly" data-pin-do="buttonPin" data-pin-config="above">Pinterest</a>
+                </div>
               </div>
           </div>
         </div>
@@ -66,5 +71,15 @@
     <div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button" ></div></div>
   </form>
 </div>
+
+ <script type="text/javascript">
+ (function(d){
+     var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+     p.type = 'text/javascript';
+     p.async = true;
+     p.src = '//assets.pinterest.com/js/pinit.js';
+     f.parentNode.insertBefore(p, f);
+ }(document));
+ </script>
 
 <?php get_footer(); ?>
