@@ -104,12 +104,11 @@
       <div id="splash-signup">
         <div class="close">✕</div>
           <div class="header">
+            <h2>We've partnered with</h2>
             <img src="<?php echo get_template_directory_uri(); ?>/images/splash-icon.png">
-            <h2>Adaptly Partners with Pinterest!</h2>
-            <p>To celebrate, we created the Adaptly logo entirely out of pushpins!</p>
             <div class="links">
-              <a href="#">Read More <span>▶</span></a>
-              <a href="#">Behind the Scenes <span>▶</span></a>
+              <a href="#">Read about the partnership <span>></span></a>
+              <a href="#">Watch the making of our pinboard <span>></span></a>
             </div>
           </div>
           <div class="iframe-container">
