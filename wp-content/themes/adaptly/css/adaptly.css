@@ -353,8 +353,8 @@ p.back-to-feed a {  color: black;}
 
 /*SPLASH*/
 #home-overlay {position:absolute; width:100%;  top:0; left:0; bottom:0; z-index:1000; overflow:hidden;  display: none;}
-#splash-signup {	-moz-box-shadow:-6px 6px 30px 10px #ccc; -webkit-box-shadow:-6px 6px 30px 10px #ccc;box-shadow:-6px 6px 30px 10px #ccc;}
-#splash-signup.desktop { position:absolute; background:#fff;left:50%; width: 850px; top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); text-align: center; border: 1px solid black; display: table;}
+#splash-signup {	-moz-box-shadow:-6px 6px 30px 10px #ccc; -webkit-box-shadow:-6px 6px 30px 10px #ccc;box-shadow:-6px 6px 30px 10px #ccc;position:absolute; background:#fff;left:50%;top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+#splash-signup.desktop {  width: 850px;  text-align: center;  display: table;}
 #splash-signup .close {position:absolute; top:-22px; right:-16px;font-size:24px; cursor:pointer; color: white; background-color: #15a5d5; padding: 4px 10px; border-radius: 5px; z-index: 10;}
 #splash-signup.desktop .header {	 margin: 0 auto; padding: 30px 20px; display: table-cell; width: 230px;}
 #splash-signup .header h2 {	margin-bottom: 0; font-size: 21px; line-height: 21px;}
@@ -453,7 +453,7 @@ p.back-to-feed a {  color: black;}
   .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;}
   /*splash*/
   #splash-signup.desktop {	display: none;}
-  #splash-signup.mobile {	width: 96%; top: 10px; left: 50%; transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); display: block; position: absolute; background: white; }
+  #splash-signup.mobile {	width: 96%;  display: block; background: white; }
   #splash-signup.mobile .header, #splash-signup.mobile .iframe-container, #splash-signup.mobile .links {	display: block;}
   #splash-signup.mobile .header {	padding: 20px 15px;}
   #splash-signup.mobile .header img {	width: 189px; margin-top: 5px;}
