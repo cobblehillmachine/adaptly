@@ -353,16 +353,15 @@ p.back-to-feed a {  color: black;}
 
 /*SPLASH*/
 #home-overlay {position:absolute; width:100%;  top:0; left:0; bottom:0; z-index:1000; overflow:hidden;  }
-#splash-signup { position:absolute; background:#fff;left:50%; width: 850px; top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); text-align: center; border: 1px solid black; display: table;}
+#splash-signup {	-moz-box-shadow:-6px 6px 30px 10px #ccc; -webkit-box-shadow:-6px 6px 30px 10px #ccc;box-shadow:-6px 6px 30px 10px #ccc;}
+#splash-signup.desktop { position:absolute; background:#fff;left:50%; width: 850px; top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); text-align: center; border: 1px solid black; display: table;}
 #splash-signup .close {position:absolute; top:-22px; right:-16px;font-size:24px; cursor:pointer; color: white; background-color: #15a5d5; padding: 4px 10px; border-radius: 5px; z-index: 10;}
-#splash-signup .header {	 margin: 0 auto; padding: 30px 20px; display: table-cell; width: 230px;}
+#splash-signup.desktop .header {	 margin: 0 auto; padding: 30px 20px; display: table-cell; width: 230px;}
 #splash-signup .header h2 {	margin-bottom: 0; font-size: 21px; line-height: 21px;}
-/*#splash-signup .header .links {	margin-top: 60px;}*/
-#splash-signup .header a {	font-family: "merriweather"; font-style: italic; font-weight: 300; font-size: 18px;  display: block; text-align: left; margin-top: 50px;}
-/*#splash-signup .header a span {	font-style: normal; font-size: 35px; vertical-align: middle;}*/
+#splash-signup a {	font-family: "merriweather"; font-style: italic; font-weight: 300; font-size: 18px;  display: block; text-align: left; margin-top: 50px;}
 #splash-signup .iframe-container {position: relative;height: 0;overflow: hidden; display: table-cell; width: 620px;}
 #splash-signup iframe {	position: absolute;top:0;left: 0;width: 100%;height: 100%;}
-
+#splash-signup.mobile {	display: none;}
 
 
 
@@ -453,15 +452,16 @@ p.back-to-feed a {  color: black;}
   .about.meet-our-team h3 { padding-bottom: 0;}
   .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;}
   /*splash*/
-  #splash-signup {	width: 96%; top: 10px; transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); }
-  #splash-signup .header {	 padding: 21px 15px 8px;}
-  #splash-signup .header a:first-child, #splash-signup .header a:nth-child(2), #splash-signup .header .links {	float: none;  margin: 10px auto; font-size: 16px;}
-  #splash-signup img {	width: 50px;}
-  #splash-signup .header h2 {	font-size: 28px; margin-top: 6px;}
-  #splash-signup .close {	font-size: 16px;}
-  #splash-signup .header  p, #splash-signup .header a span {	font-size: 18px;}
-  #splash-signup .header  p {	margin-bottom: 10px;}
-  #splash-signup .header a {	margin: 0 5px;}
+  #splash-signup.desktop {	display: none;}
+  #splash-signup.mobile {	width: 96%; top: 10px; left: 50%; transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); display: block; position: absolute; background: white; }
+  #splash-signup.mobile .header, #splash-signup.mobile .iframe-container, #splash-signup.mobile .links {	display: block;}
+  #splash-signup.mobile .header {	padding: 20px 15px;}
+  #splash-signup.mobile .header img {	width: 189px; margin-top: 5px;}
+  #splash-signup.mobile .iframe-container {	position: relative;padding-bottom: 56.25%;height: 0;overflow: hidden; width: 100%;}
+  #splash-signup.mobile .close {	top: 15px; right :5px; font-size: 14px; padding: 4px 7px;}
+  #splash-signup.mobile .links {	padding: 20px 15px;}
+  #splash-signup.mobile a {	display: inline-block; width: 49%; vertical-align: top;  margin-bottom: 50px; text-align: center;}
+
 }
 
 /*MOBILE*/

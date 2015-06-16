@@ -100,22 +100,35 @@
   </div>
 </div>
 <div id="home-overlay">
-
-      <div id="splash-signup">
-        <div class="close">✕</div>
-          <div class="header">
-            <h2>We've partnered with</h2>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/splash-icon.png">
-            <div class="links">
-              <a href="#">Read about the partnership <span>></span></a>
-              <a href="#">Watch the making of our pinboard <span>></span></a>
-            </div>
-          </div>
-          <div class="iframe-container">
-            <iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-          </div>
+  <div id="splash-signup" class="desktop">
+    <div class="close">✕</div>
+      <div class="header">
+        <h2>We've partnered with</h2>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/splash-icon.png">
+        <div class="links">
+          <a href="#">Read about the partnership <span>></span></a>
+          <a href="#">Watch the making of our pinboard <span>></span></a>
         </div>
-    </div>
+      </div>
+      <div class="iframe-container">
+        <iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
+  </div>
+  <div id="splash-signup" class="mobile">
+    <div class="close">✕</div>
+      <div class="header">
+        <h2>We've partnered with</h2>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/splash-icon.png">
+      </div>
+      <div class="iframe-container">
+        <iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
+      <div class="links">
+        <a href="#">Read about the<br>partnership <span>></span></a>
+        <a href="#">Watch the making<br>of our pinboard <span>></span></a>
+      </div>
+  </div>
+</div>
 <?php get_footer(); ?>
 
 
