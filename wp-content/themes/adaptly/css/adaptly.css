@@ -457,11 +457,14 @@ p.back-to-feed a {  color: black;}
   .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;}
   /*splash*/
   #splash-signup {	width: 96%;}
-  #splash-signup .header {	 padding: 30px 15px;}
-  #splash-signup .header a:first-child, #splash-signup .header a:nth-child(2), #splash-signup .header .links {	float: none; display: block; margin: 10px auto; font-size: 16px;}
-  #splash-signup img {	width: 72px;}
-  #splash-signup .header h2 {	font-size: 28px;}
+  #splash-signup .header {	 padding: 21px 15px 8px;}
+  #splash-signup .header a:first-child, #splash-signup .header a:nth-child(2), #splash-signup .header .links {	float: none;  margin: 10px auto; font-size: 16px;}
+  #splash-signup img {	width: 50px;}
+  #splash-signup .header h2 {	font-size: 28px; margin-top: 6px;}
+  #splash-signup .close {	font-size: 16px;}
   #splash-signup .header  p, #splash-signup .header a span {	font-size: 18px;}
+  #splash-signup .header  p {	margin-bottom: 10px;}
+  #splash-signup .header a {	margin: 0 5px;}
 }
 
 /*MOBILE*/
