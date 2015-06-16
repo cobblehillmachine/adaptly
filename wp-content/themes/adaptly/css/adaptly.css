@@ -352,7 +352,7 @@ p.back-to-feed a {  color: black;}
 .mid-cont.privacy li {  font-size: 18px; font-weight: 300; line-height: 1.5em; list-style: bullet;}
 
 /*SPLASH*/
-#home-overlay {position:absolute; width:100%;  top:0; left:0; bottom:0; z-index:1000; overflow:hidden;  }
+#home-overlay {position:absolute; width:100%;  top:0; left:0; bottom:0; z-index:1000; overflow:hidden;  display: none;}
 #splash-signup {	-moz-box-shadow:-6px 6px 30px 10px #ccc; -webkit-box-shadow:-6px 6px 30px 10px #ccc;box-shadow:-6px 6px 30px 10px #ccc;}
 #splash-signup.desktop { position:absolute; background:#fff;left:50%; width: 850px; top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); text-align: center; border: 1px solid black; display: table;}
 #splash-signup .close {position:absolute; top:-22px; right:-16px;font-size:24px; cursor:pointer; color: white; background-color: #15a5d5; padding: 4px 10px; border-radius: 5px; z-index: 10;}

@@ -6,7 +6,7 @@ $( document ).ready(function() {
   $('.request-demo-form form').on('click', function() {
 	  console.log('attempt');
   })
-  // splashCookie();
+  splashCookie();
   $('#splash-signup .close').on('click', function() {
     $('#home-overlay').fadeOut();
     $('body').css({'overflow-y':'visible'});
@@ -181,7 +181,7 @@ function splashCookie() {
   if ($go == null) {
     $.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
     $('#home-overlay').fadeIn();
-    $('body').css({'overflow-y':'hidden'});
+    $('body').css('overflow-y','hidden');
   }
   else {
     $('#home-overlay').hide();
