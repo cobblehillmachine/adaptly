@@ -456,7 +456,7 @@ p.back-to-feed a {  color: black;}
   .about.meet-our-team h3 { padding-bottom: 0;}
   .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;}
   /*splash*/
-  #splash-signup {	width: 96%;}
+  #splash-signup {	width: 96%; top: 10px; transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); }
   #splash-signup .header {	 padding: 21px 15px 8px;}
   #splash-signup .header a:first-child, #splash-signup .header a:nth-child(2), #splash-signup .header .links {	float: none;  margin: 10px auto; font-size: 16px;}
   #splash-signup img {	width: 50px;}
