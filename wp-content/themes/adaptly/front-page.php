@@ -107,7 +107,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/splash-icon.png">
         <div class="links">
           <a href="#">Read about the partnership <span>></span></a>
-          <a href="#">Watch the making of our pinboard <span>></span></a>
+          <a href="/making-of-adaptly-pin-board">Watch the making of our pinboard <span>></span></a>
         </div>
       </div>
       <div class="iframe-container">
@@ -125,7 +125,7 @@
       </div>
       <div class="links">
         <a href="#">Read about the<br>partnership <span>></span></a>
-        <a href="#">Watch the making<br>of our pinboard <span>></span></a>
+        <a href="/making-of-adaptly-pin-board">Watch the making<br>of our pinboard <span>></span></a>
       </div>
   </div>
 </div>
