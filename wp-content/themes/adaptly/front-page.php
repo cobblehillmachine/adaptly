@@ -111,7 +111,7 @@
         </div>
       </div>
       <div class="iframe-container">
-        <iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        <iframe width="540" height="304" src="//player.vimeo.com/video/130766546?autoplay=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
       </div>
   </div>
   <div id="splash-signup" class="mobile">

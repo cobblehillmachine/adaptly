@@ -11,6 +11,13 @@ $( document ).ready(function() {
     $('#home-overlay').fadeOut();
     $('body').css('overflow-y','visible');
   })
+  $('html').click(function() {
+    $('#home-overlay').fadeOut();
+    $('body').css('overflow-y','visible');
+  });
+  $('#splash-signup').click(function(event){
+    event.stopPropagation();
+});
 })
 
 $( window ).load(function() {
@@ -180,11 +187,10 @@ function splashCookie() {
   $go = $.cookie(COOKIE_NAME);
   if ($go == null) {
     $.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
-    $('#home-overlay').fadeIn();
-    $('body').css('overflow-y','hidden');
+    $('#splash-signup.desktop .iframe-container').append($('<iframe width="540" height="304" src="//player.vimeo.com/video/130766546?autoplay=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>'))
   }
   else {
-    $('#home-overlay').hide();
+    $('#splash-signup.desktop .iframe-container').append($('<iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>'))
   }
 
 }
