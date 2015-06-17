@@ -106,7 +106,7 @@
         <h2>We've partnered with</h2>
         <img src="<?php echo get_template_directory_uri(); ?>/images/splash-icon.png">
         <div class="links">
-          <a href="#">Read about the partnership <span>></span></a>
+          <a href="/adaptly-named-pinterest-marketing-developer-partner">Read about the partnership <span>></span></a>
           <a href="/making-of-adaptly-pin-board">Watch the making of our pinboard <span>></span></a>
         </div>
       </div>
@@ -124,7 +124,7 @@
         <iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
       </div>
       <div class="links">
-        <a href="#">Read about the<br>partnership <span>></span></a>
+        <a href="/adaptly-named-pinterest-marketing-developer-partner">Read about the<br>partnership <span>></span></a>
         <a href="/making-of-adaptly-pin-board">Watch the making<br>of our pinboard <span>></span></a>
       </div>
   </div>
