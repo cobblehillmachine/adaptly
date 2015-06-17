@@ -21,7 +21,6 @@ $( document ).ready(function() {
 })
 
 $( window ).load(function() {
-  
   homepageAnimation();
   $('.computer-animation video').loop = true;
   requestDemoForm();
@@ -128,8 +127,6 @@ function smoothScroll() {
 function shareCounter() {
   var shareDivs = $('.post');
   $.each(shareDivs, function(div) {
-    // var facebookCount = $('this' + ' .ssba_sharecount.facebook').textContent || 0;
-    // var twitterCount = $('this' + ' .ssba_sharecount.twitter').textContent || 0;
     var totalCount = get_tweets(div.find('a').href) + get_shares(div.find('a').href);
     console.log(div.find('a').href)
     if (totalCount === 1) {
@@ -179,7 +176,7 @@ function widowVanquisher() {
     var string = $(this).html();
     string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
     $(this).html(string);
-});
+  });
 }
 
 function splashCookie() {

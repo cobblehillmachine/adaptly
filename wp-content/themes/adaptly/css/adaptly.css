@@ -453,7 +453,7 @@ p.back-to-feed a {  color: black;}
   .team-member { width: 100%; display: block; max-width: 400px; margin: 40px auto;}
   /*splash*/
   #splash-signup.desktop {	display: none;}
-  #splash-signup.mobile {	width: 96%;  display: block; background: white; }
+  #splash-signup.mobile {	width: 96%;  display: block; background: white; top: 10px; transform: translate(-50%, 0); -moz-transform: translate(-50%, 0);-webkit-transform: translate(-50%, 0);}
   #splash-signup.mobile .header, #splash-signup.mobile .iframe-container, #splash-signup.mobile .links {	display: block;}
   #splash-signup.mobile .header {	padding: 20px 15px;}
   #splash-signup.mobile .header img {	width: 189px; margin-top: 5px;}
