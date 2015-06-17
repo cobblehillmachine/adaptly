@@ -2,7 +2,9 @@ $( document ).ready(function() {
   careersSlider();
   blurs();
   widowVanquisher();
-  $('.video-bg video')[0].play();
+  if ($('.video-bg video').length > 0) {
+    $('.video-bg video')[0].play();
+  }
   $('.request-demo-form form').on('click', function() {
 	  console.log('attempt');
   })
