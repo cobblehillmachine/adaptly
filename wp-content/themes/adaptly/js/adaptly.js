@@ -30,6 +30,7 @@ $( window ).load(function() {
   // shareCounter();
   blogPhotoWrap();
   gallery();
+  iframeContainer();
 });
 
 $( window ).resize(function() {
@@ -192,6 +193,10 @@ function splashCookie() {
     $('#splash-signup.desktop .iframe-container').append($('<iframe width="540" height="304" src="//player.vimeo.com/video/130766546" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>'))
   }
 
+}
+
+function iframeContainer() {
+  $('iframe').parent().addClass('iframe-container');
 }
 
 
