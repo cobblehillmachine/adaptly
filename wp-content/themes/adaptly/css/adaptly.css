@@ -360,8 +360,8 @@ p.back-to-feed a {  color: black;}
 #splash-signup.desktop .header {	 margin: 0 auto; padding: 30px 20px; display: table-cell; width: 230px;}
 #splash-signup .header h2 {	margin-bottom: 0; font-size: 21px; line-height: 21px;}
 #splash-signup a {	font-family: "merriweather"; font-style: italic; font-weight: 300; font-size: 18px;  display: block; text-align: left; margin-top: 50px;}
-#splash-signup .iframe-container {position: relative;height: 0;overflow: hidden; display: table-cell; width: 620px;}
-#splash-signup iframe {	position: absolute;top:0;left: 0;width: 100%;height: 100%;}
+.iframe-container {position: relative;height: 0;overflow: hidden; display: table-cell; width: 620px;}
+iframe {	position: absolute;top:0;left: 0;width: 100%;height: 100%;}
 #splash-signup.mobile {	display: none;}
 
 
@@ -458,7 +458,7 @@ p.back-to-feed a {  color: black;}
   #splash-signup.mobile .header, #splash-signup.mobile .iframe-container, #splash-signup.mobile .links {	display: block;}
   #splash-signup.mobile .header {	padding: 20px 15px;}
   #splash-signup.mobile .header img {	width: 189px; margin-top: 5px;}
-  #splash-signup.mobile .iframe-container {	position: relative;padding-bottom: 56.25%;height: 0;overflow: hidden; width: 100%;}
+  .iframe-container {	position: relative;padding-bottom: 56.25%;height: 0;overflow: hidden; width: 100%;}
   #splash-signup.mobile .close {	top: 15px; right :5px; font-size: 14px; padding: 4px 7px;}
   #splash-signup.mobile .links {	padding: 20px 15px;}
   #splash-signup.mobile a {	display: inline-block; width: 49%; vertical-align: top;  margin-bottom: 50px; text-align: center;}
