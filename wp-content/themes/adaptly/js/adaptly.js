@@ -30,7 +30,7 @@ $( window ).load(function() {
   // shareCounter();
   blogPhotoWrap();
   gallery();
-  iframeContainer();
+  // iframeContainer();
 });
 
 $( window ).resize(function() {
