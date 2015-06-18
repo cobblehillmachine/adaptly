@@ -154,10 +154,6 @@ function careersSlider() {
           var currentColor = colorList[slider.currentSlide]
           $('.wide-cont.careers a').css('background-color', currentColor);
         }
-      },
-      start: function(slider) {
-        // $('.header-slider .flexslider').show();
-        $('.wide-cont.careers').show();
       }
   })
   $('.employee-quotes.flexslider').flexslider({
