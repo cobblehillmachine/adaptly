@@ -115,7 +115,7 @@ p {  font-size: 18px;font-weight: 300; line-height: 1.5em}
 .header-slider .flexslider .flex-viewport {	width: 100%;}
 /* .header-slider .flexslider li:nth-child(2){ display: block;} */
 /* .header-slider .flexslider li { display: none;} */
- .header-slider .flex-slider{display: none;} 
+ .header-slider .flexslider{display: none;} 
 
 
 .client-wrapper { background: #F0F0F1; margin-bottom:100px;}
