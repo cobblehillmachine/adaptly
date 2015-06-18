@@ -156,7 +156,7 @@ function careersSlider() {
         }
       },
       start: function(slider) {
-        $('.header-slider .flexslider').show();
+        // $('.header-slider .flexslider').show();
         $('.wide-cont.careers').show();
       }
   })
@@ -194,9 +194,3 @@ function splashCookie() {
   }
 
 }
-
-function iframeContainer() {
-  $('iframe').parent().addClass('iframe-container');
-}
-
-
