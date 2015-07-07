@@ -8,18 +8,8 @@ $( document ).ready(function() {
   $('.request-demo-form form').on('click', function() {
 	  console.log('attempt');
   })
-  splashCookie();
-  $('#splash-signup .close').on('click', function() {
-    $('#home-overlay').fadeOut();
-    $('body').css('overflow-y','visible');
-  })
-  $('html').click(function() {
-    $('#home-overlay').fadeOut();
-    $('body').css('overflow-y','visible');
-  });
-  $('#splash-signup').click(function(event){
-    event.stopPropagation();
-});
+
+
 })
 
 $( window ).load(function() {
