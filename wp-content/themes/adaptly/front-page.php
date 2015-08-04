@@ -22,7 +22,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_facebook.gif">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_pinterest.gif">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_twitter.gif">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/home_laptop.gif">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/instagram-line-icon.gif">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_video.gif">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_speech2.gif">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home_picture.gif">
