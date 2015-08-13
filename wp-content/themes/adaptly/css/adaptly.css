@@ -263,10 +263,10 @@ body .deploy-manage-analyze ul li:first-child {  margin-top:0;}
 
 .blog-feed img {  width: 50%; display: inline-block; border-top:10px #1AA2D1 solid; vertical-align: top}
 .share { display: inline-block; float:right;}
-.blog-feed .ssba img {  display: inline-block; border: 0; vertical-align: middle; float:none; padding:3px; width: auto;}
+.blog-feed .share img {  display: inline-block; border: 0; vertical-align: middle; float:none; padding:3px; width: auto;}
 .ssba_sharecount {  display: none;}
 .blog-feed .pinterest img {	width: 100%; border-top: 0;}
-.resources .ssba, .resources .pinterest {	display: inline-block; vertical-align: bottom; }
+.resources .share .facebook, .resources .share .twitter, .resources .pinterest {	display: inline-block; vertical-align: bottom; }
 .resources .excerpt a {  font-size: 16px;color: black; font-weight: 400; vertical-align: middle; display: inline-block;}
 .resources .share { float: right;}
 .resources .counter-total {font-weight: 400;   right: 114px; font-size: 15px;position: absolute; margin-top: 3px;}

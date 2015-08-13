@@ -41,7 +41,8 @@
                 $link = get_permalink();
                 echo get_tweets($link) + get_likes($link); ?> shares
                 </span>
-                <?php echo do_shortcode( '[ssba]' ); ?>
+                <div class="twitter"><a target=_blank href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title() ?>"><img src="../images/twitter_blue.png" alt="twitter"></a></div>
+                <div class="facebook"><a target=_blank href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>"><img src="../images/facebook_blue.png" alt="facebook"></a></div>
                 <div class="pinterest">
                   <?php $post_thumbnail_id = get_post_thumbnail_id();
                   $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id ); ?>
