@@ -9,7 +9,7 @@
 <div class="map">
   <div class="mid-cont contact">
     <h3>Locate Us</h3>
-    <?php query_posts( array( 'post_type' => 'locations', 'order' => "ASC") ); ?>
+    <?php query_posts( array( 'post_type' => 'locations', 'order' => "ASC", 'posts_per_page' => 10) ); ?>
     <?php while ( have_posts() ) : the_post(); ?>
       <div class="location">
         <h4><?php the_title(); ?></h4>
