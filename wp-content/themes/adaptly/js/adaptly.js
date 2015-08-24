@@ -26,7 +26,9 @@ $( window ).load(function() {
     $('#home-overlay').fadeOut();
     $('body').css('overflow-y', 'visible')
   })
-
+  if ($(window).width() < 1000 ) {
+     mobileSplashHeight()
+  }
 
 });
 
@@ -34,6 +36,9 @@ $( window ).resize(function() {
   homepageAnimation();
   var height = $(window).height();
   $('#home-overlay').css('height', height)
+  if ($(window).width < 1000 ) {
+     mobileSplashHeight()
+  }
 })
 
 function gallery() {
@@ -187,7 +192,6 @@ function instagramSplash() {
   var numberOfImages = images.length;
   var fadeTimeout = lengthOfTime / numberOfImages;
   var shuffledImageArray = shuffle(images);
-  console.log(images.length)
   shuffledImageArray.each(function(i) {
     $(this).delay(i++*fadeTimeout).fadeTo("slow", 0);
     setTimeout(function() {
@@ -201,6 +205,12 @@ function shuffle(o) {
   for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
   return o;
 };
+
+function mobileSplashHeight() {
+  var imgHeight = $('.image-tiles.mobile img').first().height();
+  console.log(imgHeight)
+  $('#splash-signup').css('height', imgHeight * 5)
+}
 
 function splashCookie() {
   var COOKIE_NAME = 'home-page-cookie';
