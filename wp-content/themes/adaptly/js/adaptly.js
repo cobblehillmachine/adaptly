@@ -19,6 +19,7 @@ $( window ).load(function() {
   smoothScroll();
   blogPhotoWrap();
   gallery();
+  splashCookie();
   $('#splash-signup').on('click', function() {
     $('#home-overlay').fadeOut();
     $('body').css('overflow-y', 'visible')
@@ -198,6 +199,7 @@ function splashCookie() {
   $go = $.cookie(COOKIE_NAME);
   if ($go == null) {
     $.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
+    $('#home-overlay').show();
     instagramSplash();
     $('body').css('overflow-y', 'hidden');
   }
