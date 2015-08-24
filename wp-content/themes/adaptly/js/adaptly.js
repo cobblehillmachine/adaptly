@@ -22,7 +22,7 @@ $( window ).load(function() {
   blogPhotoWrap();
   gallery();
   instagramSplash();
-  $('#splash-signup').on('click', function() {
+  $('#splash-signup .close').on('click', function() {
     $('#home-overlay').fadeOut();
     $('body').css('overflow-y', 'visible')
   })
