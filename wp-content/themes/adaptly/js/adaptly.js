@@ -21,7 +21,7 @@ $( window ).load(function() {
   smoothScroll();
   blogPhotoWrap();
   gallery();
-  splashCookie();
+  instagramSplash();
   $('#splash-signup').on('click', function() {
     $('#home-overlay').fadeOut();
     $('body').css('overflow-y', 'visible')
