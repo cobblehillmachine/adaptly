@@ -8,6 +8,8 @@ $( document ).ready(function() {
   $('.request-demo-form form').on('click', function() {
 	  // console.log('attempt');
   })
+  var height = $(window).height();
+  $('#home-overlay').css('height', height)
 
 
 })
@@ -30,6 +32,8 @@ $( window ).load(function() {
 
 $( window ).resize(function() {
   homepageAnimation();
+  var height = $(window).height();
+  $('#home-overlay').css('height', height)
 })
 
 function gallery() {
@@ -206,9 +210,6 @@ function splashCookie() {
     $('#home-overlay').show();
     instagramSplash();
     $('body').css('overflow-y', 'hidden');
-  }
-  else {
-
   }
 
 }
