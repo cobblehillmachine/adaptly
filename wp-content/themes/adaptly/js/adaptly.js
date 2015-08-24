@@ -186,7 +186,11 @@ function instagramSplash() {
   console.log(images.length)
   shuffledImageArray.each(function(i) {
     $(this).delay(i++*fadeTimeout).fadeTo("slow", 0);
+    setTimeout(function() {
+      $('.image-tiles').hide();
+    }, lengthOfTime )
   });
+
 }
 
 function shuffle(o) {
