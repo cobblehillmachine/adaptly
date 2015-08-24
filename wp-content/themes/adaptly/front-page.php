@@ -181,7 +181,7 @@
         <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_blue.gif">
         <h2>An Instagram Ads API Partner</h2>
         <img class="instagram" src="<?php echo get_template_directory_uri(); ?>/images/instagram-glyph.png">
-        <a href="/adaptly-named-pinterest-marketing-developer-partner">Read about the partnership <span>></span></a>
+        <a href="/adaptly-adds-instagram">Read about the partnership <span>></span></a>
 
       </div>
   </div>
