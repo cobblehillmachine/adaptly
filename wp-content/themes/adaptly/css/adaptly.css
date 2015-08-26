@@ -362,6 +362,7 @@ body.home.page {  overflow-y: hidden;}
 #splash-signup a {	font-family: "merriweather"; font-style: italic; font-weight: 300; font-size: 24px;  display: block; text-align: center; margin-top: 30px; }
 #splash-signup h2,
 #splash-signup h2 a{	margin: 15px 0; font-size: 35px; margin-bottom: 38px; color:#000; font-style:normal; font-family: "open-sans",sans-serif; }
+#splash-signup h2 a:hover{ background-color: #15a5d5; }
 #splash-signup .image-tiles.mobile {	display: none;}
 #splash-signup .image-tiles.desktop { display: block;}
 #splash-signup img.instagram {  max-width: 144px; }
