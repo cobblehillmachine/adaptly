@@ -356,17 +356,13 @@ p.back-to-feed a {  color: black;}
 body.home.page {  overflow-y: hidden;}
 #home-overlay {position:absolute; width:100%;  top:0; left:0; bottom:0; z-index:1000; overflow: hidden;}
 #splash-signup {	-moz-box-shadow:-6px 6px 30px 10px #ccc; -webkit-box-shadow:-6px 6px 30px 10px #ccc;box-shadow:-6px 6px 30px 10px #ccc;position:absolute; background:#fff;left:50%;top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); }
-
 #splash-signup {  height: 500px; width: 1000px;  text-align: center; }
 #splash-signup .close {position:absolute; top:-22px; right:-16px;font-size:24px; cursor:pointer; color: white; background-color: #15a5d5; padding: 4px 10px; border-radius: 5px; z-index: 10;}
 #splash-signup .cont {  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); z-index: 0;}
 #splash-signup a {	font-family: "merriweather"; font-style: italic; font-weight: 300; font-size: 24px;  display: block; text-align: center; margin-top: 20px; }
 #splash-signup h2,
 #splash-signup h2 a{	margin: 15px 0; font-size: 35px; margin-bottom: 28px; color:#000; font-style:normal; font-family: "open-sans",sans-serif; }
-#splash-signup h2 a{
- margin:0;
-}
-#splash-signup h2 a:hover{ color: #15a5d5; }
+#splash-signup h2 a{ margin:0; }
 #splash-signup .image-tiles.mobile {	display: none;}
 #splash-signup .image-tiles.desktop { display: block;}
 #splash-signup img.instagram {  max-width: 144px; }
