@@ -545,4 +545,8 @@ body.home.page {  overflow-y: hidden;}
 @media only screen and (max-width: 600px) {
   .icon-container img { width: 49%; padding: 20px 7%;}
   .icon-container { max-width: 300px; margin: 0 auto;}
+  .mobile-break{
+   display:block;
+  }
+  }
 }
