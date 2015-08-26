@@ -179,7 +179,7 @@
     <div class="close">✕</div>
       <div class="cont">
         <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/adaptly_logo_blue.gif">
-        <h2>Selected for Early Instagram Ads API Access</h2>
+        <h2>Selected for Early <span class="mobile-break"></span>Instagram Ads API Access</h2>
         <img class="instagram" src="<?php echo get_template_directory_uri(); ?>/images/instagram-glyph.png">
         <a href="/adaptly-adds-instagram">Read More <span>></span></a>
 
