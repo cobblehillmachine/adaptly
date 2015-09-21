@@ -8,8 +8,7 @@ $( document ).ready(function() {
   $('.request-demo-form form').on('click', function() {
 	  // console.log('attempt');
   })
-  var height = $(window).height();
-  $('#home-overlay').css('height', height)
+
 
 
 })
@@ -21,24 +20,11 @@ $( window ).load(function() {
   smoothScroll();
   blogPhotoWrap();
   gallery();
-  instagramSplash();
-  $('#splash-signup .close').on('click', function() {
-    $('#home-overlay').fadeOut();
-    $('body').css('overflow-y', 'visible')
-  })
-  if ($(window).width() < 1000 ) {
-     mobileSplashHeight()
-  }
 
 });
 
 $( window ).resize(function() {
   homepageAnimation();
-  var height = $(window).height();
-  $('#home-overlay').css('height', height)
-  if ($(window).width < 1000 ) {
-     mobileSplashHeight()
-  }
 })
 
 function gallery() {
