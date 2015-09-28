@@ -84,10 +84,17 @@ class MC4WP_API {
 			$result = $this->call( 'helper/ping' );
 
 			if( $result !== false ) {
-				if( isset( $result->msg ) && $result->msg === "Everything's Chimpy!" ) {
-					$this->connected = true;
+
+				if( isset( $result->msg ) ) {
+					if( $result->msg === "Everything's Chimpy!" ) {
+						$this->connected = true;
+					} else {
+						$this->show_error( $result->msg );
+					}
 				} elseif( isset( $result->error ) ) {
 					$this->show_error( 'MailChimp Error: ' . $result->error );
+				} else {
+					$this->show_error( 'Could not connect to MailChimp. The following response was received. <br><pre><code style="display: block; padding: 20px;">' . print_r( $result, true ) . '</code></pre>' );
 				}
 			}
 
@@ -154,6 +161,8 @@ class MC4WP_API {
 	public function get_lists( $list_ids = array() ) {
 		$args = array(
 			'limit' => 100,
+			'sort_field' => 'web',
+			'sort_dir' => 'ASC',
 		);
 
 		// set filter if the $list_ids parameter was set
@@ -196,6 +205,11 @@ class MC4WP_API {
 	* @return array|bool
 	*/
 	public function get_subscriber_info( $list_id, $emails ) {
+
+		if( is_string( $emails ) ) {
+			$emails = array( $emails );
+		}
+
 		$result = $this->call( 'lists/member-info', array(
 				'id' => $list_id,
 				'emails'  => $emails,
@@ -329,9 +343,7 @@ class MC4WP_API {
 		$response = wp_remote_post( $url, array(
 				'body' => $data,
 				'timeout' => 10,
-				'headers' => array(
-					'Accept-Encoding' => '',
-				),
+				'headers' => $this->get_headers()
 			)
 		);
 
@@ -363,6 +375,11 @@ class MC4WP_API {
 			if( isset( $response->code ) ) {
 				$this->error_code = (int) $response->code;
 			}
+
+		}
+
+		if( is_null( $response ) ) {
+			return false;
 		}
 
 		return $response;
@@ -411,6 +428,25 @@ class MC4WP_API {
 		$this->last_response = null;
 		$this->error_code = 0;
 		$this->error_message = '';
+	}
+
+	/**
+	 * Get the request headers to send to the MailChimp API
+	 *
+	 * @return array
+	 */
+	private function get_headers() {
+
+		$headers = array(
+			'Accept' => 'application/json'
+		);
+
+		// Copy Accept-Language from browser headers
+		if( ! empty( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ) ) {
+			$headers['Accept-Language'] = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+		}
+
+		return $headers;
 	}
 
 }

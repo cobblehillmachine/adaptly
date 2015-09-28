@@ -6,7 +6,7 @@ if( ! defined( 'MC4WP_LITE_VERSION' ) ) {
 } ?>
 <div id="mc4wp-admin" class="wrap mc4wp-settings">
 
-	<h2><img src="<?php echo MC4WP_LITE_PLUGIN_URL . 'assets/img/menu-icon.png'; ?>" /> <?php _e( 'MailChimp for WordPress', 'mailchimp-for-wp' ); ?>: <?php _e( 'Form Settings', 'mailchimp-for-wp' ); ?></h2>
+	<h1 class="page-title"><?php _e( 'MailChimp for WordPress', 'mailchimp-for-wp' ); ?>: <?php _e( 'Form Settings', 'mailchimp-for-wp' ); ?></h1>
 
 	<div id="mc4wp-content">
 
@@ -330,6 +330,10 @@ if( ! defined( 'MC4WP_LITE_VERSION' ) ) {
 			<tr>
 				<th>{current_url}</th>
 				<td><?php _e( 'Current URL', 'mailchimp-for-wp' ); ?></td>
+			</tr>
+			<tr>
+				<th>{current_path}</th>
+				<td><?php _e( 'Current URL path', 'mailchimp-for-wp' ); ?></td>
 			</tr>
 			<tr>
 				<th>{data_FNAME}</th>
