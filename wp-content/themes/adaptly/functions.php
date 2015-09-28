@@ -703,14 +703,14 @@ function is_post_type($type){
     return false;
 }
 
-function get_tweets($url) {    
-  $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
+function get_tweets($url) {
+  $json_string = @file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
   $json = json_decode($json_string, true);
   return intval( $json['count'] );
 }
 
 function get_likes($url) {
-  $json_string = file_get_contents('http://graph.facebook.com/?ids=' . $url);
+  $json_string = @file_get_contents('http://graph.facebook.com/?ids=' . $url);
   $json = json_decode($json_string, true);
   return intval( $json[$url]['shares'] );
 }
