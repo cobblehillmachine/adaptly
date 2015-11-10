@@ -179,7 +179,7 @@
     </div>
     <div class="close">✕</div>
     <div class="cont">
-      <a class="table" href="/adaptly-recognized-as-member-of-instagram-partner-program"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/adaptly.png"><img class="instagram" src="<?php echo get_template_directory_uri(); ?>/images/Instagram_partners_badge"></a>
+      <a class="table" href="/adaptly-recognized-as-member-of-instagram-partner-program"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/adaptly.png"><img class="instagram" src="<?php echo get_template_directory_uri(); ?>/images/Instagram_partners_badge.png"></a>
       <h2>Recognized Member of Instagram Partner Program</h2>
        <a href="/adaptly-recognized-as-member-of-instagram-partner-program">Read about the partnership <span>></span></a>
     </div>
