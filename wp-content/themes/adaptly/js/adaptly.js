@@ -2,6 +2,11 @@ $( document ).ready(function() {
   careersSlider();
   blurs();
   widowVanquisher();
+  splashCookie();
+  $('#home-overlay .close').on('click', function() {
+    $('#home-overlay').hide();
+    $('body').css('overflow-y', 'visible');
+  })
   if ($('.video-bg video').length > 0) {
     $('.video-bg video')[0].play();
   }
@@ -201,11 +206,11 @@ function mobileSplashHeight() {
 function splashCookie() {
   var COOKIE_NAME = 'home-page-cookie';
   $go = $.cookie(COOKIE_NAME);
-  if ($go == null) {
+  // if ($go == null) {
     $.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
     $('#home-overlay').show();
     instagramSplash();
-    $('body').css('overflow-y', 'hidden');
-  }
+    $('body.home.page').css('overflow-y', 'hidden');
+  // }
 
 }
