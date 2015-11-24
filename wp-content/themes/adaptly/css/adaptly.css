@@ -6,7 +6,7 @@ img { max-width: 100%; height: auto;}
 .wide-cont { width: 90%; margin: 0 auto; max-width: 1215px}
 .mid-cont {margin: 0 auto;}
 /*for mobile nav push*/
-.body { width: 100%; background: white;}
+.body { width: 100%; }
 
 /*FIXED WIDTH ELEMENTS*/
 .mid-cont.home-page { width: 845px;}
