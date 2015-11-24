@@ -100,11 +100,29 @@
   </div>
 </div>
 
-<div id="home-overlay">
+<!-- <div id="home-overlay">
   <div id="splash-signup" class="instagram">
 
-    <div class="image-tiles desktop">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image1.jpg">
+    <div class="image-tiles desktop"> -->
+      <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image47.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image26.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image3.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/event.png">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image5.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image20.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image42.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image34.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image25.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image14.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image15.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image16.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image30.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image38.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image24.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image12.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image13.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image4.jpg"> -->
+      <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image1.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image2.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image3.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image4.jpg">
@@ -129,7 +147,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image23.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image24.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image25.jpg">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image45.jpg">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/event.png">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image27.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image28.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image29.jpg">
@@ -177,15 +195,15 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image46.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image47.jpg">
     </div>
-    <div class="close">✕</div>
-    <div class="cont">
-      <a class="table" href="/adaptly-recognized-as-member-of-instagram-partner-program"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/adaptly.png"><img class="instagram" src="<?php echo get_template_directory_uri(); ?>/images/Instagram_partners_badge.png"></a>
-      <h2>Recognized Member of Instagram Partner Program</h2>
-       <a href="/adaptly-recognized-as-member-of-instagram-partner-program">Read about the partnership <span>></span></a>
-    </div>
+    <!-- <div class="close">✕</div> -->
+    <!-- <div class="cont">
+      <a class="table" href="/adaptly-recognized-as-member-of-instagram-partner-program"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/adaptly.png"><!-- <img class="instagram" src="<?php echo get_template_directory_uri(); ?>/images/Instagram_partners_badge.png"> --></a>
+      <!-- <h2>Recognized Member of Instagram Partner Program</h2> -->
+       <!-- <a href="/adaptly-recognized-as-member-of-instagram-partner-program">Read about the partnership <span>></span></a> -->
+    <!-- </div>
   </div>
 
-</div>
+</div> -->
 
 
 <?php get_footer(); ?>
