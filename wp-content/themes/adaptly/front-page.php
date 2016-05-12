@@ -69,7 +69,7 @@
   <div class="mid-cont home-page desktop mobile">
     <?php the_field('case_study_intro'); ?>
     <div class="case-study-grid">
-      <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'DESC', 'posts_per_page' => 20) ); ?>
+      <?php query_posts( array( 'post_type' => 'case studies', 'order' => 'DESC', 'posts_per_page' => -1) ); ?>
       <?php while ( have_posts() ) : the_post(); ?>
       <div class="case-study">
         <a href="<?php the_permalink(); ?>">
