@@ -13,6 +13,10 @@ get_header(); ?>
   <div class="request-demo-form contact case-study mid-cont post-header">
     <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
     <input type=hidden name="oid" value="00Dd0000000ezSf">
+    <?php $custom_input = get_field('custom_form');
+    if ($custom_input) {
+      echo $custom_input;
+    } ?>
     <div class="form-left">
       <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
        <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
@@ -66,7 +70,10 @@ get_header(); ?>
 <div class="request-demo-form contact case-study mid-cont pre-footer">
     <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="window.open('<?php the_field('pdf_for_download'); ?>')">
     <input type=hidden name="oid" value="00Dd0000000ezSf">
-    <!-- <input type=hidden name="retURL" target=""> -->
+    <?php $custom_input = get_field('custom_form');
+    if ($custom_input) {
+      echo $custom_input;
+    } ?>
     <div class="form-left">
       <label for="first_name">First Name*</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
        <label for="email">Email*</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
