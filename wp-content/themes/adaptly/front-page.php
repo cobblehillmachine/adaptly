@@ -100,10 +100,21 @@
   </div>
 </div>
 
+<div id="home-overlay">
+  <div id="splash-signup">
+    <div class="close">✕</div>
+    <div class="cont">
+      <h2>Adaptly named a Snapchat Partner!</h2>
+      <a href="/adaptly-initial-snapchat-partner"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/snapchat_splash.jpg"></a>
+       <a href="/adaptly-initial-snapchat-partner">Read about the partnership <span>></span></a>
+    </div>
+  </div>
+</div>
+
 <!-- <div id="home-overlay">
   <div id="splash-signup" class="instagram">
 
-    <div class="image-tiles desktop"> -->
+    <div class="image-tiles desktop">
       <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image47.jpg">
     <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image26.jpg">
     <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image3.jpg">
@@ -121,7 +132,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image24.jpg">
     <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image12.jpg">
     <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image13.jpg">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image4.jpg"> -->
+    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image4.jpg">
       <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image1.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image2.jpg">
       <img src="<?php echo get_template_directory_uri(); ?>/images/instagram/image3.jpg">
