@@ -354,7 +354,7 @@ p.back-to-feed a {  color: black;}
 .mid-cont.privacy li {  font-size: 18px; font-weight: 300; line-height: 1.5em; list-style: bullet;}
 
 /*SPLASH*/
-body.home.page {  overflow-y: hidden;}
+// body.home.page {  overflow-y: hidden;}
 #home-overlay {position:absolute; width:100%;  top:0; left:0; bottom:0; z-index:1000; overflow: hidden; }
 #splash-signup {	-moz-box-shadow:-6px 6px 30px 10px #ccc; -webkit-box-shadow:-6px 6px 30px 10px #ccc;box-shadow:-6px 6px 30px 10px #ccc;position:absolute; background:#fff;left:50%;top:50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%); }
 #splash-signup {  height: 500px; width: 1000px;  text-align: center; }

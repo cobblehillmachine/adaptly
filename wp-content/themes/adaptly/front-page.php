@@ -100,7 +100,7 @@
   </div>
 </div>
 
-<div id="home-overlay">
+<!-- <div id="home-overlay">
   <div id="splash-signup">
     <div class="close">✕</div>
     <div class="cont">
@@ -109,7 +109,7 @@
        <a href="/adaptly-initial-snapchat-partner">Read about the partnership <span>></span></a>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- <div id="home-overlay">
   <div id="splash-signup" class="instagram">

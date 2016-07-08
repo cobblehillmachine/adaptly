@@ -2,11 +2,11 @@ $( document ).ready(function() {
   careersSlider();
   blurs();
   widowVanquisher();
-  splashCookie();
-  $('#home-overlay .close').on('click', function() {
-    $('#home-overlay').hide();
-    $('body').css('overflow-y', 'visible');
-  })
+  // splashCookie();
+  // $('#home-overlay .close').on('click', function() {
+  //   $('#home-overlay').hide();
+  //   $('body').css('overflow-y', 'visible');
+  // })
   if ($('.video-bg video').length > 0) {
     $('.video-bg video')[0].play();
   }
